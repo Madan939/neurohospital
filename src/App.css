@@ -5,8 +5,12 @@
   padding: 0;
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-body {
-  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+html, body, #root {
+  width: 100%;
+  height: 100%;
+}
+.main{
+  flex:1;
 }
 .nav-1 {
   background: linear-gradient(90deg, #2c52a0, #1a3a7a);
@@ -350,9 +354,10 @@ footer {
   margin-bottom: 15rem;
 }
 .home-1 {
-  width: 88%;
+  width: 100%;
   height: 500px;
   margin: auto;
+  justify-content: space-between;
 }
 .home-row .col1 {
   height: 19rem;
@@ -387,6 +392,17 @@ footer {
   justify-content: center;
   align-items: center;
   border-radius: 0 7px 7px 0;
+}
+.home-1-1{
+  margin-left: 4.6rem;
+  width:45%;
+}
+.home-1-2{
+  width:50%;
+}
+.home-1-pic{
+  width:100%;
+  height:570px;
 }
 .hp1 {
   margin-top: 9rem;

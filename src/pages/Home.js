@@ -105,7 +105,7 @@ const Home = () => {
       )}
       <div className="home-bg ">
         <div className="home-1 d-flex">
-          <div className=" w-50">
+          <div className="home-1-1">
             <p className="hp1">Neuro Hospital - Biratnagar</p>
             <p className="hp2">Trusted Care</p>
             <p className="hp3">
@@ -115,8 +115,8 @@ const Home = () => {
             </p>
             <button className="hbtn btn">About Us</button>
           </div>
-          <div className=" w-50">
-            <img src="/images/homeimage.png" alt="home-image" />
+          <div className="home-1-2">
+            <img src="/images/homeimage.png" alt="home-image" className="home-1-pic" />
           </div>
         </div>
         <div className="container mt-2">
