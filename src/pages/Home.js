@@ -116,7 +116,11 @@ const Home = () => {
             <button className="hbtn btn">About Us</button>
           </div>
           <div className="home-1-2">
-            <img src="/images/homeimage.png" alt="home-image" className="home-1-pic" />
+            <img
+              src="/images/homeimage.png"
+              alt="home-image"
+              className="home-1-pic"
+            />
           </div>
         </div>
         <div className="container mt-2">
@@ -236,12 +240,90 @@ const Home = () => {
             </div>
           </div>
           <div className="mb-4">
-            <button className='prev' onClick={prevSlide}>
+            <button className="prev" onClick={prevSlide}>
               o
             </button>
             <button className="next" onClick={nextSlide}>
               o
             </button>
+          </div>
+        </div>
+      </div>
+      <div className="section-3">
+        <div className="sec-3-content row">
+          <div className="col col-1"></div>
+          <div className="col col-5  text-secondary">
+            <p className="sec-3-p1">Best Practices</p>
+            <p className="sec-3-p2">Premium Medical Facilities</p>
+            <p className="sec-3-p3">
+              To provide a safe and efficient environment to patients, staff,
+              and visitors routine inspections are one of the hospital facility
+              management’s key activities that are performed to find and address
+              any problem areas inside and outside of healthcare facilities,
+              such as:
+            </p>
+            <div className="sec-3-2row row">
+              <div className="sec-3-2col col col-6">
+                <div>
+                  <i class="fa-solid fa-angles-right"></i>&nbsp; Trauma Care
+                </div>
+                <div>
+                  <i class="fa-solid fa-angles-right"></i>&nbsp; Intensive Care
+                  Unit
+                </div>
+                <div>
+                  <i class="fa-solid fa-angles-right"></i>&nbsp;Ventilator
+                </div>
+              </div>
+              <div className="sec-3-2col col col-6">
+                <div>
+                  <i class="fa-solid fa-angles-right"></i>&nbsp; Stroke Care
+                </div>
+                <div>
+                  <i class="fa-solid fa-angles-right"></i>&nbsp; Heart Attack
+                  Care
+                </div>
+                <div>
+                  <i class="fa-solid fa-angles-right"></i>&nbsp;Knee/ Hip
+                  Replacement
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col col-6">
+            <img src="/images/sec-3-1.png" alt="" className="sec-3-img" />
+          </div>
+        </div>
+      </div>
+      <div className="section-4 ">
+        <div className="sec-4-row d-flex">
+          <div className="sec-4-col1">
+            <img src="/images/sec-4-img.jpg" alt="" className="sec-4-img" />
+          </div>
+          <div className="sec-4-col2 ">
+            <div className=" sec-4-col2-div  text-light">
+              <div className="sec-4-1">Experienced Doctors</div>
+              <p className="sec-4-2">World Class Treatment</p>
+              <p>
+                I feel proud to become a team member of professionally managed
+                healthcare services in Nepal. Our hospital provides world class
+                healthcare solutions for them whose last lifeline is "Neuro
+                Hospital-Biratnagar".
+              </p>
+              <p>
+                We have been serving local & international patients under single
+                roof as being the best neuro hospital in Nepal.
+              </p>
+              <p>Life Matters !</p>
+              <p className="sec-4-5">Dr. Vivek Kattel | Consultant Physician</p>
+              <Link className="text-decoration-none text-light" to="mailto:drkattel@neurohospital.com.np">
+                drkattel@neurohospital.com.np
+              </Link>
+              <br/>
+              <Link className="sec-4-btn btn text-light">
+                Book an Appointment
+              </Link>
+            </div>
           </div>
         </div>
       </div>
