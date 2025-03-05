@@ -331,7 +331,7 @@ body,
   display: block;
 }
 footer {
-  border:2px solid black !important;
+  /* border:2px solid black !important; */
   color: #636262;
 }
 .main-footer {
