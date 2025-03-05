@@ -35,9 +35,9 @@ const Nav_2 = () => {
               {showAbout && (
                 <div className="dropdown-content">
                   <div className="About-content">
-                    <div>About Us</div>
-                    <div>Messages</div>
-                    <div>Partners Organization</div>
+                    <Link to="">About Us</Link>
+                    <Link to="">Messages</Link>
+                    <Link to="">Partners Organization</Link>
                   </div>
                 </div>
               )}
@@ -149,7 +149,7 @@ const Nav_2 = () => {
             <NavLink to="#" className="nav-links">
               Contact
             </NavLink>
-            <NavLink to="#" className="btn btn-primary btn-sm text-sm">
+            <NavLink to="https://neuro.danphecare.com/" className="nav-2-btn btn text-sm">
               Book an Appointment
             </NavLink>
           </div>

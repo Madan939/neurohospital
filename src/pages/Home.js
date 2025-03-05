@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import CardSlider from "../components/CardSlider";
 import Video from "../components/Video";
 import Section_6 from "../components/Section_6";
+import Sec8 from "../components/Sec8";
 
 const Home = () => {
   const [homePic, showHomePic] = useState(true);
@@ -254,8 +255,21 @@ useEffect(()=>{
         </div>
       </div>
       </div>
-      <div className="section-6 border">
+      <div className="section-6 ">
         <Section_6/>
+      </div>
+      <div className="section-7">
+        <div className="sec-7-div">
+          <p className="sec7-p1">World Class Equipments</p>
+          <p className="sec7-p2">Magnetic resonance imaging is a medical imaging technique used in radiology to form pictures of the anatomy and the physiological processes of the body. MRI scanners use strong magnetic fields, magnetic field gradients, and radio waves to generate images of the organs in the body.</p>
+          <NavLink to="" className="sec7-btn btn text-light">Book an Appointment</NavLink>
+        </div>
+      </div>
+      <div className="section-8">
+        <div className="sec8-div">
+          <p className="sec8-p text-center">Hospital Updates</p>
+            <Sec8/>
+        </div>
       </div>
     </>
   );

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 const Section_6 = () => {
   const list = [
@@ -134,9 +135,12 @@ const Section_6 = () => {
                     </div>
                   </div>
                 </div>
+                <NavLink className="card-cnt-btn btn text-light">Book an Appointment</NavLink>
               </div>
             </div>
+           
           </div>
+
         )}
       </div>
     </>

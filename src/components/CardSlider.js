@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, FreeMode ,Pagination} from "swiper/modules";
 import "swiper/css";
 import "swiper/css/autoplay";
+import "swiper/css/pagination";
 
 const cards = [
   {
@@ -77,13 +78,12 @@ const CardSlider = () => {
           reverseDirection: true,
           pauseOnMouseEnter:true,
         }}
-        speed={2000}
-        pagination={{ clickable: true, el: ".custom-pagination" }}
+        speed={5000}
+        pagination={{ clickable: true }}
         modules={[Autoplay, FreeMode,Pagination]}
       > 
         {cards.map((card) => (
-          <SwiperSlide key={card.id}>
-          
+          <SwiperSlide key={card.id}>       
             <div className="card slider-card">
               <div className=" slider-div">
                 <img
@@ -98,7 +98,6 @@ const CardSlider = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-      <div className="custom-pagination"></div>
     </>
   );
 };

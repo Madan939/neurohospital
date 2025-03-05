@@ -13,20 +13,20 @@ const Header = () => {
         <nav className="nav-1 d-flex">
           <div className="nav-1-content d-flex justify-content-between">
             <div className="nav-1-first d-flex">
-              <NavLink to="#">
+              <NavLink to="https://neurohospital.com.np/location">
                 <i className="fa-solid fa-location-dot"></i>&nbsp; F73M+G94,
                 Jahada Road, Biratnagar
               </NavLink>
-              <NavLink to="#">
+              <NavLink to="tel:+97721416267">
                 <i className="fa-solid fa-phone-flip"></i>&nbsp; +977-21-416267
               </NavLink>
-              <NavLink to="#">
+              <NavLink to="https://neurohospital.com.np/email">
                 <i className="fa-solid fa-envelope"></i>&nbsp; Check Email
               </NavLink>
             </div>
             <div className="nav-1-second d-flex">
               <NavLink
-                to="#"
+                to="https://www.facebook.com/neurohospitalofficial/"
                 className="media-container"
                 onMouseOver={() => setShowFb(true)}
                 onMouseLeave={() => setShowFb(false)}
@@ -36,7 +36,7 @@ const Header = () => {
               </NavLink>
 
               <NavLink
-                to="#"
+                to="https://www.instagram.com/neurohospitalbrt/"
                 className="media-container"
                 onMouseOver={() => setShowInst(true)}
                 onMouseLeave={() => setShowInst(false)}
@@ -45,7 +45,7 @@ const Header = () => {
                 {showInst && <div className="media-content">Instagram</div>}
               </NavLink>
               <NavLink
-                to="#"
+                to="https://www.youtube.com/channel/UCGrHL0QQXVu1n-P29xUhmYA"
                 className="media-container"
                 onMouseOver={() => setShowYt(true)}
                 onMouseLeave={() => setShowYt(false)}
@@ -54,7 +54,7 @@ const Header = () => {
                 {showYt && <div className="media-content">Youtube</div>}
               </NavLink>
               <NavLink
-                to="#"
+                to="https://www.linkedin.com/company/neurohospital/?originalSubdomain=np"
                 className="media-container"
                 onMouseOver={() => setShowLdn(true)}
                 onMouseLeave={() => setShowLdn(false)}
@@ -63,7 +63,7 @@ const Header = () => {
                 {showLdi && <div className="media-content">LinkedIn</div>}
               </NavLink>
               <NavLink
-                to="#"
+                to="https://wa.me/9779852004024?text=Hi%2C%20I%27m%20contacting%20you%20through%20www.neurohospital.com.np.%20"
                 className="media-container"
                 onMouseOver={() => setShowWtsp(true)}
                 onMouseLeave={() => setShowWtsp(false)}
