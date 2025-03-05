@@ -1,96 +1,17 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import CardSlider from "../components/CardSlider";
+import Video from "../components/Video";
+import Section_6 from "../components/Section_6";
 
 const Home = () => {
   const [homePic, showHomePic] = useState(true);
   const close = () => {
     showHomePic(false);
   };
-  const cards = [
-    {
-      id: 1,
-      img: "/images/sl1.png",
-      name: "NEUROLOGY",
-      description:
-        "The branch of medicine concerned with the study and treatment of disorders of the nervous system. It is acomplex system that regulates and coordinates body activities",
-    },
-    {
-      id: 2,
-      img: "/images/sl2.png",
-      name: "NEUROSURGERY",
-      description:
-        "The branch of medicine concerned with the study and treatment of disorders of the nervous system. It is a complex system that regulates and coordinates body activities.",
-    },
-    {
-      id: 3,
-      img: "/images/sl3.png",
-      name: "CARDIOLOGY",
-      description:
-        "A branch of medicine that uses imaging technology to diagnose and treat disease. Radiology may be divided into two different areas, diagnostic radiology and interventional radiology.",
-    },
-    {
-      id: 4,
-      img: "/images/sl4.png",
-      name: "ORTHOPEDIC",
-      description:
-        "An X-ray, also called a radiograph, sends radiation through the body. Areas with high levels of calcium (bones and teeth) block the radiation, causing them to appear white on the image.",
-    },
-    {
-      id: 5,
-      img: "/images/sl5.png",
-      name: "GENERAL SURGERY",
-      description:
-        " Medical specialty dealing with the diagnosis and treatment of diseases and abnormalities involving the heart and blood vessels. Cardiology is a medical, not surgical, discipline. ",
-    },
-    {
-      id: 6,
-      img: "/images/sl6.png",
-      name: "PEDIATRICS",
-      description:
-        "It is a noninvasive medical imaging test that produces detailed images of almost every internal structure in the human body, including the organs, bones, muscles and blood.",
-    },
-    {
-      id: 7,
-      img: "/images/sl7.png",
-      name: "GYNECOLOGY",
-      description:
-        "It is the branch of medicine dealing with the skin. A dermatologist is a specialist medical doctor who manages diseases related to skin, hair, nails, cosmetic problems.",
-    },
-    {
-      id: 8,
-      img: "/images/sl8.png",
-      name: "NEPHROLOGY",
-      description:
-        " It comprises of both medicine as well as surgical fields. While many of the it illnesses need hormonal and other pharmacological management, cancers, fibroids etc.",
-    },
-  ];
-  const [startIndex, setStartIndex] = useState(0);
-  const totalCards = cards.length;
-  const visibleCards = 4;
-  const getVisibleCards = () => {
-    const endIndex = startIndex + visibleCards;
-    return endIndex > totalCards
-      ? [
-          ...cards.slice(startIndex, totalCards),
-          ...cards.slice(0, endIndex - totalCards),
-        ]
-      : cards.slice(startIndex, endIndex);
-  };
-  useEffect(() => {
-    const interval = setInterval(() => {
-      nextSlide();
-    }, 5000);
-    return () => clearInterval(interval);
-  }, [startIndex]);
-  const nextSlide = () => {
-    setStartIndex((prevIndex) => (prevIndex + 1) % totalCards);
-  };
-
-  const prevSlide = () => {
-    setStartIndex((prevIndex) =>
-      prevIndex === 0 ? totalCards - 1 : prevIndex - 1
-    );
-  };
+useEffect(()=>{
+  showHomePic(true);
+},[]);
   return (
     <>
       {homePic && (
@@ -225,29 +146,9 @@ const Home = () => {
           </Link>
         </div>
       </div>
-      <div className="section border">
-        <div className="section-2">
-          <p className="sec-2-p1 text-center h3">Optimum Caring</p>
-          <div className="slider-container">
-            <div className="card-wrapper text-center">
-              {getVisibleCards().map((card) => (
-                <div key={card.id} className="card">
-                  <img src={card.img} className="sec-2sl-img" alt="" />
-                  <p className="card-name">{card.name}</p>
-                  <p className="text-secondary m-2">{card.description}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-          <div className="mb-4">
-            <button className="prev" onClick={prevSlide}>
-              o
-            </button>
-            <button className="next" onClick={nextSlide}>
-              o
-            </button>
-          </div>
-        </div>
+      <div className="slider-container">
+        <div className="slide-p1 text-center">Optimum Caring</div>
+        <CardSlider />
       </div>
       <div className="section-3">
         <div className="sec-3-content row">
@@ -316,16 +217,45 @@ const Home = () => {
               </p>
               <p>Life Matters !</p>
               <p className="sec-4-5">Dr. Vivek Kattel | Consultant Physician</p>
-              <Link className="text-decoration-none text-light" to="mailto:drkattel@neurohospital.com.np">
+              <Link
+                className="text-decoration-none text-light"
+                to="mailto:drkattel@neurohospital.com.np"
+              >
                 drkattel@neurohospital.com.np
               </Link>
-              <br/>
+              <br />
               <Link className="sec-4-btn btn text-light">
                 Book an Appointment
               </Link>
             </div>
           </div>
         </div>
+      </div>
+      <div className="section-5">
+      <div className="section-5-content">
+        <div className="sec-5-1"></div>
+        <div className="sec-5-2 ">
+          <p className="sec-5-p1">Highest Quality Care</p>
+          <p className="sec-5-p2">Solutions to Complex Medical Problems</p>
+          <ul className="sec-5-ul">
+            <li>Analyze—Understand the root cause.</li>
+            <li>Plan—Determine how to resolve the problem.</li>
+            <li>Implement—Put the resolution in place.</li>
+            <li>
+              Evaluate—Determine if the resolution is producing the desired
+              results.
+            </li>
+          </ul>
+        </div>
+        <div className="sec-5-3 ">
+          <div className="sec-5-3-div">
+           <Video/>
+          </div>        
+        </div>
+      </div>
+      </div>
+      <div className="section-6 border">
+        <Section_6/>
       </div>
     </>
   );
