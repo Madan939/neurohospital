@@ -1,17 +1,21 @@
 import React, { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 
-const Nav_2 = () => {
+const SecondNav = () => {
   const [showAbout, setShowAbout] = useState(false);
   const [showDept, setShowDept] = useState(false);
   const [showBrowse, setShowBrowse] = useState(false);
-
+  const navigate=useNavigate();
+function load(link){
+  navigate(link);
+  window.location.reload();
+}
   return (
     <>
-      <div className="nav-2 shadow">
+      <div className="nav-2">
         <div className="nav-2-content d-flex justify-content-between">
           <div>
-            <NavLink to="/">
+            <NavLink onClick={()=>load("/")}>
               <img
                 src="/images/header-logo.png"
                 alt="header-logo"
@@ -20,7 +24,7 @@ const Nav_2 = () => {
             </NavLink>
           </div>
           <div className="nav-2-second">
-            <NavLink to="/" className="nav-links">
+            <NavLink onClick={()=>load("/")} className="nav-links">
               Home
             </NavLink>
 
@@ -29,7 +33,7 @@ const Nav_2 = () => {
               onMouseEnter={() => setShowAbout(true)}
               onMouseLeave={() => setShowAbout(false)}
             >
-              <NavLink to="#" className="nav-links">
+              <NavLink onClick={()=>load("/about")} className="nav-links">
                 About&nbsp;<i className="fa-solid fa-caret-down"></i>
               </NavLink>
               {showAbout && (
@@ -48,7 +52,7 @@ const Nav_2 = () => {
               onMouseEnter={() => setShowDept(true)}
               onMouseLeave={() => setShowDept(false)}
             >
-              <NavLink to="#" className="nav-links">
+              <NavLink onClick={()=>load("/departments")}  className="nav-links">
                 Departments&nbsp;<i className="fa-solid fa-caret-down"></i>
               </NavLink>
               {showDept && (
@@ -99,10 +103,10 @@ const Nav_2 = () => {
               )}
             </div>
 
-            <NavLink to="#" className="nav-links">
+            <NavLink onClick={()=>load("/")} className="nav-links">
               Doctors
             </NavLink>
-            <NavLink to="#" className="nav-links">
+            <NavLink onClick={()=>load("/")} className="nav-links">
               Academics
             </NavLink>
 
@@ -111,7 +115,7 @@ const Nav_2 = () => {
               onMouseEnter={() => setShowBrowse(true)}
               onMouseLeave={() => setShowBrowse(false)}
             >
-              <NavLink to="#" className="nav-links">
+              <NavLink onClick={()=>load("/")} className="nav-links">
                 Browse More&nbsp;<i className="fa-solid fa-caret-down"></i>
               </NavLink>
               {showBrowse && (
@@ -146,7 +150,7 @@ const Nav_2 = () => {
               )}
             </div>
 
-            <NavLink to="#" className="nav-links">
+            <NavLink onClick={()=>load("/")} className="nav-links">
               Contact
             </NavLink>
             <NavLink to="https://neuro.danphecare.com/" className="nav-2-btn btn text-sm">
@@ -159,4 +163,4 @@ const Nav_2 = () => {
   );
 };
 
-export default Nav_2;
+export default SecondNav;

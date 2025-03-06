@@ -1,18 +1,17 @@
-import React, { useEffect, useState } from "react";
+import React, {  useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import CardSlider from "../components/CardSlider";
 import Video from "../components/Video";
-import Section_6 from "../components/Section_6";
 import Sec8 from "../components/Sec8";
+import SectionSix from "../components/SectionSix";
 
 const Home = () => {
   const [homePic, showHomePic] = useState(true);
+  const img="images/video-img.jpg"
+  const url="https://www.youtube.com/watch?v=TnBuYRP5hZo" 
   const close = () => {
     showHomePic(false);
   };
-useEffect(()=>{
-  showHomePic(true);
-},[]);
   return (
     <>
       {homePic && (
@@ -49,7 +48,7 @@ useEffect(()=>{
           <div className="home-row row">
             <div className="col1 col col-md-3">
               <div className="hcard">
-                <div className="hcard-f1 h5 mb-3">Hospital Timings</div>
+                <div className="h5 mb-3">Hospital Timings</div>
                 <div className="hcard-1 d-flex justify-content-between">
                   <div className="fh ">OPD</div>
                   <div className="fs ">-</div>
@@ -70,7 +69,7 @@ useEffect(()=>{
             <div className="col2 col col-md-3 ">
               <div className="hcard">
                 <p className="h5 mb-3">Doctors' Team</p>
-                <p className="mt-2 mb-3">
+                <p className="hpp1 mt-2 mb-3">
                   We have managed our services to ease our patients an easiest
                   way to get emergency, OPD & other essential medical services
                   round the clock.
@@ -83,7 +82,7 @@ useEffect(()=>{
             <div className="col3 col col-md-3 ">
               <div className="hcard">
                 <p className="h5 mb-3"> Appointments</p>
-                <p className="mb-3 mt-3">
+                <p className="hpp1 mb-3 mt-3">
                   You can book an appointment to get connected with your desired
                   doctors.
                 </p>
@@ -101,7 +100,7 @@ useEffect(()=>{
                 >
                   <i className="fa-solid fa-phone-flip"></i>&nbsp;166-021-52777
                 </Link>
-                <p className="mt-3 mb-3">
+                <p className="hpp1 mt-3 mb-3">
                   Emergency connectivity over toll free number ( NTC Only ) and
                   WhatsApp.
                 </p>
@@ -225,7 +224,7 @@ useEffect(()=>{
                 drkattel@neurohospital.com.np
               </Link>
               <br />
-              <Link className="sec-4-btn btn text-light">
+              <Link to="#"className="sec-4-btn btn text-light">
                 Book an Appointment
               </Link>
             </div>
@@ -250,13 +249,13 @@ useEffect(()=>{
         </div>
         <div className="sec-5-3 ">
           <div className="sec-5-3-div">
-           <Video/>
+           <Video img={img}url={url}/>
           </div>        
         </div>
       </div>
       </div>
       <div className="section-6 ">
-        <Section_6/>
+        <SectionSix/>
       </div>
       <div className="section-7">
         <div className="sec-7-div">

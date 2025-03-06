@@ -1,20 +1,17 @@
 import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Nav_2 from './components/Nav_2';
 import MyRoute from './route/MyRoute';
+import SecondNav from './components/SecondNav';
 
 
 function App() {
   return (
     <>
-    <div className='main'>
     <Header/>
-    <Nav_2/>
+    <SecondNav/>
     <MyRoute/>
     <Footer/>
-    </div>
- 
     </>
   );
 }

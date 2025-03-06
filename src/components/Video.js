@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ReactPlayer from "react-player";
 
-const Video = () => {
+const Video = ({url,img}) => {
   const [isPlaying, setIsPlaying] = useState(false);
 
   return (
@@ -9,14 +9,14 @@ const Video = () => {
       {!isPlaying ? (
         <div className="video-container">
           <div className="video-thumbnail" onClick={() => setIsPlaying(true)}>
-            <img src="images/video-img.jpg" alt="Video Thumbnail" />
+            <img src={img} alt="Video Thumbnail" />
             <i className="play-btn fa-solid fa-play"></i>
           </div>
         </div>
       ) : (
         <div className="fullscreen-video">
           <ReactPlayer 
-            url="https://www.youtube.com/watch?v=TnBuYRP5hZo" 
+            url={url}
             controls
             playing
             width="90%"

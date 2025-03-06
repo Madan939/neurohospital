@@ -24,7 +24,7 @@ const Footer = () => {
               <p className='footer-head'>Our Location</p>
               <p>F73M+G94, Jahada Road, Biratnagar, Nepal</p>
               <p>E: <Link className='e-link text-dark' to="mailto:info@neurohospital.com.np">info@neurohospital.com.np</Link></p>
-              <p>P: +977-21-417484 / 417475</p>
+              <p>P: <Link to="tel:+977-21-417475" className='foot-phn'>+977-21-417484 / 417475</Link></p>
             </div>
             <div className='col col-3'>
             <p className='footer-head'>OPD Hours</p>

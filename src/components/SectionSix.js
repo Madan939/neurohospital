@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
-const Section_6 = () => {
+const SectionSix = () => {
   const list = [
     {
       id: 1,
@@ -147,4 +147,4 @@ const Section_6 = () => {
   );
 };
 
-export default Section_6;
+export default SectionSix;
