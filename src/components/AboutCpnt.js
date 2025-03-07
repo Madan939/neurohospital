@@ -40,7 +40,7 @@ const AboutCpnt = () => {
           <div className="abu-col col col-md-5">
             <div className="abu-col-div d-flex">
               <div className="abucol-1">
-                <img src={item.icon} alt="item.name"/>
+                <img src={item.icon} alt={item.name}/>
               </div>
               <div className="abucol-2">
                 <div className="abcl-2-1">{item.name}</div>

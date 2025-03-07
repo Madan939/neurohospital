@@ -42,9 +42,9 @@ function load(link){
               {showAbout && (
                 <div className="dropdown-content">
                   <div className="About-content">
-                    <Link to="">About Us</Link>
-                    <Link to="">Messages</Link>
-                    <Link to="">Partners Organization</Link>
+                    <Link onClick={()=>load("/about")}>About Us</Link>
+                    <Link onClick={()=>load("/message")}>Messages</Link>
+                    <Link onClick={()=>load("/about")}>Partners Organization</Link>
                   </div>
                 </div>
               )}
