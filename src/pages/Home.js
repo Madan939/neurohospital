@@ -1,4 +1,4 @@
-import React, {  useState } from "react";
+import React, {  useEffect, useRef, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import CardSlider from "../components/CardSlider";
 import Video from "../components/Video";
@@ -7,23 +7,118 @@ import SectionSix from "../components/SectionSix";
 
 const Home = () => {
   const [homePic, showHomePic] = useState(true);
-  const img="images/video-img.jpg"
+  const img="images/homepage/video-img.jpg"
   const url="https://www.youtube.com/watch?v=TnBuYRP5hZo" 
   const close = () => {
     showHomePic(false);
   };
+    const sec2Ref = useRef(null);
+    const sec3Ref = useRef(null);
+    const sec4Ref = useRef(null);
+    const sec5Ref = useRef(null);
+    const sec6Ref = useRef(null);
+    const sec7Ref = useRef(null);
+  
+    const [isVisible, setIsVisible] = useState(false);
+    const [isSec3Visible, setIsSec3Visible] = useState(false);
+    const [isSec4Visible, setIsSec4Visible] = useState(false);
+    const [isSec5Visible, setIsSec5Visible] = useState(false);
+    const [isSec6Visible, setIsSec6Visible] = useState(false);
+    const [isSec7Visible, setIsSec7Visible] = useState(false);
+  
+    useEffect(() => {
+      const sec2Element = sec2Ref.current;
+      const sec3Element = sec3Ref.current;
+      const sec4Element = sec4Ref.current;
+      const sec5Element = sec5Ref.current;
+      const sec6Element = sec6Ref.current;
+      const sec7Element = sec7Ref.current;
+  
+      const observer2 = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) {
+            setIsVisible(true);
+            observer2.unobserve(sec2Element);
+          }
+        },
+        { threshold: 0.5 }
+      );
+  
+      const observer3 = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) {
+            setIsSec3Visible(true);
+            observer3.unobserve(sec3Element);
+          }
+        },
+        { threshold: 0.5 }
+      );
+      const observer4 = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) {
+            setIsSec4Visible(true);
+            observer4.unobserve(sec4Element);
+          }
+        },
+        { threshold: 0.5 }
+      );
+      const observer5 = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) {
+            setIsSec5Visible(true);
+            observer5.unobserve(sec5Element);
+          }
+        },
+        { threshold: 0.5 }
+      );
+      const observer6 = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) {
+            setIsSec6Visible(true);
+            observer6.unobserve(sec6Element);
+          }
+        },
+        { threshold: 0.5 }
+      );
+      const observer7 = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) {
+            setIsSec7Visible(true);
+            observer7.unobserve(sec7Element);
+          }
+        },
+        { threshold: 0.5 }
+      );
+
+      if (sec2Element) observer2.observe(sec2Element);
+      if (sec3Element) observer3.observe(sec3Element);
+      if (sec4Element) observer4.observe(sec4Element);
+      if (sec5Element) observer5.observe(sec5Element);
+      if (sec6Element) observer6.observe(sec6Element);
+      if (sec7Element) observer7.observe(sec7Element);
+  
+      return () => {
+        if (sec2Element) observer2.unobserve(sec2Element);
+        if (sec3Element) observer3.unobserve(sec3Element);
+        if (sec4Element) observer4.unobserve(sec4Element);
+        if (sec5Element) observer5.unobserve(sec5Element);
+        if (sec6Element) observer6.unobserve(sec6Element);
+        if (sec7Element) observer7.unobserve(sec7Element);
+      };
+    }, []);
   return (
     <>
       {homePic && (
         <div className="overlay">
           <div className="overlay-div">
-            <img src="/images/1.jpg" alt="Home" className="overlay-image" />
+            <img src="/images/homepage/1.jpg" alt="Home" className="overlay-image" />
           </div>
           <button className="close-button" onClick={close}>
             X
           </button>
         </div>
       )}
+      <div className="home">
       <div className="home-bg ">
         <div className="home-1 d-flex">
           <div className="home-1-1">
@@ -38,7 +133,7 @@ const Home = () => {
           </div>
           <div className="home-1-2">
             <img
-              src="/images/homeimage.png"
+              src="/images/homepage/homeimage.png"
               alt="home-image"
               className="home-1-pic"
             />
@@ -115,9 +210,9 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="section-1 d-flex">
+      <div ref={sec2Ref} className={`section-1 d-flex ${isVisible ? "show" : ""}`}>
         <div className="w-50">
-          <img src="/images/director.png" alt="director-image" />
+          <img src="/images/homepage/director.png" alt="director-image" />
         </div>
         <div className="section-1-2div container mt-3">
           <p className="section-1-1p ">SERVING THE HUMANITY</p>
@@ -150,7 +245,7 @@ const Home = () => {
         <div className="slide-p1 text-center">Optimum Caring</div>
         <CardSlider />
       </div>
-      <div className="section-3">
+      <div ref={sec3Ref} className={`section-3 ${isSec3Visible ? "show" : ""}`}>
         <div className="sec-3-content row">
           <div className="col col-1"></div>
           <div className="col col-5  text-secondary">
@@ -192,17 +287,17 @@ const Home = () => {
             </div>
           </div>
           <div className="col col-6">
-            <img src="/images/sec-3-1.png" alt="" className="sec-3-img" />
+            <img src="/images/homepage/sec-3-1.png" alt="" className="sec-3-img" />
           </div>
         </div>
       </div>
       <div className="section-4 ">
         <div className="sec-4-row d-flex">
           <div className="sec-4-col1">
-            <img src="/images/sec-4-img.jpg" alt="" className="sec-4-img" />
+            <img src="/images/homepage/sec-4-img.jpg" alt="" className="sec-4-img" />
           </div>
           <div className="sec-4-col2 ">
-            <div className=" sec-4-col2-div  text-light">
+            <div ref={sec4Ref} className={`sec-4-col2-div  text-light ${isSec4Visible ? "show" : ""}`}>
               <div className="sec-4-1">Experienced Doctors</div>
               <p className="sec-4-2">World Class Treatment</p>
               <p>
@@ -231,7 +326,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="section-5">
+      <div ref={sec5Ref} className={`section-5  text-light ${isSec5Visible ? "show" : ""}`}>
       <div className="section-5-content">
         <div className="sec-5-1"></div>
         <div className="sec-5-2 ">
@@ -258,18 +353,22 @@ const Home = () => {
         <SectionSix/>
       </div>
       <div className="section-7">
-        <div className="sec-7-div">
+        <div ref={sec6Ref} className={`sec-7-div  ${isSec6Visible ? "show" : ""}`} >
           <p className="sec7-p1">World Class Equipments</p>
-          <p className="sec7-p2">Magnetic resonance imaging is a medical imaging technique used in radiology to form pictures of the anatomy and the physiological processes of the body. MRI scanners use strong magnetic fields, magnetic field gradients, and radio waves to generate images of the organs in the body.</p>
+          <p className="sec7-p2 text-secondary">Magnetic resonance imaging is a medical imaging technique used in radiology to form pictures of the anatomy and the physiological processes of the body. MRI scanners use strong magnetic fields, magnetic field gradients, and radio waves to generate images of the organs in the body.</p>
           <NavLink to="" className="sec7-btn btn text-light">Book an Appointment</NavLink>
         </div>
       </div>
       <div className="section-8">
         <div className="sec8-div">
           <p className="sec8-p text-center">Hospital Updates</p>
-            <Sec8/>
+          <div ref={sec7Ref} className={`sec8cnt-div  text-light ${isSec7Visible ? "show" : ""}`}>
+          <Sec8 />
+          </div>          
         </div>
       </div>
+      </div>
+   
     </>
   );
 };

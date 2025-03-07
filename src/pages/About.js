@@ -1,20 +1,111 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Breadcrumb from "../components/Breadcrumb";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Video from "../components/Video";
 import AboutCpnt from "../components/AboutCpnt";
 
 const About = () => {
-  const name = "About Us";
-  const img = "/images/abu3.png";
+  const name1 = "About Us";
+  const name2 = "About Us";
+  const img = "/images/aboutus/abu3.png";
   const url = "https://www.youtube.com/watch?v=WYN_vQ-PdH4";
+  const navigate=useNavigate();
+function load(link){
+  navigate(link);
+  window.location.reload();
+}
+
+
+  const sec2Ref = useRef(null);
+  const sec3Ref = useRef(null);
+  const sec4Ref = useRef(null);
+  const sec5Ref = useRef(null);
+  const sec6Ref = useRef(null);
+
+  const [isVisible, setIsVisible] = useState(false);
+  const [isSec3Visible, setIsSec3Visible] = useState(false);
+  const [isSec4Visible, setIsSec4Visible] = useState(false);
+  const [isSec5Visible, setIsSec5Visible] = useState(false);
+  const [isSec6Visible, setIsSec6Visible] = useState(false);
+
+  useEffect(() => {
+    const sec2Element = sec2Ref.current;
+    const sec3Element = sec3Ref.current;
+    const sec4Element = sec4Ref.current;
+    const sec5Element = sec5Ref.current;
+    const sec6Element = sec6Ref.current;
+
+    const observer2 = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer2.unobserve(sec2Element); 
+        }
+      },
+      { threshold: 0.3 }
+    );
+
+    const observer3 = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsSec3Visible(true);
+          observer3.unobserve(sec3Element);
+        }
+      },
+      { threshold: 0.5 }
+    );
+    const observer4 = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsSec4Visible(true);
+          observer4.unobserve(sec4Element);
+        }
+      },
+      { threshold: 0.5 }
+    );
+    const observer5 = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsSec5Visible(true);
+          observer5.unobserve(sec5Element);
+        }
+      },
+      { threshold: 0.1 }
+    );
+    const observer6 = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsSec6Visible(true);
+          observer6.unobserve(sec6Element);
+        }
+      },
+      { threshold: 0.5 }
+    );
+
+    if (sec2Element) observer2.observe(sec2Element);
+    if (sec3Element) observer3.observe(sec3Element);
+    if (sec4Element) observer4.observe(sec4Element);
+    if (sec5Element) observer5.observe(sec5Element);
+    if (sec6Element) observer6.observe(sec6Element);
+
+    return () => {
+      if (sec2Element) observer2.unobserve(sec2Element);
+      if (sec3Element) observer3.unobserve(sec3Element);
+      if (sec4Element) observer4.unobserve(sec4Element);
+      if (sec5Element) observer5.unobserve(sec5Element);
+      if (sec6Element) observer6.unobserve(sec6Element);
+    };
+  }, []);
+
   return (
     <>
-      <Breadcrumb name={name} />
+      <Breadcrumb name1={name1}name2={name2} />
+
+      {/* Section 1 */}
       <div className="abu-sec1">
         <div className="ab-sec1-cnt d-flex">
           <div className="ab-sec1-cnt-1">
-            <img src="/images/ab1.png" alt="ab1" />
+            <img src="/images/aboutus/ab1.png" alt="ab1" />
           </div>
           <div className="ab-sec1-cnt-2">
             <div className="ab-sec1-cnt-2-1">
@@ -40,7 +131,9 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="abu-sec2">
+
+      {/* Section 2 (Appears on scroll) */}
+      <div ref={sec2Ref} className={`abu-sec2 ${isVisible ? "show" : ""}`}>
         <div className="abu-sec2-cnt d-flex">
           <div className="abu-sec2-cnt1 w-50">
             <div className="abu-s2ct-1div">
@@ -55,66 +148,43 @@ const About = () => {
                 provision as we know it, improving access, clinical outcomes and
                 engagement with services.
               </div>
-              <div className="s2ct-p4 d-flex">
-                <div className="w-50">
-                  <div>
-                    <i class="fa-solid fa-angles-right"></i>Service optimisation
-                  </div>
-                  <div>
-                    <i class="fa-solid fa-angles-right"></i>Cost-efficiency
-                  </div>
-                  <div>
-                    <i class="fa-solid fa-angles-right"></i>Engagement medical
-                    care
-                  </div>
-                </div>
-                <div className="w-50">
-                  <div>
-                    <i class="fa-solid fa-angles-right"></i>Accessibility
-                  </div>
-                  <div>
-                    <i class="fa-solid fa-angles-right"></i>Improved
-                    communication
-                  </div>
-                  <div>
-                    <i class="fa-solid fa-angles-right"></i>Personalised
-                    healthcare
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
           <div className="abu-sec2-cnt2 w-50">
-            <img src="/images/abu2.jpg" alt="abu2" />
+            <img src="/images/aboutus/abu2.jpg" alt="abu2" />
           </div>
         </div>
       </div>
+
+      {/* Section 3 (Appears on scroll) */}
       <div className="abu-sec3">
-        <div className="abu-sec3-div1">
+        <div ref={sec3Ref} className={`abu-sec3-div1 ${isSec3Visible ? "show" : ""}`}>
           <div className="abu-sec3-div1-1">
-            <img src="/images/cardiogram.png" alt="bed" className="flat-icon" />
+            <img src="/images/aboutus/cardiogram.png" alt="cardiogram" className="flat-icon" />
             <p className="abs3-p1 text-light h3 text-bold">100000</p>
             <p className="abs3-p2">Plus Happy Patients</p>
           </div>
           <div className="abu-sec3-div1-1">
-            <img src="/images/doctor.png" alt="bed" className="flat-icon" />
+            <img src="/images/aboutus/doctor.png" alt="doctor" className="flat-icon" />
             <p className="abs3-p1 text-light h3 text-bold">31</p>
             <p className="abs3-p2">Qualified Doctors</p>
           </div>
           <div className="abu-sec3-div1-1">
-            <img src="/images/bed.png" alt="bed" className="flat-icon" />
+            <img src="/images/aboutus/bed.png" alt="bed" className="flat-icon" />
             <p className="abs3-p1 text-light h3 text-bold">150</p>
             <p className="abs3-p2">Beds</p>
           </div>
           <div className="abu-sec3-div1-1">
-            <img src="/images/location.png" alt="bed" className="flat-icon" />
+            <img src="/images/aboutus/location.png" alt="location" className="flat-icon" />
             <p className="abs3-p1 text-light h3 text-bold">473</p>
             <p className="abs3-p2">Referring Center</p>
           </div>
         </div>
       </div>
+
+      {/* Section 4 (Video Section) */}
       <div className="abu-sec4">
-        <div className="abs4-cnt">
+        <div ref={sec4Ref} className={`abs4-cnt ${isSec4Visible ? "show" : ""}`} >
           <div className="abs4-cnt1">
             <Video img={img} url={url} />
           </div>
@@ -133,16 +203,18 @@ const About = () => {
                 it.
               </div>
             </div>
-          </div>
+            </div>
         </div>
       </div>
+
+      {/* Section 5 (About Component) */}
       <div className="abu-sec5">
         <div className="abs5-cnt">
-          <div className="abs5-cnt1">
+          <div ref={sec5Ref} className={`abs5-cnt1 ${isSec5Visible ? "show" : ""}`}>
             <AboutCpnt />
           </div>
-          <div className="abs5-cnt2">
-            <div className="abs5c21">
+          <div  ref={sec6Ref} className={`abs5-cnt2 ${isSec6Visible ? "show" : ""}`}>
+            <div className="abs5c21" >
               <p className="abs5-p1">Opening Hours</p>
               <p className="abs5-p2">
                 Major services are round the clock services at our hospital. OPD
@@ -166,15 +238,15 @@ const About = () => {
           </div>
         </div>
       </div>
+
+      {/* Section 6 (Doctor Info) */}
       <div className="abu-sec6">
         <div className="abs6-cnt text-center">
-          <p className="abs6-p1">
-          Experienced Doctors
-          </p>
+          <p className="abs6-p1">Experienced Doctors</p>
           <p className="abs6-p2">
-          Team of Nepal's best doctors to provide round the clock services to the patients from Nepal, Bangladesh, India, Bhutan etc.
+            Team of Nepal's best doctors to provide round-the-clock services to the patients from Nepal, Bangladesh, India, Bhutan, etc.
           </p>
-          <Link to="" className="abs6-btn btn">View Doctors Team</Link>
+          <Link onClick={()=>load('/doctors')} className="abs6-btn btn">View Doctors Team</Link>
         </div>
       </div>
     </>

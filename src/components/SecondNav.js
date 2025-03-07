@@ -9,6 +9,9 @@ const SecondNav = () => {
 function load(link){
   navigate(link);
   window.location.reload();
+  setShowAbout(false);
+  setShowDept(false);
+  setShowBrowse(false);
 }
   return (
     <>
@@ -103,7 +106,7 @@ function load(link){
               )}
             </div>
 
-            <NavLink onClick={()=>load("/")} className="nav-links">
+            <NavLink onClick={()=>load("/doctors")} className="nav-links">
               Doctors
             </NavLink>
             <NavLink onClick={()=>load("/")} className="nav-links">
