@@ -91,7 +91,7 @@ const Message = () => {
     if (sec6Element) observer6.observe(sec6Element);
 
     return () => {
-        if (sec1Element) observer1.unobserve(sec1Element);
+      if (sec1Element) observer1.unobserve(sec1Element);
       if (sec2Element) observer2.unobserve(sec2Element);
       if (sec3Element) observer3.unobserve(sec3Element);
       if (sec4Element) observer4.unobserve(sec4Element);
@@ -105,10 +105,16 @@ const Message = () => {
       <Breadcrumb name1={name1} name2={name2} />
       <div className="m-sec1">
         <div className="m-sec1-div">
-          <div ref={sec1Ref} className={`m-sec1-div1 ${isSec1Visible ? "show" : ""}`}>
+          <div
+            ref={sec1Ref}
+            className={`m-sec1-div1 ${isSec1Visible ? "show" : ""}`}
+          >
             <img src="/images/aboutus/msg1.png" alt="msg-1" />
           </div>
-          <div ref={sec2Ref} className={`m-sec1-div2 ${isSec2Visible ? "show" : ""}`}>
+          <div
+            ref={sec2Ref}
+            className={`m-sec1-div2 ${isSec2Visible ? "show" : ""}`}
+          >
             <div className="msd2-p1 text-secondary">
               Message from Operational Director
             </div>
@@ -138,10 +144,16 @@ const Message = () => {
       </div>
       <div className="m-sec2">
         <div className="m-sec2-div">
-          <div  ref={sec3Ref} className={`m-sec2-div1 ${isSec3Visible ? "show" : ""}`}>
+          <div
+            ref={sec3Ref}
+            className={`m-sec2-div1 ${isSec3Visible ? "show" : ""}`}
+          >
             <img src="/images/aboutus/msg2.png" alt="msg-2" />
           </div>
-          <div ref={sec4Ref} className={`m-sec2-div2 ${isSec4Visible ? "show" : ""}`}>
+          <div
+            ref={sec4Ref}
+            className={`m-sec2-div2 ${isSec4Visible ? "show" : ""}`}
+          >
             <div className="ms2d2-p1">Message from Academic Director</div>
             <div className="msd2-p2">World-class Medical Education</div>
             <div className="ms2d2-p3 mb-3">
@@ -194,10 +206,16 @@ const Message = () => {
       </div>
       <div className="m-sec3">
         <div className="m-sec3-div">
-          <div ref={sec5Ref} className={`m-sec3-div1 ${isSec5Visible ? "show" : ""}`}>
+          <div
+            ref={sec5Ref}
+            className={`m-sec3-div1 ${isSec5Visible ? "show" : ""}`}
+          >
             <img src="/images/aboutus/msg4.png" alt="msg-4" />
           </div>
-          <div ref={sec6Ref} className={`m-sec3-div2 ${isSec6Visible ? "show" : ""}`}>
+          <div
+            ref={sec6Ref}
+            className={`m-sec3-div2 ${isSec6Visible ? "show" : ""}`}
+          >
             <div className="ms2d2-p1">
               Message from the desk of the Medical Director
             </div>

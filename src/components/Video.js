@@ -6,14 +6,15 @@ const Video = ({url,img}) => {
 
   return (
     <div>
-      {!isPlaying ? (
+      {! isPlaying && (
         <div className="video-container">
           <div className="video-thumbnail" onClick={() => setIsPlaying(true)}>
             <img src={img} alt="Video Thumbnail" />
             <i className="play-btn fa-solid fa-play"></i>
           </div>
         </div>
-      ) : (
+      ) }
+      {isPlaying &&(
         <div className="fullscreen-video">
           <ReactPlayer 
             url={url}
@@ -21,6 +22,7 @@ const Video = ({url,img}) => {
             playing
             width="90%"
             height="90%"
+            z-index="99"
           />
           <i className="close-btn fa-solid fa-times" onClick={() => setIsPlaying(false)}></i>
         </div>

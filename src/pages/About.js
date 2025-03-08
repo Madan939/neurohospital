@@ -184,11 +184,12 @@ function load(link){
 
       {/* Section 4 (Video Section) */}
       <div className="abu-sec4">
-        <div ref={sec4Ref} className={`abs4-cnt ${isSec4Visible ? "show" : ""}`} >
+
+        <div className="abs4-cnt" >
           <div className="abs4-cnt1">
             <Video img={img} url={url} />
           </div>
-          <div className="abs4-cnt2">
+          <div ref={sec4Ref} className={`abs4-cnt2 ${isSec4Visible ? "show" : ""}`} >
             <div className="abs4-cnt2-cnt">
               <div className="abs4ct2cnt1">Modern Medicine</div>
               <div className="abs4ct2cnt2">World Class Equipments</div>

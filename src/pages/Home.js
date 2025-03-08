@@ -41,7 +41,7 @@ const Home = () => {
             observer2.unobserve(sec2Element);
           }
         },
-        { threshold: 0.5 }
+        { threshold: 0.3 }
       );
   
       const observer3 = new IntersectionObserver(
@@ -51,7 +51,7 @@ const Home = () => {
             observer3.unobserve(sec3Element);
           }
         },
-        { threshold: 0.5 }
+        { threshold: 0.3 }
       );
       const observer4 = new IntersectionObserver(
         ([entry]) => {
@@ -60,7 +60,7 @@ const Home = () => {
             observer4.unobserve(sec4Element);
           }
         },
-        { threshold: 0.5 }
+        { threshold: 0.3 }
       );
       const observer5 = new IntersectionObserver(
         ([entry]) => {
@@ -69,7 +69,7 @@ const Home = () => {
             observer5.unobserve(sec5Element);
           }
         },
-        { threshold: 0.5 }
+        { threshold: 0.3 }
       );
       const observer6 = new IntersectionObserver(
         ([entry]) => {
@@ -78,7 +78,7 @@ const Home = () => {
             observer6.unobserve(sec6Element);
           }
         },
-        { threshold: 0.5 }
+        { threshold: 0.3 }
       );
       const observer7 = new IntersectionObserver(
         ([entry]) => {
@@ -87,7 +87,7 @@ const Home = () => {
             observer7.unobserve(sec7Element);
           }
         },
-        { threshold: 0.5 }
+        { threshold: 0.3 }
       );
 
       if (sec2Element) observer2.observe(sec2Element);
@@ -326,10 +326,10 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div ref={sec5Ref} className={`section-5  text-light ${isSec5Visible ? "show" : ""}`}>
+      <div className="section-5" >
       <div className="section-5-content">
         <div className="sec-5-1"></div>
-        <div className="sec-5-2 ">
+        <div ref={sec5Ref} className={`sec-5-2  text-light ${isSec5Visible ? "show" : ""}`}>
           <p className="sec-5-p1">Highest Quality Care</p>
           <p className="sec-5-p2">Solutions to Complex Medical Problems</p>
           <ul className="sec-5-ul">

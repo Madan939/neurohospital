@@ -44,7 +44,7 @@ function load(link){
                   <div className="About-content">
                     <Link onClick={()=>load("/about")}>About Us</Link>
                     <Link onClick={()=>load("/message")}>Messages</Link>
-                    <Link onClick={()=>load("/about")}>Partners Organization</Link>
+                    <Link onClick={()=>load("/partner")}>Partners Organization</Link>
                   </div>
                 </div>
               )}
@@ -109,7 +109,7 @@ function load(link){
             <NavLink onClick={()=>load("/doctors")} className="nav-links">
               Doctors
             </NavLink>
-            <NavLink onClick={()=>load("/")} className="nav-links">
+            <NavLink onClick={()=>load("/academics")} className="nav-links">
               Academics
             </NavLink>
 
@@ -118,7 +118,7 @@ function load(link){
               onMouseEnter={() => setShowBrowse(true)}
               onMouseLeave={() => setShowBrowse(false)}
             >
-              <NavLink onClick={()=>load("/")} className="nav-links">
+              <NavLink className="nav-links">
                 Browse More&nbsp;<i className="fa-solid fa-caret-down"></i>
               </NavLink>
               {showBrowse && (
@@ -126,24 +126,24 @@ function load(link){
                   <div className="browse-div">
                     <div className="browse-row row">
                       <div className="browse-col col col-6">
-                        <Link to="/">
+                        <Link  onClick={()=>load("/gallery")}>
                           <div>Gallery</div>
                         </Link>
-                        <Link to="#">
+                        <Link  onClick={()=>load("/testimonials")}>
                           <div>Testimonials</div>
                         </Link>
-                        <Link to="#">
+                        <Link  onClick={()=>load("/location-map")}>
                           <div>Location Map</div>
                         </Link>
                       </div>
                       <div className="browse-col col col-6">
-                        <Link to="#">
+                        <Link  onClick={()=>load("/privacy-policy")}>
                           <div>Privacy Policy</div>
                         </Link>
-                        <Link to="#">
+                        <Link  onClick={()=>load("/hospital-calender")}>
                           <div>Hospital Calendar</div>
                         </Link>
-                        <Link to="#">
+                        <Link  onClick={()=>load("/career")}>
                           <div>Career</div>
                         </Link>
                       </div>
