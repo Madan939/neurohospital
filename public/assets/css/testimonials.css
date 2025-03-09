@@ -1,0 +1,128 @@
+.tl-sec1 {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 500px;
+  /* border: 2px solid red; */
+}
+.tl-sec {
+    width: 90%;
+    margin: auto;
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 500px;
+    /* border: 2px solid red; */
+  }
+.tl-col1 {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 2s ease-in-out, transform 1.5s ease-in-out;
+}
+.tl-col1.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.tl-col1 img {
+  width: 90%;
+  height: 70%;
+}
+.tl-col2 {
+  width: 61%;
+  height: 90%;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 2s ease-in-out, transform 1s ease-in-out;
+}
+.tl-col2.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.tl-p1 {
+  margin-top: 3rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: #999;
+  font-size: 14px;
+}
+.tl-p2 {
+  color: #2c52a0;
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+.tl-p3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  color: #515151;
+}
+.tl2-col1 {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 2s ease-in-out, transform 1.5s ease-in-out;
+}
+.tl2-col1.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.tl2-col1 img {
+  width: 90%;
+  height: 70%;
+}
+.tl2-col2 {
+  width: 61%;
+  height: 90%;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 2s ease-in-out, transform 1s ease-in-out;
+}
+.tl2-col2.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.tl3-col1 {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 2s ease-in-out, transform 1.5s ease-in-out;
+}
+.tl3-col1.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.tl3-col1 img {
+  width: 90%;
+  height: 70%;
+}
+.tl3-col2 {
+  width: 61%;
+  height: 90%;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 2s ease-in-out, transform 1s ease-in-out;
+}
+.tl3-col2.show {
+  opacity: 1;
+  transform: translateY(0);
+}

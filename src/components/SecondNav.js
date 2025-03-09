@@ -105,7 +105,6 @@ function load(link){
                 </div>
               )}
             </div>
-
             <NavLink onClick={()=>load("/doctors")} className="nav-links">
               Doctors
             </NavLink>
