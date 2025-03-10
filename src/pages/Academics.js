@@ -16,8 +16,7 @@ const Academics = () => {
               The Neuro Cardio & Multispeciality Hospital, located on Jahada
               Road in Biratnagar, has initiated a FCPS training (equivalent to
               Master of Medicine-MD) program in collaboration with the renowned{" "}
-              <i>CPSP</i>
-              Pakistan. This partnership marks a significant step forward in
+              <i>CPSP</i> Pakistan. This partnership marks a significant step forward in
               advancing medical education in the region, providing aspiring
               doctors with access to world-class training and expertise.
             </p>

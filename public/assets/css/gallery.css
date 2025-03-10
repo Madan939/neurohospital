@@ -137,6 +137,7 @@
 }
 .g-pic-overlay img {
   height: 550px;
+  /* border:2px solid black */
 }
 
 .g-pic-overlay {
@@ -145,12 +146,34 @@
 
 .g-btn {
   position: absolute;
-  top: -10px;
-  right: -15px;
+  top: 1%;
+  right: 1%;
   font-size: 1rem !important;
   background-color: #ff0505 !important;
   color: #fff !important;
   /* border-radius: 50% !important; */
   border: none;
   cursor: pointer;
+}
+.g-prev-btn{
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  border:none;
+  font-size: 6rem;
+  background: rgba(0, 0, 0, 0);
+}
+.g-prev-btn:hover{
+  color: rgb(163, 161, 161) !important;
+}
+.g-next-btn{
+  position: absolute;
+  top: 40%;
+  right: 5%;
+  border:none;
+  font-size: 6rem;
+  background: rgba(0, 0, 0, 0);
+}
+.g-next-btn:hover{
+  color:rgb(163, 161, 161) !important;
 }

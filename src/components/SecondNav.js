@@ -152,7 +152,7 @@ function load(link){
               )}
             </div>
 
-            <NavLink onClick={()=>load("/")} className="nav-links">
+            <NavLink onClick={()=>load("/contacts")} className="nav-links">
               Contact
             </NavLink>
             <NavLink to="https://neuro.danphecare.com/" className="nav-2-btn btn text-sm">

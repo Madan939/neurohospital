@@ -13,6 +13,7 @@ import HospitalCalender from '../pages/HospitalCalender'
 import PrivacyPolicy from '../pages/PrivacyPolicy'
 import Career from '../pages/Career'
 import LocationMap from '../pages/LocationMap'
+import Contact from '../pages/Contact'
 
 const MyRoute = () => {
   return (
@@ -31,6 +32,7 @@ const MyRoute = () => {
         <Route path="/privacy-policy" element={<PrivacyPolicy/>}/>
         <Route path="/career" element={<Career/>}/>
         <Route path="/location-map" element={<LocationMap/>}/>
+        <Route path="/contacts" element={<Contact/>}/>
       </Routes>
     </>
   )

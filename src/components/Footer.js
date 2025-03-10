@@ -7,7 +7,7 @@ const Footer = () => {
       <footer className=' mt-3 '>
         <div className='main-footer  mt-3'>
           <div className='footer-row row  '>
-            <div className='col col-3'>
+            <div className='col col-4'>
               <NavLink to="">
                 <img src="/images/footer-logo.png" alt='footer-logo' className='footer-logo'/>
               </NavLink>
@@ -31,7 +31,7 @@ const Footer = () => {
             <p>Sun-Fri - <b className='text-dark'>10:30AM - 05:00PM</b></p>
             <p>Saturday - <b className='text-dark'>Closed</b></p>
             </div>
-            <div className='col col-3'>
+            <div className='col col-2'>
             <p className='footer-head'>Toll Free Number</p>
             <p><Link to="tel:1660-21-52777" className='tel-no'>1660-21-52777</Link></p><Link to="tel:"></Link>
             <p>24X7 Helpline</p>
