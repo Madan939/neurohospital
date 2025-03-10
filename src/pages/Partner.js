@@ -65,13 +65,6 @@ const Partner = () => {
   ];
   const list3 = [
     {
-      name: "Jhi Pucha",
-      date: "Date of MoU : 27-Mar-2024",
-      img: "images/aboutus/jhipucha.jpg",
-      des: "null",
-      link: "null",
-    },
-    {
       name: "Nepal SBI Bank Ltd.",
       date: "Date of MoU : 4-Apr-2024",
       img: "images/aboutus/sbi.png",
@@ -84,13 +77,6 @@ const Partner = () => {
       img: "images/aboutus/nmb.png",
       des: "NMB Bank Limited licensed as “A” class financial institution by Nepal Rastra Bank in May 2008 has been operating in the Nepalese Financial market for over twenty years and is one of the leading commercial banks in the banking industry.",
       link: "https://nmb.com.np/individual",
-    },
-    {
-      name: "GEFONT",
-      date: "Date of MoU : 1-May-2024",
-      img: "images/aboutus/gefont.png",
-      des: "General Federation of Nepalese Trade Unions (GEFONT ) was established on 20th July 1989. As there was no union right in Nepal; GEFONT was launched underground. GEFONT has 21 affiliates (as of April 2022), which cover all three fields- agriculture, industries and services; covering various sectors such as manufacturing, textiles and clothing, carpet industry, transport, hotels, restaurants and catering, tourism, ICT, media and printing, auto-mechanics, e-rikshaw, food production, breweries, chemical and metal industry, tea plantations, street vendors, private school, beauticians, employees of security sector and sports sector, construction and agriculture.",
-      link: "https://www.gefont.org/",
     },
   ];
   const list4 = [
@@ -162,6 +148,15 @@ const Partner = () => {
             </div>
           </div>
         ))}
+        <div className="ptr-row33">
+          <div className="ptr3-col13">
+            <img src="images/aboutus/jhipucha.jpg" alt="" />
+          </div>
+          <div className="ptr3-col23">
+            <p className="ptr-p1">Date of MoU : 27-Mar-2024</p>
+            <p className="ptr-p2">Jhi Pucha</p>
+          </div>
+        </div>
         {list3.map((item) => (
           <div className="ptr-row-2">
             <div className="ptr-col1-2">
@@ -185,6 +180,33 @@ const Partner = () => {
             </div>
           </div>
         ))}
+        <div className="ptr-row3-3">
+          <div className="ptr3-col1-3">
+            <img src="images/aboutus/gefont.png" alt="" />
+          </div>
+          <div className="ptr3-col2-3">
+            <p className="ptr-p1">Date of MoU : 1-May-2024</p>
+            <p className="ptr-p2">GEFONT</p>
+            <p className="ptr-p3">
+              General Federation of Nepalese Trade Unions (GEFONT ) was
+              established on 20th July 1989. As there was no union right in
+              Nepal; GEFONT was launched underground. GEFONT has 21 affiliates
+              (as of April 2022), which cover all three fields- agriculture,
+              industries and services; covering various sectors such as
+              manufacturing, textiles and clothing, carpet industry, transport,
+              hotels, restaurants and catering, tourism, ICT, media and
+              printing, auto-mechanics, e-rikshaw, food production, breweries,
+              chemical and metal industry, tea plantations, street vendors,
+              private school, beauticians, employees of security sector and
+              sports sector, construction and agriculture.
+            </p>
+            <p>
+              <Link className="msd2-btn btn" to="https://www.gefont.org/">
+                Browse More
+              </Link>
+            </p>
+          </div>
+        </div>
         <div className="ptr-row3">
           <div className="ptr3-col1">
             <img src="images/aboutus/pabson.png" alt="" />
