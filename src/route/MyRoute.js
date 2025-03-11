@@ -1,5 +1,5 @@
 import React from 'react'
-import { Route, Routes } from 'react-router-dom'
+import { Route, Routes,Navigate } from 'react-router-dom'
 import Home from '../pages/Home'
 import About from '../pages/About'
 import Department from '../pages/Department'
@@ -34,7 +34,8 @@ const MyRoute = () => {
         <Route path="/career" element={<Career/>}/>
         <Route path="/location-map" element={<LocationMap/>}/>
         <Route path="/contacts" element={<Contact/>}/>
-        <Route path="*" element={<PageNotFound/>}/>
+        <Route path="*" element={<Navigate to="/404" />} />
+        <Route path="/404" element={<PageNotFound />} />
        
       </Routes>
     </>
