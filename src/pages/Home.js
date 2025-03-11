@@ -122,7 +122,7 @@ const Home = () => {
   }, []);
   return (
     <>
-      {/* {homePic && (
+       {homePic && (
         <div className="overlay">
           <div className="overlay-div">
             <img
@@ -135,7 +135,7 @@ const Home = () => {
             X
           </button>
         </div>
-      )} */}
+      )} 
       <div className="home">
         <Float/>
         <div className="home-bg ">
