@@ -98,11 +98,11 @@ const Gallery = () => {
             </div>
             <button className="g-btn btn" onClick={closeImage}>Close</button>
             <button className="g-prev-btn" onClick={prev} disabled={currentIndex === 0}
-            style={{ color: currentIndex === 0 ? "rgb(163, 161, 161)" : " white" }}>
+            style={{ display: currentIndex === 0 ? "none" : " block" }}>
                 <i className="fa-solid fa-less-than"></i>
               </button>
               <button className="g-next-btn" onClick={next} disabled={currentIndex === images.length - 1}
-               style={{ color: currentIndex === images.length - 1 ? "rgb(163, 161, 161)" : " white" }}>
+               style={{ display: currentIndex === images.length - 1 ? "none" : "block" }}>
                 <i className="fa-solid fa-greater-than"></i>
               </button>
           </div>

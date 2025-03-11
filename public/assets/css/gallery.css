@@ -162,6 +162,7 @@
   border:none;
   font-size: 6rem;
   background: rgba(0, 0, 0, 0);
+  color: #fff;
 }
 .g-prev-btn:hover{
   color: rgb(163, 161, 161) !important;
@@ -170,6 +171,7 @@
   position: absolute;
   top: 40%;
   right: 5%;
+  color: #fff;
   border:none;
   font-size: 6rem;
   background: rgba(0, 0, 0, 0);

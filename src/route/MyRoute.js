@@ -14,6 +14,7 @@ import PrivacyPolicy from '../pages/PrivacyPolicy'
 import Career from '../pages/Career'
 import LocationMap from '../pages/LocationMap'
 import Contact from '../pages/Contact'
+import PageNotFound from '../pages/PageNotFound'
 
 const MyRoute = () => {
   return (
@@ -33,6 +34,7 @@ const MyRoute = () => {
         <Route path="/career" element={<Career/>}/>
         <Route path="/location-map" element={<LocationMap/>}/>
         <Route path="/contacts" element={<Contact/>}/>
+        <Route path="*" element={<PageNotFound/>}/>
       </Routes>
     </>
   )

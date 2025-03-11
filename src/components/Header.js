@@ -13,7 +13,7 @@ const Header = () => {
         <nav className="nav-1 d-flex">
           <div className="nav-1-content d-flex justify-content-between">
             <div className="nav-1-first d-flex">
-              <NavLink to="https://neurohospital.com.np/location">
+              <NavLink to="/location-map">
                 <i className="fa-solid fa-location-dot"></i>&nbsp; F73M+G94,
                 Jahada Road, Biratnagar
               </NavLink>

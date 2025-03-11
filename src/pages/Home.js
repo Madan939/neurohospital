@@ -4,6 +4,7 @@ import CardSlider from "../components/CardSlider";
 import Video from "../components/Video";
 import Sec8 from "../components/Sec8";
 import SectionSix from "../components/SectionSix";
+import Float from "../components/Float";
 
 const Home = () => {
   const [homePic, showHomePic] = useState(true);
@@ -136,6 +137,7 @@ const Home = () => {
         </div>
       )}
       <div className="home">
+        <Float/>
         <div className="home-bg ">
           <div
             ref={sec1Ref}
