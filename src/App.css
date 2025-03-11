@@ -15,52 +15,7 @@ body,
   overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
-.nav-1 {
-  background: #2c52a0;
-  color: white;
-  display: flex;
-  align-items: center;
-  padding: 2px 0;
-  overflow: visible;
-}
 
-.nav-1-content {
-  width: 88%;
-  display: flex;
-  margin: auto;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav-1-first {
-  display: flex;
-  gap: 16px;
-}
-
-.nav-1-second {
-  display: flex;
-}
-
-.nav-1 a {
-  color: white;
-  text-decoration: none;
-  font-size: 12.5px;
-  transition: color 0.3s ease;
-
-  font-weight: 300;
-
-}
-
-.nav-1-second a {
-  font-size: 13px;
-  padding: 8px 14px;
-  transition: background-color 0.3s ease;
-}
-
-.nav-1-second a:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 5px;
-}
 .nav-2 {
   position: sticky;
   top: 0;
@@ -2305,4 +2260,9 @@ footer {
 }
 .pnf a{
   color: #25d366;
+}
+@media only screen and (min-width:320px) and (max-width:600px) {
+  *{
+    scrollbar-width:none;
+  }
 }

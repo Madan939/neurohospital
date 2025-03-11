@@ -1,14 +1,68 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 const Header = () => {
   const [showFb, setShowFb] = useState(false);
   const [showInst, setShowInst] = useState(false);
   const [showWtsp, setShowWtsp] = useState(false);
   const [showYt, setShowYt] = useState(false);
   const [showLdi, setShowLdn] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
   return (
     <>
+      {/* responsive view starts*/}
+      <section className="resp-nav1">
+        <div className="resp-nav1-div">
+          <div className="resp-nav1-div-div1">
+            <i className="fa-solid fa-bars" onClick={toggleMenu}></i>
+          </div>
+          <div className="resp-nav1-div-div2">
+            <Link to="/" className="w-100">
+              <img src="/images/header-logo.png" alt="header-logo" />
+            </Link>
+          </div>
+          <div className="resp-nav1-div-div3">
+            <Link to="tel:+97721416267">
+              <i className="fa-solid fa-phone-flip"></i>
+            </Link>
+          </div>
+        </div>
+      </section>
+      <div className={`sidebar ${menuOpen ? "open" : ""}`}>
+      <button className="menu-bar-close-btn" onClick={toggleMenu}>
+          &times;
+        </button>
+        <ul>
+          <li>
+            <Link to="/" onClick={toggleMenu}>
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link to="/about" onClick={toggleMenu}>
+              About
+            </Link>
+          </li>
+          <li>
+            <Link to="/services" onClick={toggleMenu}>
+              Services
+            </Link>
+          </li>
+          <li>
+            <Link to="/contact" onClick={toggleMenu}>
+              Contact
+            </Link>
+          </li>
+        </ul>
+      </div>
+      {menuOpen && <div className="menu-overlay" onClick={toggleMenu}>
+      
+        </div>}
+
+      {/* responsive view ends*/}
       <header className="header">
         <nav className="nav-1 d-flex">
           <div className="nav-1-content d-flex justify-content-between">
