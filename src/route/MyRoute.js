@@ -35,6 +35,7 @@ const MyRoute = () => {
         <Route path="/location-map" element={<LocationMap/>}/>
         <Route path="/contacts" element={<Contact/>}/>
         <Route path="*" element={<PageNotFound/>}/>
+       
       </Routes>
     </>
   )
