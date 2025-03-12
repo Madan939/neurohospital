@@ -121,7 +121,7 @@ const Home = () => {
   }, []);
   return (
     <>
-      {/* {homePic && (
+      {homePic && (
         <div className="overlay">
           <div className="overlay-div">
             <img
@@ -134,7 +134,7 @@ const Home = () => {
             X
           </button>
         </div>
-      )}  */}
+      )} 
       <div className="home">
         <div className="home-first">
           <div className="home-bg ">
