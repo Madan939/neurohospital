@@ -4,7 +4,6 @@ import CardSlider from "../components/CardSlider";
 import Video from "../components/Video";
 import Sec8 from "../components/Sec8";
 import SectionSix from "../components/SectionSix";
-import Float from "../components/Float";
 
 const Home = () => {
   const [homePic, showHomePic] = useState(true);
@@ -122,7 +121,7 @@ const Home = () => {
   }, []);
   return (
     <>
-       {homePic && (
+      {/* {homePic && (
         <div className="overlay">
           <div className="overlay-div">
             <img
@@ -135,104 +134,107 @@ const Home = () => {
             X
           </button>
         </div>
-      )} 
+      )}  */}
       <div className="home">
-        <Float/>
-        <div className="home-bg ">
-          <div
-            ref={sec1Ref}
-            className={`home-1 d-flex ${isSec1Visible ? "show" : ""}`}
-          >
-            <div className="home-1-1">
-              <p className="hp1">Neuro Hospital - Biratnagar</p>
-              <p className="hp2">Trusted Care</p>
-              <p className="hp3">
-                We have been the first choice of neurological services since two
-                decades in Biratnagar and serving various premium medical
-                facilities under a single roof by giving new lives to thousands
-              </p>
-              <button className="hbtn btn">About Us</button>
+        <div className="home-first">
+          <div className="home-bg ">
+            <div
+              ref={sec1Ref}
+              className={`home-1 ${isSec1Visible ? "show" : ""}`}
+            >
+              <div className="home-1-1">
+                <p className="hp1">Neuro Hospital - Biratnagar</p>
+                <p className="hp2">Trusted Care</p>
+                <p className="hp3">
+                  We have been the first choice of neurological services since
+                  two decades in Biratnagar and serving various premium medical
+                  facilities under a single roof by giving new lives to
+                  thousands
+                </p>
+                <button className="hbtn btn">About Us</button>
+              </div>
+              <div className="home-1-2">
+                <img
+                  src="/images/homepage/homeimage.png"
+                  alt="home-image"
+                  className="home-1-pic"
+                />
+              </div>
             </div>
-            <div className="home-1-2">
-              <img
-                src="/images/homepage/homeimage.png"
-                alt="home-image"
-                className="home-1-pic"
-              />
-            </div>
-          </div>
-          <div className="container mt-2">
-            <div className="home-row row">
-              <div className="col1 col col-md-3">
-                <div className="hcard">
-                  <div className="h5 mb-3">Hospital Timings</div>
-                  <div className="hcard-1 d-flex justify-content-between">
-                    <div className="fh ">OPD</div>
-                    <div className="fs ">-</div>
-                    <div className="ft ">10:30 AM - 05:00 PM</div>
-                  </div>
-                  <div className="hcard-1 d-flex justify-content-between">
-                    <div className="fh ">Saturday</div>
-                    <div className="fs ">-</div>
-                    <div className="ft ">Closed</div>
-                  </div>
-                  <div className=" d-flex justify-content-between">
-                    <div className="fh ">Emergency</div>
-                    <div className="fs ">-</div>
-                    <div className="ft ">24x7 Service</div>
+            <div className="container mt-2">
+              <div className="home-row row">
+                <div className="col1 cols col-md-3 col-xs-12">
+                  <div className="hcard">
+                    <div className="h5 mb-3">Hospital Timings</div>
+                    <div className="hcard-1 d-flex justify-content-between">
+                      <div className="fh ">OPD</div>
+                      <div className="fs ">-</div>
+                      <div className="ft ">10:30 AM - 05:00 PM</div>
+                    </div>
+                    <div className="hcard-1 d-flex justify-content-between">
+                      <div className="fh ">Saturday</div>
+                      <div className="fs ">-</div>
+                      <div className="ft ">Closed</div>
+                    </div>
+                    <div className=" d-flex justify-content-between">
+                      <div className="fh ">Emergency</div>
+                      <div className="fs ">-</div>
+                      <div className="ft ">24x7 Service</div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="col2 col col-md-3 ">
-                <div className="hcard">
-                  <p className="h5 mb-3">Doctors' Team</p>
-                  <p className="hpp1 mt-2 mb-3">
-                    We have managed our services to ease our patients an easiest
-                    way to get emergency, OPD & other essential medical services
-                    round the clock.
-                  </p>
-                  <Link to="" className="card-btn btn text-light mt-3">
-                    View Doctors
-                  </Link>
+                <div className="col2 cols col-md-3 col-xs-12 ">
+                  <div className="hcard">
+                    <p className="h5 mb-3">Doctors' Team</p>
+                    <p className="hpp1 mt-2 mb-3">
+                      We have managed our services to ease our patients an
+                      easiest way to get emergency, OPD & other essential
+                      medical services round the clock.
+                    </p>
+                    <Link to="" className="card-btn btn text-light mt-3">
+                      View Doctors
+                    </Link>
+                  </div>
                 </div>
-              </div>
-              <div className="col3 col col-md-3 ">
-                <div className="hcard">
-                  <p className="h5 mb-3"> Appointments</p>
-                  <p className="hpp1 mb-3 mt-3">
-                    You can book an appointment to get connected with your
-                    desired doctors.
-                  </p>
-                  <Link to="" className="card-btn btn text-light mt-3">
-                    Book an Appointment
-                  </Link>
+                <div className="col3 cols col-md-3 col-xs-12 ">
+                  <div className="hcard">
+                    <p className="h5 mb-3"> Appointments</p>
+                    <p className="hpp1 mb-3 mt-3">
+                      You can book an appointment to get connected with your
+                      desired doctors.
+                    </p>
+                    <Link to="" className="card-btn btn text-light mt-3">
+                      Book an Appointment
+                    </Link>
+                  </div>
                 </div>
-              </div>
-              <div className="col4 col col-md-3 ">
-                <div className="hcard">
-                  <p className="h5 mb-3">Emergency Cases</p>
-                  <Link
-                    to="tel:166-021-52777"
-                    className="text-decoration-none text-light mt-3 mb-3"
-                  >
-                    <i className="fa-solid fa-phone-flip"></i>
-                    &nbsp;166-021-52777
-                  </Link>
-                  <p className="hpp1 mt-3 mb-3">
-                    Emergency connectivity over toll free number ( NTC Only )
-                    and WhatsApp.
-                  </p>
-                  <Link
-                    to="whatsapp:9818869166"
-                    className="card-btn btn text-light mt-3"
-                  >
-                    Call on Whatsapp
-                  </Link>
+                <div className="col4 cols col-md-3 col-xs-12">
+                  <div className="hcard">
+                    <p className="h5 mb-3">Emergency Cases</p>
+                    <Link
+                      to="tel:166-021-52777"
+                      className="text-decoration-none text-light mt-3 mb-3"
+                    >
+                      <i className="fa-solid fa-phone-flip"></i>
+                      &nbsp;166-021-52777
+                    </Link>
+                    <p className="hpp1 mt-3 mb-3">
+                      Emergency connectivity over toll free number ( NTC Only )
+                      and WhatsApp.
+                    </p>
+                    <Link
+                      to="whatsapp:9818869166"
+                      className="card-btn btn text-light mt-3"
+                    >
+                      Call on Whatsapp
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
         <div
           ref={sec2Ref}
           className={`section-1 d-flex ${isSec2Visible ? "show" : ""}`}

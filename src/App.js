@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import ReactGA from "react-ga4";
 import { useLocation } from "react-router-dom";
 import "./App.css";
@@ -10,22 +10,25 @@ import Float from "./components/Float";
 import PageNotFound from "./pages/PageNotFound";
 
 function App() {
+  const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation();
-  const isNotFoundPage = location.pathname === "/404"; 
+  const isNotFoundPage = location.pathname === "/404";
   useEffect(() => {
-    ReactGA.initialize("G-Y6XX5D6NJW"); 
+    ReactGA.initialize("G-Y6XX5D6NJW");
     ReactGA.send({ hitType: "pageview", page: location.pathname });
-  }, [location]); 
+  }, [location]);
 
   return isNotFoundPage ? (
     <PageNotFound />
   ) : (
     <>
-      <Header />
-      <SecondNav />
-      <Float />
-      <MyRoute />
-      <Footer />
+      <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <div className={`myroute ${menuOpen ? "menu-active" : "not-active"}`}>
+        <SecondNav />
+        <Float />
+        <MyRoute />
+        <Footer />
+      </div>
     </>
   );
 }
