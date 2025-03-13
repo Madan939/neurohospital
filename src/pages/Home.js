@@ -151,7 +151,7 @@ const Home = () => {
                   facilities under a single roof by giving new lives to
                   thousands
                 </p>
-                <button className="hbtn btn">About Us</button>
+                <Link to="/about"className="hbtn btn">About Us</Link>
               </div>
               <div className="home-1-2">
                 <img
