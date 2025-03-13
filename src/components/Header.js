@@ -195,18 +195,18 @@ const load = (link) => {
 
       {/* responsive view ends*/}
       <header className="header">
-        <nav className="nav-1 d-flex">
+        <nav className="nav-1 d-flex  text-light">
           <div className="nav-1-content d-flex justify-content-between">
-            <div className="nav-1-first d-flex">
+            <div className="nav-1-first d-flex  text-light">
               <NavLink to="/location-map">
-                <i className="fa-solid fa-location-dot"></i>&nbsp; F73M+G94,
+                <i className="fa-solid fa-location-dot  text-light"></i>&nbsp; F73M+G94,
                 Jahada Road, Biratnagar
               </NavLink>
               <NavLink to="tel:+97721416267">
-                <i className="fa-solid fa-phone-flip"></i>&nbsp; +977-21-416267
+                <i className="fa-solid fa-phone-flip  text-light"></i>&nbsp; +977-21-416267
               </NavLink>
               <NavLink to="https://neurohospital.com.np/email">
-                <i className="fa-solid fa-envelope"></i>&nbsp; Check Email
+                <i className="fa-solid fa-envelope  text-light"></i>&nbsp; Check Email
               </NavLink>
             </div>
             <div className="nav-1-second d-flex">
@@ -216,7 +216,7 @@ const load = (link) => {
                 onMouseOver={() => setShowFb(true)}
                 onMouseLeave={() => setShowFb(false)}
               >
-                <i className="fa-brands fa-square-facebook"></i>
+                <i className="fa-brands fa-square-facebook  text-light"></i>
                 {showFb && <div className="media-content">Facebook</div>}
               </NavLink>
 
@@ -226,7 +226,7 @@ const load = (link) => {
                 onMouseOver={() => setShowInst(true)}
                 onMouseLeave={() => setShowInst(false)}
               >
-                <i className="fa-brands fa-instagram"></i>
+                <i className="fa-brands fa-instagram  text-light"></i>
                 {showInst && <div className="media-content">Instagram</div>}
               </NavLink>
               <NavLink
@@ -235,7 +235,7 @@ const load = (link) => {
                 onMouseOver={() => setShowYt(true)}
                 onMouseLeave={() => setShowYt(false)}
               >
-                <i className="fa-brands fa-youtube"></i>
+                <i className="fa-brands fa-youtube  text-light"></i>
                 {showYt && <div className="media-content">Youtube</div>}
               </NavLink>
               <NavLink
@@ -244,7 +244,7 @@ const load = (link) => {
                 onMouseOver={() => setShowLdn(true)}
                 onMouseLeave={() => setShowLdn(false)}
               >
-                <i className="fa-brands fa-linkedin"></i>
+                <i className="fa-brands fa-linkedin  text-light"></i>
                 {showLdi && <div className="media-content">LinkedIn</div>}
               </NavLink>
               <NavLink
@@ -253,7 +253,7 @@ const load = (link) => {
                 onMouseOver={() => setShowWtsp(true)}
                 onMouseLeave={() => setShowWtsp(false)}
               >
-                <i className="fa-brands fa-whatsapp"></i>
+                <i className="fa-brands fa-whatsapp  text-light"></i>
                 {showWtsp && <div className="media-content">WhatsApp</div>}
               </NavLink>
             </div>
