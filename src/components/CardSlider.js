@@ -1,8 +1,8 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, FreeMode ,Pagination} from "swiper/modules";
+import { Autoplay, FreeMode, Pagination } from "swiper/modules";
 import "swiper/css";
-import "swiper/css/autoplay";
+import "swiper/css/free-mode";
 import "swiper/css/pagination";
 
 const cards = [
@@ -68,19 +68,23 @@ const CardSlider = () => {
     <>
         <Swiper
         className="swiper"
-        spaceBetween={20}
-        slidesPerView={4}
+        spaceBetween={15}
+        slidesPerView={1}
         loop={true}
         freeMode={true}
         autoplay={{
-          delay: 0,
-          disableOnInteraction:false,
+          delay: 1.5,
           reverseDirection: true,
           pauseOnMouseEnter:true,
         }}
         speed={5000}
         pagination={{ clickable: true }}
         modules={[Autoplay, FreeMode,Pagination]}
+        breakpoints={{
+          768: { slidesPerView: 2 }, 
+          1024: { slidesPerView: 4 }, 
+          1200: { slidesPerView: 4 } 
+        }}
       > 
         {cards.map((card) => (
           <SwiperSlide key={card.id}>       

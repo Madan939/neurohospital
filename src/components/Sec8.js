@@ -32,7 +32,7 @@ const Sec8 = () => {
     <>
     <div className='sec8-row row '>
         {List.map((card)=>(
-            <div className='sec-8-col col col-4'>
+            <div className='sec-8-col cols col-md-4 col-sm-12'>
                 <img src={card.pic} alt={card.name} className='sec8-img'/>
                 <Link to="/" className='sec-8-p1'>{card.name}</Link>
                 <p>{card.date}</p>

@@ -176,7 +176,7 @@ const Home = () => {
                       <div className="fs ">-</div>
                       <div className="ft ">Closed</div>
                     </div>
-                    <div className=" d-flex justify-content-between">
+                    <div className="hcard-2 d-flex justify-content-between">
                       <div className="fh ">Emergency</div>
                       <div className="fs ">-</div>
                       <div className="ft ">24x7 Service</div>
@@ -191,7 +191,7 @@ const Home = () => {
                       easiest way to get emergency, OPD & other essential
                       medical services round the clock.
                     </p>
-                    <Link to="" className="card-btn btn text-light mt-3">
+                    <Link to="/doctors" className="card-btn btn text-light mt-3">
                       View Doctors
                     </Link>
                   </div>
@@ -203,7 +203,7 @@ const Home = () => {
                       You can book an appointment to get connected with your
                       desired doctors.
                     </p>
-                    <Link to="" className="card-btn btn text-light mt-3">
+                    <Link to="https://neuro.danphecare.com/" className="card-btn btn text-light mt-3">
                       Book an Appointment
                     </Link>
                   </div>
@@ -212,7 +212,7 @@ const Home = () => {
                   <div className="hcard">
                     <p className="h5 mb-3">Emergency Cases</p>
                     <Link
-                      to="tel:166-021-52777"
+                      to="https://wa.me/9779852004024?text=Hi%2C%20I%27m%20contacting%20you%20through%20www.neurohospital.com.np.%20"
                       className="text-decoration-none text-light mt-3 mb-3"
                     >
                       <i className="fa-solid fa-phone-flip"></i>
@@ -223,7 +223,7 @@ const Home = () => {
                       and WhatsApp.
                     </p>
                     <Link
-                      to="whatsapp:9818869166"
+                      to="https://wa.me/9779852004024?text=Hi%2C%20I%27m%20contacting%20you%20through%20www.neurohospital.com.np.%20"
                       className="card-btn btn text-light mt-3"
                     >
                       Call on Whatsapp
@@ -239,7 +239,7 @@ const Home = () => {
           ref={sec2Ref}
           className={`section-1 d-flex ${isSec2Visible ? "show" : ""}`}
         >
-          <div className="w-50">
+          <div className="section-1-1div">
             <img src="/images/homepage/director.png" alt="director-image" />
           </div>
           <div className="section-1-2div container mt-3">
@@ -280,8 +280,7 @@ const Home = () => {
           className={`section-3 ${isSec3Visible ? "show" : ""}`}
         >
           <div className="sec-3-content row">
-            <div className="col col-1"></div>
-            <div className="col col-5  text-secondary">
+            <div className="cols col-md-6 col-sm-12  text-secondary">
               <p className="sec-3-p1">Best Practices</p>
               <p className="sec-3-p2">Premium Medical Facilities</p>
               <p className="sec-3-p3">
@@ -292,7 +291,7 @@ const Home = () => {
                 facilities, such as:
               </p>
               <div className="sec-3-2row row">
-                <div className="sec-3-2col col col-6">
+                <div className="sec-3-2col cols col-md-6 col-sm-12">
                   <div>
                     <i class="fa-solid fa-angles-right"></i>&nbsp; Trauma Care
                   </div>
@@ -304,7 +303,7 @@ const Home = () => {
                     <i class="fa-solid fa-angles-right"></i>&nbsp;Ventilator
                   </div>
                 </div>
-                <div className="sec-3-2col col col-6">
+                <div className="sec-3-2col cols col-md-6 col-sm-12">
                   <div>
                     <i class="fa-solid fa-angles-right"></i>&nbsp; Stroke Care
                   </div>
@@ -319,7 +318,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className="col col-6">
+            <div className="cols col-md-6 col-sm-12">
               <img
                 src="/images/homepage/sec-3-1.png"
                 alt=""
@@ -329,13 +328,9 @@ const Home = () => {
           </div>
         </div>
         <div className="section-4 ">
-          <div className="sec-4-row d-flex">
+          <div className="sec-4-row ">
             <div className="sec-4-col1">
-              <img
-                src="/images/homepage/sec-4-img.jpg"
-                alt=""
-                className="sec-4-img"
-              />
+              
             </div>
             <div className="sec-4-col2 ">
               <div
@@ -344,19 +339,19 @@ const Home = () => {
                   isSec4Visible ? "show" : ""
                 }`}
               >
-                <div className="sec-4-1">Experienced Doctors</div>
-                <p className="sec-4-2">World Class Treatment</p>
-                <p>
+                <div className="sec-4-1 text-light">Experienced Doctors</div>
+                <p className="sec-4-2 text-light">World Class Treatment</p>
+                <p className="text-light">
                   I feel proud to become a team member of professionally managed
                   healthcare services in Nepal. Our hospital provides world
                   class healthcare solutions for them whose last lifeline is
                   "Neuro Hospital-Biratnagar".
                 </p>
-                <p>
+                <p className="text-light">
                   We have been serving local & international patients under
                   single roof as being the best neuro hospital in Nepal.
                 </p>
-                <p>Life Matters !</p>
+                <p className="text-light">Life Matters !</p>
                 <p className="sec-4-5">
                   Dr. Vivek Kattel | Consultant Physician
                 </p>
@@ -372,11 +367,11 @@ const Home = () => {
                 </Link>
               </div>
             </div>
+            <div className="sec-4-col3"></div>
           </div>
         </div>
         <div className="section-5">
           <div className="section-5-content">
-            <div className="sec-5-1"></div>
             <div
               ref={sec5Ref}
               className={`sec-5-2  text-light ${isSec5Visible ? "show" : ""}`}

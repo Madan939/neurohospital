@@ -73,7 +73,7 @@ const SectionSix = () => {
           {list.map((items) => (
             <div
               key={items.id}
-              className="list-col col col-3"
+              className="list-col cols col-md-3 col-sm-12"
               onClick={() => handleCardClick(items.id)}
             >
               <p
@@ -105,7 +105,7 @@ const SectionSix = () => {
               <div className="card-content-2">
                 <h2 className="card-cnt-1">{selectedCard.name}</h2>
                 <p className="card-cnt-2">{selectedCard.description}</p>
-                <div className="d-flex justify-content-between">
+                <div className="card-cnt-ul">
                   <div className="card-cnt-li">
                     <div>
                       <i class="fa-solid fa-angles-right"></i>
@@ -135,7 +135,7 @@ const SectionSix = () => {
                     </div>
                   </div>
                 </div>
-                <NavLink className="card-cnt-btn btn text-light">Book an Appointment</NavLink>
+                <NavLink to ="https://neuro.danphecare.com/"className="card-cnt-btn btn text-light">Book an Appointment</NavLink>
               </div>
             </div>
            

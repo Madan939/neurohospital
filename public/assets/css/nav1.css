@@ -81,7 +81,8 @@
     /* border: 2px solid black; */
   }
   .resp-nav1-div-div1 i {
-    font-size: 2rem;
+    margin-left: 3px;
+    font-size: 2.5rem;
   }
   .resp-nav1-div-div2 {
     width: 40%;
@@ -209,7 +210,7 @@
     margin-top: 1rem !important;
   }
   .nav-cnt.active {
-    background-color: #ddd;
+    /* background-color: #ddd; */
     color:lightseagreen;
     transition: color 0.3s ease-in-out;
   }
