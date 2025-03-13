@@ -703,11 +703,12 @@
   width: 40%;
 }
 .sec7-btn {
-  border-color: #2c52a0;
+  border-color: #2c52a0 !important;
   margin-top: 1.5rem;
   background-color: #2c52a0 !important;
 }
 .sec7-btn:hover {
+  border-color:#17a2b8 !important; ;
   background-color: #17a2b8 !important;
 }
 .section-8 {
