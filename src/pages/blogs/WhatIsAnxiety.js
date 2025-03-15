@@ -38,7 +38,7 @@ const WhatIsAnxiety = () => {
               diagnosis and treatment.
             </li>
           </ul>
-          <div className="blog-heading">// Symptoms of Anxiety</div>
+          <div className="blog-heading">Symptoms of Anxiety</div>
           <ul>
             <li>Feeling nervous, restless or tense</li>
             <li>Having a sense of impending danger, panic or doom</li>
@@ -56,7 +56,7 @@ const WhatIsAnxiety = () => {
             <li>Having difficulty controlling worry</li>
             <li>Having the urge to avoid things that trigger anxiety</li>
           </ul>
-          <div className="blog-heading">// Mental Symptoms</div>
+          <div className="blog-heading">Mental Symptoms</div>
           <ul>
             <li>
               <b>Racing thoughts:</b> Feeling like your mind is constantly racing with
@@ -108,7 +108,7 @@ const WhatIsAnxiety = () => {
             </li>
             <li><b>Fatigue:</b> Feeling easily tired or drained of energy.</li>
           </ul>
-          <div className="blog-heading">// Causes of Anxiety</div>
+          <div className="blog-heading">Causes of Anxiety</div>
           <ul>
             <li>
             <b>Genetic and biological factors:</b> Family history of anxiety
@@ -119,7 +119,7 @@ const WhatIsAnxiety = () => {
               illness, substance abuse, personality traits.
             </li>
           </ul>
-          <div className="blog-heading">// How to Cope with Anxiety</div>
+          <div className="blog-heading">How to Cope with Anxiety</div>
           <ul>
             <li>
             <b> Lifestyle changes: </b>Regular exercise, healthy diet, relaxation
@@ -136,7 +136,7 @@ const WhatIsAnxiety = () => {
               helpful in managing anxiety symptoms.
             </li>
           </ul>
-          <div className="blog-heading">// Important Things to Remember</div>
+          <div className="blog-heading">Important Things to Remember</div>
           <ul>
             <li>
               Anxiety is a common condition, affecting millions of people

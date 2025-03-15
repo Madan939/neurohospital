@@ -48,12 +48,14 @@ body,
   font-size: 14.5px;
   font-weight: lighter;
   padding: 25px 15.7px;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease-in-out;
 }
 .nav-links:hover {
   color: #17a2b8 !important;
 }
-
+.nav-links:hover i {
+  color: inherit !important; /* Inherits the hover color from .nav-links */
+}
 .dropdown-container {
   /* position: relative; */
   display: inline-block;

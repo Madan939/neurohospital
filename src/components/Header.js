@@ -39,7 +39,7 @@ const Header = ({ menuOpen, setMenuOpen }) => {
     setShowBse(false);
   };
   const location = useLocation();
-  const blogs = location.pathname.startsWith("/blogs/");
+  const blogs = location.pathname.startsWith("/blogs");
   return (
     <>
       {/* responsive view starts*/}
@@ -191,20 +191,22 @@ const Header = ({ menuOpen, setMenuOpen }) => {
             <Link to="/contact">Contacts</Link>
           </li>
           <li className="ul-li-last">
-            {blogs?(
+            {blogs ? (
               <>
-              <Link to="/blogs" className="text-light ">
-              Neuro Hospital Blog
-            </Link>
+                <Link to="/blogs" className="text-light ">
+                  Neuro Hospital Blog
+                </Link>
               </>
-            ):(
+            ) : (
               <>
-              <Link to="https://neuro.danphecare.com/" className="text-light ">
-              Book an Appointment
-            </Link>
+                <Link
+                  to="https://neuro.danphecare.com/"
+                  className="text-light "
+                >
+                  Book an Appointment
+                </Link>
               </>
             )}
-            
           </li>
         </ul>
       </div>

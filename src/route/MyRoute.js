@@ -17,6 +17,9 @@ import Contact from '../pages/Contact'
 import PageNotFound from '../pages/PageNotFound'
 import UserLogin from '../pages/UserLogin'
 import WhatIsAnxiety from '../pages/blogs/WhatIsAnxiety'
+import MigraineHeadache from '../pages/blogs/MigraineHeadache'
+import ASD from '../pages/blogs/ASD'
+import Blogs from '../pages/blogs/Blogs'
 
 const MyRoute = () => {
   return (
@@ -39,7 +42,10 @@ const MyRoute = () => {
         <Route path="*" element={<Navigate to="/404" />} />
         <Route path="/404" element={<PageNotFound />} />
         <Route path="/login" element={<UserLogin/>}/>
-        <Route path='/:blogs/what-is-anxiety' element={<WhatIsAnxiety/>}/>
+        <Route path='/blogs/what-is-anxiety' element={<WhatIsAnxiety/>}/>
+        <Route path='/blogs/migraine-headache' element={<MigraineHeadache/>}/>
+        <Route path='/blogs/autism-spectrum-disorder-asd-3' element={<ASD/>}/>
+        <Route path='/blogs' element={<Blogs/>}/>
       </Routes>
     </>
   )

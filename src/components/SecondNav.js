@@ -6,7 +6,7 @@ const SecondNav = () => {
   const [showDept, setShowDept] = useState(false);
   const [showBrowse, setShowBrowse] = useState(false);
   const location = useLocation();
-  const blogs = location.pathname.startsWith("/blogs/");
+  const blogs = location.pathname.startsWith("/blogs");
   // console.log(blogs);
   const navigate = useNavigate();
   function load(link) {
@@ -64,7 +64,7 @@ const SecondNav = () => {
                 onClick={() => load("/departments")}
                 className="nav-links"
               >
-                Departments&nbsp;<i className="fa-solid fa-caret-down"></i>
+               Departments&nbsp;<i className="fa-solid fa-caret-down"></i> 
               </NavLink>
               {showDept && (
                 <div className="dropdown-content">
@@ -172,7 +172,7 @@ const SecondNav = () => {
             ) : (
               <>
                 <NavLink
-                  to="https://neuro.danphecare.com/"
+                  to="/login"
                   className="nav-2-btn btn text-sm"
                 >
                   Book an Appointment

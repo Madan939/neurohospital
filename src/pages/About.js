@@ -124,7 +124,7 @@ function load(link){
               </p>
               <div className="abu-p4 text-dark">Dr. Birendra Kumar Bista</div>
               <div className="abu-p5">Senior Consultant Neurologist</div>
-              <Link to="https://neuro.danphecare.com/" className="abu-btn btn">
+              <Link to="/login" className="abu-btn btn">
                 Book an Appointment
               </Link>
             </div>

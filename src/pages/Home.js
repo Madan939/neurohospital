@@ -121,7 +121,7 @@ const Home = () => {
   }, []);
   return (
     <>
-      {/* {homePic && (
+      {homePic && (
         <div className="overlay">
           <div className="overlay-div">
             <img
@@ -134,7 +134,7 @@ const Home = () => {
             X
           </button>
         </div>
-      )}  */}
+      )} 
       <div className="home">
         <div className="home-first">
           <div className="home-bg ">
@@ -203,7 +203,7 @@ const Home = () => {
                       You can book an appointment to get connected with your
                       desired doctors.
                     </p>
-                    <Link to="https://neuro.danphecare.com/" className="card-btn btn text-light mt-3">
+                    <Link to="/login" className="card-btn btn text-light mt-3">
                       Book an Appointment
                     </Link>
                   </div>

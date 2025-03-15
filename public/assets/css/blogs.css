@@ -9,7 +9,7 @@
   font-weight: 200;
 }
 .blogs-div {
-  width: 89%;
+  width: 88%;
   /* border: 2px solid red; */
   margin: 6rem 0 ;
 }
@@ -31,7 +31,6 @@
   margin: 1rem 0 0 0;
 }
 .blog-p {
-  font-size: 1.1rem;
   font-weight: 200;
   color: #4b4b4b;
 }
@@ -42,9 +41,93 @@
 .blogs ul li::marker {
   color: black;
 }
+
 .blogs ul li b{
     color: black;
 }
 .blogs-width{
     width:95%;
+}
+.blogs-p1{
+  font-size: 2rem;
+  text-align: center;
+  color: #2c52a0;
+}
+.blog-img-1{
+  height: 650px;
+  width:100%;
+}
+.blogs-phobia{
+  text-align: center;
+  font-size: 1.5rem;
+  color: #2c52a0;
+}
+.blog-btn {
+  padding: 8px 25px !important;
+  font-size: 14px !important;
+  border-width: 2px !important;
+  border-color: #2c52a0 !important;
+  color: #2c52a0 !important;
+}
+.blog-btn:hover {
+  border-color: #0ab3c3 !important;
+  background-color: #0ab3c3 !important;
+  color: #ffffff !important;
+}
+
+.blogs-row {
+  /* border: 2px solid black !important; */
+  width: 100% !important;
+  margin-left: 0 !important;
+  margin-top: 3rem;
+}
+.blogs-col{
+  height: 30rem !important;
+  /* border: 2px solid rgb(218, 9, 9) !important; */
+}
+.blogs-col-2{
+  height: 34rem !important;
+  /* border: 2px solid rgb(218, 9, 9) !important; */
+}
+.blogs-col-3{
+  height: 28rem !important;
+  /* border: 2px solid rgb(218, 9, 9) !important; */
+}
+.blogs-img {
+  width: 100%;
+  height: 205px;
+  margin-bottom: 1.3rem;
+}
+.blogs-img-2 {
+  width: 100%;
+  height: 20rem;
+  margin-bottom: 1.3rem;
+}
+.blogs-card-p1 {
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #2c52a0 !important;
+}
+.blogs-card-p1:hover {
+  color: #666666 !important;
+  text-decoration: underline;
+}
+.blogs-p3 {
+  font-size: 15px;
+  color: #666;
+}
+.blogs-btn {
+  position: absolute;
+  bottom: 2%;
+  padding: 8px 25px !important;
+  font-size: 14px !important;
+  border-width: 2px !important;
+  border-color: #2c52a0 !important;
+  color: #2c52a0 !important;
+}
+.blogs-btn:hover {
+  border-color: #0ab3c3 !important;
+  background-color: #0ab3c3 !important;
+  color: #ffffff !important;
 }

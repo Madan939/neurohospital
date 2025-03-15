@@ -1,7 +1,12 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 const Sec8 = () => {
+    const navigate = useNavigate();
+    function load(link) {
+      navigate(link);
+      window.location.reload();
+    }
     const List=[
         {
             id:1,
@@ -25,7 +30,7 @@ const Sec8 = () => {
             name:"Autism Spectrum Disorder (ASD)",
             date:"4 January 2024",
             des:"Autism, or autism spectrum disorder (ASD), is a neurodevelopmental disorder characterized by a presence of...",
-            link:"/blogs/asd"
+            link:"blogs/autism-spectrum-disorder-asd-3"
         },
     ]
   return (
@@ -34,10 +39,10 @@ const Sec8 = () => {
         {List.map((card)=>(
             <div className='sec-8-col cols col-md-4 col-sm-12'>
                 <img src={card.pic} alt={card.name} className='sec8-img'/>
-                <Link to="/" className='sec-8-p1'>{card.name}</Link>
+                <Link onClick={()=>load(card.link)} className='sec-8-p1'>{card.name}</Link>
                 <p>{card.date}</p>
                 <p className='sec8-p3'>{card.des}</p>
-                <Link to={card.link} className='sec8-btn btn '>Read More</Link>
+                <Link onClick={()=>load(card.link)} className='sec8-btn btn '>Read More</Link>
             </div>
         ))}
     </div>
