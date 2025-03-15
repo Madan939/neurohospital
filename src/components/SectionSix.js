@@ -108,29 +108,29 @@ const SectionSix = () => {
                 <div className="card-cnt-ul">
                   <div className="card-cnt-li">
                     <div>
-                      <i class="fa-solid fa-angles-right"></i>
+                      <i class="fa-solid fa-angles-right"></i>&nbsp;
                       {selectedCard.li1}
                     </div>
                     <div>
-                      <i class="fa-solid fa-angles-right"></i>
+                      <i class="fa-solid fa-angles-right"></i>&nbsp;
                       {selectedCard.li2}
                     </div>
                     <div>
-                      <i class="fa-solid fa-angles-right"></i>
+                      <i class="fa-solid fa-angles-right"></i>&nbsp;
                       {selectedCard.li3}
                     </div>
                   </div>
                   <div className="card-cnt-li">
                     <div>
-                      <i class="fa-solid fa-angles-right"></i>
+                      <i class="fa-solid fa-angles-right"></i>&nbsp;
                       {selectedCard.li4}
                     </div>
                     <div>
-                      <i class="fa-solid fa-angles-right"></i>
+                      <i class="fa-solid fa-angles-right"></i>&nbsp;
                       {selectedCard.li5}
                     </div>
                     <div>
-                      <i class="fa-solid fa-angles-right"></i>
+                      <i class="fa-solid fa-angles-right"></i>&nbsp;
                       {selectedCard.li6}
                     </div>
                   </div>

@@ -1,24 +1,27 @@
 import React, { useState } from "react";
-import { Link, NavLink, useNavigate } from "react-router-dom";
+import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
 
 const SecondNav = () => {
   const [showAbout, setShowAbout] = useState(false);
   const [showDept, setShowDept] = useState(false);
   const [showBrowse, setShowBrowse] = useState(false);
-  const navigate=useNavigate();
-function load(link){
-  navigate(link);
-  window.location.reload();
-  setShowAbout(false);
-  setShowDept(false);
-  setShowBrowse(false);
-}
+  const location = useLocation();
+  const blogs = location.pathname.startsWith("/blogs/");
+  // console.log(blogs);
+  const navigate = useNavigate();
+  function load(link) {
+    navigate(link);
+    window.location.reload();
+    setShowAbout(false);
+    setShowDept(false);
+    setShowBrowse(false);
+  }
   return (
     <>
       <div className="nav-2">
         <div className="nav-2-content d-flex justify-content-between">
           <div>
-            <NavLink onClick={()=>load("/")}>
+            <NavLink onClick={() => load("/")}>
               <img
                 src="/images/header-logo.png"
                 alt="header-logo"
@@ -27,7 +30,7 @@ function load(link){
             </NavLink>
           </div>
           <div className="nav-2-second">
-            <NavLink onClick={()=>load("/")} className="nav-links">
+            <NavLink onClick={() => load("/")} className="nav-links">
               Home
             </NavLink>
 
@@ -36,15 +39,17 @@ function load(link){
               onMouseEnter={() => setShowAbout(true)}
               onMouseLeave={() => setShowAbout(false)}
             >
-              <NavLink onClick={()=>load("/about")} className="nav-links">
+              <NavLink onClick={() => load("/about")} className="nav-links">
                 About&nbsp;<i className="fa-solid fa-caret-down"></i>
               </NavLink>
               {showAbout && (
                 <div className="dropdown-content">
                   <div className="About-content">
-                    <Link onClick={()=>load("/about")}>About Us</Link>
-                    <Link onClick={()=>load("/message")}>Messages</Link>
-                    <Link onClick={()=>load("/partner")}>Partners Organization</Link>
+                    <Link onClick={() => load("/about")}>About Us</Link>
+                    <Link onClick={() => load("/message")}>Messages</Link>
+                    <Link onClick={() => load("/partner")}>
+                      Partners Organization
+                    </Link>
                   </div>
                 </div>
               )}
@@ -55,7 +60,10 @@ function load(link){
               onMouseEnter={() => setShowDept(true)}
               onMouseLeave={() => setShowDept(false)}
             >
-              <NavLink onClick={()=>load("/departments")}  className="nav-links">
+              <NavLink
+                onClick={() => load("/departments")}
+                className="nav-links"
+              >
                 Departments&nbsp;<i className="fa-solid fa-caret-down"></i>
               </NavLink>
               {showDept && (
@@ -105,10 +113,10 @@ function load(link){
                 </div>
               )}
             </div>
-            <NavLink onClick={()=>load("/doctors")} className="nav-links">
+            <NavLink onClick={() => load("/doctors")} className="nav-links">
               Doctors
             </NavLink>
-            <NavLink onClick={()=>load("/academics")} className="nav-links">
+            <NavLink onClick={() => load("/academics")} className="nav-links">
               Academics
             </NavLink>
 
@@ -125,24 +133,24 @@ function load(link){
                   <div className="browse-div">
                     <div className="browse-row row">
                       <div className="browse-col col col-6">
-                        <Link  onClick={()=>load("/gallery")}>
+                        <Link onClick={() => load("/gallery")}>
                           <div>Gallery</div>
                         </Link>
-                        <Link  onClick={()=>load("/testimonials")}>
+                        <Link onClick={() => load("/testimonials")}>
                           <div>Testimonials</div>
                         </Link>
-                        <Link  onClick={()=>load("/location-map")}>
+                        <Link onClick={() => load("/location-map")}>
                           <div>Location Map</div>
                         </Link>
                       </div>
                       <div className="browse-col col col-6">
-                        <Link  onClick={()=>load("/privacy-policy")}>
+                        <Link onClick={() => load("/privacy-policy")}>
                           <div>Privacy Policy</div>
                         </Link>
-                        <Link  onClick={()=>load("/hospital-calender")}>
+                        <Link onClick={() => load("/hospital-calender")}>
                           <div>Hospital Calendar</div>
                         </Link>
-                        <Link  onClick={()=>load("/career")}>
+                        <Link onClick={() => load("/career")}>
                           <div>Career</div>
                         </Link>
                       </div>
@@ -152,12 +160,25 @@ function load(link){
               )}
             </div>
 
-            <NavLink onClick={()=>load("/contacts")} className="nav-links">
+            <NavLink onClick={() => load("/contacts")} className="nav-links">
               Contact
             </NavLink>
-            <NavLink to="https://neuro.danphecare.com/" className="nav-2-btn btn text-sm">
-              Book an Appointment
-            </NavLink>
+            {blogs ? (
+              <>
+                <NavLink to="/blogs" className="nav-2-btn btn text-sm">
+                  Neuro Hospital Blog
+                </NavLink>
+              </>
+            ) : (
+              <>
+                <NavLink
+                  to="https://neuro.danphecare.com/"
+                  className="nav-2-btn btn text-sm"
+                >
+                  Book an Appointment
+                </NavLink>
+              </>
+            )}
           </div>
         </div>
       </div>

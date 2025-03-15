@@ -37,7 +37,7 @@ const AboutCpnt = () => {
     <>
       <div className="abu-row row">
         {list.map((item) => (
-          <div className="abu-col col col-md-5">
+          <div className="abu-col cols col-md-5 col-sm-12">
             <div className="abu-col-div d-flex">
               <div className="abucol-1">
                 <img src={item.icon} alt={item.name}/>

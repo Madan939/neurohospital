@@ -121,7 +121,7 @@ const Home = () => {
   }, []);
   return (
     <>
-      {homePic && (
+      {/* {homePic && (
         <div className="overlay">
           <div className="overlay-div">
             <img
@@ -134,7 +134,7 @@ const Home = () => {
             X
           </button>
         </div>
-      )} 
+      )}  */}
       <div className="home">
         <div className="home-first">
           <div className="home-bg ">
@@ -161,7 +161,7 @@ const Home = () => {
                 />
               </div>
             </div>
-            <div className="container mt-2">
+            <div className="Home-rows mt-2">
               <div className="home-row row">
                 <div className="col1 cols col-md-3 col-xs-12">
                   <div className="hcard">
@@ -404,7 +404,7 @@ const Home = () => {
             className={`sec-7-div  ${isSec6Visible ? "show" : ""}`}
           >
             <p className="sec7-p1">World Class Equipments</p>
-            <p className="sec7-p2 text-secondary">
+            <p className="sec7-p2 ">
               Magnetic resonance imaging is a medical imaging technique used in
               radiology to form pictures of the anatomy and the physiological
               processes of the body. MRI scanners use strong magnetic fields,

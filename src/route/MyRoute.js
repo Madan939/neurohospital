@@ -15,6 +15,8 @@ import Career from '../pages/Career'
 import LocationMap from '../pages/LocationMap'
 import Contact from '../pages/Contact'
 import PageNotFound from '../pages/PageNotFound'
+import UserLogin from '../pages/UserLogin'
+import WhatIsAnxiety from '../pages/blogs/WhatIsAnxiety'
 
 const MyRoute = () => {
   return (
@@ -36,7 +38,8 @@ const MyRoute = () => {
         <Route path="/contacts" element={<Contact/>}/>
         <Route path="*" element={<Navigate to="/404" />} />
         <Route path="/404" element={<PageNotFound />} />
-       
+        <Route path="/login" element={<UserLogin/>}/>
+        <Route path='/:blogs/what-is-anxiety' element={<WhatIsAnxiety/>}/>
       </Routes>
     </>
   )

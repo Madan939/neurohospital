@@ -103,7 +103,7 @@ function load(link){
 
       {/* Section 1 */}
       <div className="abu-sec1">
-        <div className="ab-sec1-cnt d-flex">
+        <div className="ab-sec1-cnt ">
           <div className="ab-sec1-cnt-1">
             <img src="/images/aboutus/ab1.png" alt="ab1" />
           </div>
@@ -122,7 +122,7 @@ function load(link){
                 multispecialty hospital that was established in 2000 AD to
                 provide the best neurological and other medical facilities.
               </p>
-              <div className="abu-p4">Dr. Birendra Kumar Bista</div>
+              <div className="abu-p4 text-dark">Dr. Birendra Kumar Bista</div>
               <div className="abu-p5">Senior Consultant Neurologist</div>
               <Link to="https://neuro.danphecare.com/" className="abu-btn btn">
                 Book an Appointment
@@ -133,9 +133,9 @@ function load(link){
       </div>
 
       {/* Section 2 (Appears on scroll) */}
-      <div ref={sec2Ref} className={`abu-sec2 ${isVisible ? "show" : ""}`}>
-        <div className="abu-sec2-cnt d-flex">
-          <div className="abu-sec2-cnt1 w-50">
+      <div ref={sec2Ref} className={` abu-sec2${isVisible ? "show" : ""}`}>
+        <div className="abu-sec2-cnt">
+          <div className="abu-sec2-cnt1 ">
             <div className="abu-s2ct-1div">
               <div className="s2ct-p1">Highest Quality Care</div>
               <div className="s2ct-p2">
@@ -148,9 +148,35 @@ function load(link){
                 provision as we know it, improving access, clinical outcomes and
                 engagement with services.
               </div>
+              <div className="sec-3-2row row">
+                <div className="sec-3-2col cols col-md-6 col-sm-12">
+                  <div>
+                    <i class="fa-solid fa-angles-right"></i>&nbsp;  Service optimisation
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-angles-right"></i>&nbsp; Cost-efficiency
+                    
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-angles-right"></i>&nbsp; Engagement medical care
+                  </div>
+                </div>
+                <div className="sec-3-2col cols col-md-6 col-sm-12">
+                  <div>
+                    <i class="fa-solid fa-angles-right"></i>&nbsp;  Accessibility
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-angles-right"></i>&nbsp; Improved communication
+
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-angles-right"></i>&nbsp; Personalised healthcare
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div className="abu-sec2-cnt2 w-50">
+          <div className="abu-sec2-cnt2">
             <img src="/images/aboutus/abu2.jpg" alt="abu2" />
           </div>
         </div>
@@ -216,7 +242,7 @@ function load(link){
           </div>
           <div  ref={sec6Ref} className={`abs5-cnt2 ${isSec6Visible ? "show" : ""}`}>
             <div className="abs5c21" >
-              <p className="abs5-p1">Opening Hours</p>
+              <p className="abs5-p1 text-light">Opening Hours</p>
               <p className="abs5-p2">
                 Major services are round the clock services at our hospital. OPD
                 and other free counselling has handpicked hours mentioned below.
@@ -226,14 +252,14 @@ function load(link){
                 System.
               </p>
               <div className="adiv1 d-flex">
-                <div className="d1">Sun-Fri</div>
-                <div className="d2">-</div>
-                <div className="d3">10:30 AM - 05:00 PM</div>
+                <div className="d1 text-light">Sun-Fri</div>
+                <div className="d2 text-light">-</div>
+                <div className="d3 text-light">10:30 AM - 05:00 PM</div>
               </div>
               <div className="adiv2 d-flex">
-                <div className="d1">Emergency</div>
-                <div className="d2">-</div>
-                <div className="d3">24 Hours</div>
+                <div className="d1 text-light">Emergency</div>
+                <div className="d2 text-light">-</div>
+                <div className="d3 text-light">24 Hours</div>
               </div>
             </div>
           </div>

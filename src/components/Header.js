@@ -1,43 +1,45 @@
 import React, { useState } from "react";
-import { Link, NavLink, useNavigate } from "react-router-dom";
+import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
 const Header = ({ menuOpen, setMenuOpen }) => {
   const [showFb, setShowFb] = useState(false);
   const [showInst, setShowInst] = useState(false);
   const [showWtsp, setShowWtsp] = useState(false);
   const [showYt, setShowYt] = useState(false);
   const [showLdi, setShowLdn] = useState(false);
-const [showAbout, setShowAbout] = useState(false);
-const [showDept, setShowDept] = useState(false);
-const [showBse, setShowBse] = useState(false);
-const navigate = useNavigate();
+  const [showAbout, setShowAbout] = useState(false);
+  const [showDept, setShowDept] = useState(false);
+  const [showBse, setShowBse] = useState(false);
+  const navigate = useNavigate();
 
-const toggleMenu = () => {
-  setMenuOpen(!menuOpen);
-};
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
 
-const toggleSection = (section) => {
-  if (section === "about") {
-    setShowAbout(!showAbout);
+  const toggleSection = (section) => {
+    if (section === "about") {
+      setShowAbout(!showAbout);
+      setShowDept(false);
+      setShowBse(false);
+    } else if (section === "dept") {
+      setShowDept(!showDept);
+      setShowAbout(false);
+      setShowBse(false);
+    } else if (section === "browse") {
+      setShowBse(!showBse);
+      setShowAbout(false);
+      setShowDept(false);
+    }
+  };
+
+  const load = (link) => {
+    navigate(link);
+    window.location.reload();
+    setShowAbout(false);
     setShowDept(false);
     setShowBse(false);
-  } else if (section === "dept") {
-    setShowDept(!showDept);
-    setShowAbout(false);
-    setShowBse(false);
-  } else if (section === "browse") {
-    setShowBse(!showBse);
-    setShowAbout(false);
-    setShowDept(false);
-  }
-};
-
-const load = (link) => {
-  navigate(link);
-  window.location.reload();
-  setShowAbout(false);
-  setShowDept(false);
-  setShowBse(false);
-};
+  };
+  const location = useLocation();
+  const blogs = location.pathname.startsWith("/blogs/");
   return (
     <>
       {/* responsive view starts*/}
@@ -53,8 +55,8 @@ const load = (link) => {
               onClick={toggleMenu}
             ></i>
           </div>
-          <div className="resp-nav1-div-div2" onClick={()=>load("/")}>
-            <Link  className="w-100">
+          <div className="resp-nav1-div-div2" onClick={() => load("/")}>
+            <Link className="w-100">
               <img src="/images/header-logo.png" alt="header-logo" />
             </Link>
           </div>
@@ -188,10 +190,25 @@ const load = (link) => {
           <li className="ul-li" onClick={() => load("/contacts")}>
             <Link to="/contact">Contacts</Link>
           </li>
+          <li className="ul-li-last">
+            {blogs?(
+              <>
+              <Link to="/blogs" className="text-light ">
+              Neuro Hospital Blog
+            </Link>
+              </>
+            ):(
+              <>
+              <Link to="https://neuro.danphecare.com/" className="text-light ">
+              Book an Appointment
+            </Link>
+              </>
+            )}
+            
+          </li>
         </ul>
       </div>
       {menuOpen && <div className="menu-overlay" onClick={toggleMenu}></div>}
-   
 
       {/* responsive view ends*/}
       <header className="header">
@@ -199,14 +216,16 @@ const load = (link) => {
           <div className="nav-1-content d-flex justify-content-between">
             <div className="nav-1-first d-flex  text-light">
               <NavLink to="/location-map">
-                <i className="fa-solid fa-location-dot  text-light"></i>&nbsp; F73M+G94,
-                Jahada Road, Biratnagar
+                <i className="fa-solid fa-location-dot  text-light"></i>&nbsp;
+                F73M+G94, Jahada Road, Biratnagar
               </NavLink>
               <NavLink to="tel:+97721416267">
-                <i className="fa-solid fa-phone-flip  text-light"></i>&nbsp; +977-21-416267
+                <i className="fa-solid fa-phone-flip  text-light"></i>&nbsp;
+                +977-21-416267
               </NavLink>
-              <NavLink to="https://neurohospital.com.np/email">
-                <i className="fa-solid fa-envelope  text-light"></i>&nbsp; Check Email
+              <NavLink to="/login">
+                <i className="fa-solid fa-envelope  text-light"></i>&nbsp; Check
+                Email
               </NavLink>
             </div>
             <div className="nav-1-second d-flex">

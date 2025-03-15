@@ -82,7 +82,7 @@
   }
   .resp-nav1-div-div1 i {
     margin-left: 3px;
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   .resp-nav1-div-div2 {
     width: 40%;
@@ -230,4 +230,12 @@
     margin-left: 5px;
    color:lightseagreen;
   }
+  .ul-li-last{
+    background-color: #2c52a0 !important;
+   
+  }
+ .ul-li-last:hover{
+  background-color: lightseagreen !important;
+ }
+ 
 }

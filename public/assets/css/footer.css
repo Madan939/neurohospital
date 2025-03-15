@@ -6,7 +6,7 @@
   }
   .main-footer {
     /* border:2px solid black; */
-    width: 90%;
+    width: 88%;
     margin: auto;
   }
   .footer-row {
@@ -54,6 +54,13 @@
     color: #272626;
   }
   @media screen and (max-width: 600px) {
+    .footer-logo {
+      height: 3rem;
+      margin-bottom: 1rem;
+    }
+    .footer-head {
+      font-size: 1.6rem;
+    }
     .footer-media-icons a i {
         border: 2px solid#636262;
         border-radius: 50%;

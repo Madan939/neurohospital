@@ -9,7 +9,7 @@ const Sec8 = () => {
             name:"What is Anxiety?",
             date:"07 Feburary 2024",
             des:"Anxiety is a natural human emotion characterized by feelings of worry, nervousness, apprehension, and dread. It can manifest.....",
-            link:"https://neurohospital.com.np/blog/what-is-anxiety"
+            link:"/blogs/what-is-anxiety"
         },
         {
             id:2,
@@ -17,7 +17,7 @@ const Sec8 = () => {
             name:"Migraine Headache",
             date:"01 Feburary 2024",
             des:"Migraine is a common disorder which causes a disabling headache usually associated with nausea / vomiting and/ or light and Sound sensitivity. ....",
-            link:"https://neurohospital.com.np/blog/migraine-headache"
+            link:"/blogs/migraine-headache"
         },
         {
             id:3,
@@ -25,7 +25,7 @@ const Sec8 = () => {
             name:"Autism Spectrum Disorder (ASD)",
             date:"4 January 2024",
             des:"Autism, or autism spectrum disorder (ASD), is a neurodevelopmental disorder characterized by a presence of...",
-            link:"https://neurohospital.com.np/blog/autism-spectrum-disorder-asd-3"
+            link:"/blogs/asd"
         },
     ]
   return (

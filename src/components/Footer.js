@@ -4,7 +4,7 @@ import { Link, NavLink } from "react-router-dom";
 const Footer = () => {
   return (
     <div>
-      <footer className=" mt-3 ">
+      <footer className="mt-3 ">
         <div className="main-footer  mt-3">
           <div className="footer-row row">
             <div className="cols col-md-3 col-sm-12 col-xs-12">

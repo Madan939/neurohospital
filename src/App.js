@@ -8,11 +8,13 @@ import MyRoute from "./route/MyRoute";
 import SecondNav from "./components/SecondNav";
 import Float from "./components/Float";
 import PageNotFound from "./pages/PageNotFound";
+import UserLogin from "./pages/UserLogin";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation();
   const isNotFoundPage = location.pathname === "/404";
+  const isUserLogin = location.pathname === "/login";
   useEffect(() => {
     ReactGA.initialize("G-Y6XX5D6NJW");
     ReactGA.send({ hitType: "pageview", page: location.pathname });
@@ -22,13 +24,21 @@ function App() {
     <PageNotFound />
   ) : (
     <>
-      <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-      <div className={`myroute ${menuOpen ? "menu-active" : "not-active"}`}>
-        <SecondNav />
-        <Float />
-        <MyRoute />
-        <Footer />
-      </div>
+      {isUserLogin ? (
+        <>
+          <UserLogin />
+        </>
+      ) : (
+        <>
+          <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+          <div className={`myroute ${menuOpen ? "menu-active" : "not-active"}`}>
+            <SecondNav />
+            <Float />
+            <MyRoute />
+            <Footer />
+          </div>
+        </>
+      )}
     </>
   );
 }

@@ -73,11 +73,11 @@ const CardSlider = () => {
         loop={true}
         freeMode={true}
         autoplay={{
-          delay: 1.5,
+          delay: 3,
           reverseDirection: true,
           pauseOnMouseEnter:true,
         }}
-        speed={5000}
+        speed={7000}
         pagination={{ clickable: true }}
         modules={[Autoplay, FreeMode,Pagination]}
         breakpoints={{
