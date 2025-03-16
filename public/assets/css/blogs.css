@@ -4,13 +4,13 @@
   align-items: center;
   width: 100%;
   background:  #f8f9fb;
-  /* border: 2px solid black; */
+  /* border:2px solid black; */
   font-size: 1rem;
   font-weight: 200;
+  margin-bottom: 0;
 }
 .blogs-div {
   width: 88%;
-  /* border: 2px solid red; */
   margin: 6rem 0 ;
 }
 .blog-pic {
@@ -37,12 +37,26 @@
 .blog-heading {
   font-size: 1.5rem;
   font-weight: bold;
+  color: #4b4b4b;
+}
+.blog-heading-1 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #4b4b4b;
+  font-style: italic;
 }
 .blogs ul li::marker {
   color: black;
 }
 
 .blogs ul li b{
+    color: black;
+}
+.blogs ol li::marker {
+  color: black;
+}
+
+.blogs ol li b{
     color: black;
 }
 .blogs-width{
@@ -59,8 +73,13 @@
 }
 .blogs-phobia{
   text-align: center;
-  font-size: 1.5rem;
-  color: #2c52a0;
+  font-size: 1.8rem;
+  font-weight: bolder !important;
+  color:#2c52a0;
+}
+.blogs-phobia:hover {
+  color: #666666 !important;
+  text-decoration: underline;
 }
 .blog-btn {
   padding: 8px 25px !important;
@@ -82,27 +101,21 @@
   margin-top: 3rem;
 }
 .blogs-col{
-  height: 30rem !important;
+  height: auto;
   /* border: 2px solid rgb(218, 9, 9) !important; */
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  align-items: center;
 }
-.blogs-col-2{
-  height: 34rem !important;
-  /* border: 2px solid rgb(218, 9, 9) !important; */
-}
-.blogs-col-3{
-  height: 28rem !important;
-  /* border: 2px solid rgb(218, 9, 9) !important; */
-}
+
 .blogs-img {
   width: 100%;
-  height: 205px;
+  height: 13rem;
   margin-bottom: 1.3rem;
+  border-radius:  10px 10px 0 0; 
 }
-.blogs-img-2 {
-  width: 100%;
-  height: 20rem;
-  margin-bottom: 1.3rem;
-}
+
 .blogs-card-p1 {
   text-decoration: none;
   font-size: 1.1rem;
@@ -119,7 +132,8 @@
 }
 .blogs-btn {
   position: absolute;
-  bottom: 2%;
+  bottom: 1%;
+  left: 30%;
   padding: 8px 25px !important;
   font-size: 14px !important;
   border-width: 2px !important;
@@ -130,4 +144,21 @@
   border-color: #0ab3c3 !important;
   background-color: #0ab3c3 !important;
   color: #ffffff !important;
+}
+.blogs-col-div{
+  border-radius: 10px;
+  width:97%;
+  transition: 0.3s ease-in-out;
+}
+.blogs-col-div:hover{
+ cursor: pointer;
+ scale: 1.05;
+}
+.blog-info{
+  text-decoration: none;
+  color: #4b4b4b;
+}
+.blog-info:hover{
+  text-decoration: underline;
+  color: #2c52a0;
 }

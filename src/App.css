@@ -12,8 +12,10 @@ body,
   margin: 0;
   padding: 0;
   width: 100%;
+  background:  #f8f9fb;
   font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  overflow-x: hidden; /* Prevent horizontal scroll */
+  overflow-x: hidden; 
+  scrollbar-width: 1px;/* Prevent horizontal scroll */
 }
 
 
@@ -86,6 +88,7 @@ body,
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   z-index: 1000;
+
 }
 .home {
   animation: nav 1s ease-in-out;
@@ -944,7 +947,7 @@ body,
 .float-1,.float1-link {
   z-index: 9;
   position: fixed;
-  right: 2rem;
+  right: 1.1rem;
   bottom: 14rem;
   background-color:#2c52a0;
   width: 4rem;
@@ -970,7 +973,7 @@ body,
 .float-1,.float2-link {
   z-index: 9;
   position: fixed;
-  right: 2rem;
+  right: 1.1rem;
   bottom: 8rem;
   background-color:#25d366;
   width: 3.7rem;

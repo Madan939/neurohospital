@@ -6,7 +6,7 @@ const SecondNav = () => {
   const [showDept, setShowDept] = useState(false);
   const [showBrowse, setShowBrowse] = useState(false);
   const location = useLocation();
-  const blogs = location.pathname.startsWith("/blogs");
+  const blogs = location.pathname.startsWith("/blog");
   // console.log(blogs);
   const navigate = useNavigate();
   function load(link) {
@@ -136,18 +136,18 @@ const SecondNav = () => {
                         <Link onClick={() => load("/gallery")}>
                           <div>Gallery</div>
                         </Link>
-                        <Link onClick={() => load("/testimonials")}>
+                        <Link onClick={() => load("/testimonial")}>
                           <div>Testimonials</div>
                         </Link>
-                        <Link onClick={() => load("/location-map")}>
+                        <Link onClick={() => load("/location")}>
                           <div>Location Map</div>
                         </Link>
                       </div>
                       <div className="browse-col col col-6">
-                        <Link onClick={() => load("/privacy-policy")}>
+                        <Link onClick={() => load("/privacy")}>
                           <div>Privacy Policy</div>
                         </Link>
-                        <Link onClick={() => load("/hospital-calender")}>
+                        <Link onClick={() => load("/calender")}>
                           <div>Hospital Calendar</div>
                         </Link>
                         <Link onClick={() => load("/career")}>
@@ -160,19 +160,19 @@ const SecondNav = () => {
               )}
             </div>
 
-            <NavLink onClick={() => load("/contacts")} className="nav-links">
+            <NavLink onClick={() => load("/contact")} className="nav-links">
               Contact
             </NavLink>
             {blogs ? (
               <>
-                <NavLink to="/blogs" className="nav-2-btn btn text-sm">
+                <NavLink to="/blog" className="nav-2-btn btn text-sm">
                   Neuro Hospital Blog
                 </NavLink>
               </>
             ) : (
               <>
                 <NavLink
-                  to="/login"
+                  to="https://neuro.danphecare.com/"
                   className="nav-2-btn btn text-sm"
                 >
                   Book an Appointment

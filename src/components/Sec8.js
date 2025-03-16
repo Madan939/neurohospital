@@ -14,7 +14,7 @@ const Sec8 = () => {
             name:"What is Anxiety?",
             date:"07 Feburary 2024",
             des:"Anxiety is a natural human emotion characterized by feelings of worry, nervousness, apprehension, and dread. It can manifest.....",
-            link:"/blogs/what-is-anxiety"
+            link:"/blog/what-is-anxiety"
         },
         {
             id:2,
@@ -22,7 +22,7 @@ const Sec8 = () => {
             name:"Migraine Headache",
             date:"01 Feburary 2024",
             des:"Migraine is a common disorder which causes a disabling headache usually associated with nausea / vomiting and/ or light and Sound sensitivity. ....",
-            link:"/blogs/migraine-headache"
+            link:"/blog/migraine-headache"
         },
         {
             id:3,
@@ -30,7 +30,7 @@ const Sec8 = () => {
             name:"Autism Spectrum Disorder (ASD)",
             date:"4 January 2024",
             des:"Autism, or autism spectrum disorder (ASD), is a neurodevelopmental disorder characterized by a presence of...",
-            link:"blogs/autism-spectrum-disorder-asd-3"
+            link:"/blog/autism-spectrum-disorder-asd-3"
         },
     ]
   return (

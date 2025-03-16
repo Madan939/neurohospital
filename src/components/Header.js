@@ -170,16 +170,16 @@ const Header = ({ menuOpen, setMenuOpen }) => {
               <Link onClick={() => load("/gallery")}>
                 <div>Gallery</div>
               </Link>
-              <Link onClick={() => load("/testimonials")}>
+              <Link onClick={() => load("/testimonial")}>
                 <div>Testimonials</div>
               </Link>
-              <Link onClick={() => load("/location-map")}>
+              <Link onClick={() => load("/location")}>
                 <div>Location Map</div>
               </Link>
-              <Link onClick={() => load("/privacy-policy")}>
+              <Link onClick={() => load("/privacy")}>
                 <div>Privacy Policy</div>
               </Link>
-              <Link onClick={() => load("/hospital-calender")}>
+              <Link onClick={() => load("/calender")}>
                 <div>Hospital Calendar</div>
               </Link>
               <Link onClick={() => load("/career")}>
@@ -217,7 +217,7 @@ const Header = ({ menuOpen, setMenuOpen }) => {
         <nav className="nav-1 d-flex  text-light">
           <div className="nav-1-content d-flex justify-content-between">
             <div className="nav-1-first d-flex  text-light">
-              <NavLink to="/location-map">
+              <NavLink to="/location">
                 <i className="fa-solid fa-location-dot  text-light"></i>&nbsp;
                 F73M+G94, Jahada Road, Biratnagar
               </NavLink>
@@ -225,7 +225,7 @@ const Header = ({ menuOpen, setMenuOpen }) => {
                 <i className="fa-solid fa-phone-flip  text-light"></i>&nbsp;
                 +977-21-416267
               </NavLink>
-              <NavLink to="/login">
+              <NavLink to="/email">
                 <i className="fa-solid fa-envelope  text-light"></i>&nbsp; Check
                 Email
               </NavLink>

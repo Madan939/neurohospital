@@ -203,7 +203,7 @@ const Home = () => {
                       You can book an appointment to get connected with your
                       desired doctors.
                     </p>
-                    <Link to="/login" className="card-btn btn text-light mt-3">
+                    <Link to="https://neuro.danphecare.com/" className="card-btn btn text-light mt-3">
                       Book an Appointment
                     </Link>
                   </div>
@@ -362,7 +362,7 @@ const Home = () => {
                   drkattel@neurohospital.com.np
                 </Link>
                 <br />
-                <Link to="#" className="sec-4-btn btn text-light">
+                <Link to="https://neuro.danphecare.com/" className="sec-4-btn btn text-light">
                   Book an Appointment
                 </Link>
               </div>
@@ -411,7 +411,7 @@ const Home = () => {
               magnetic field gradients, and radio waves to generate images of
               the organs in the body.
             </p>
-            <NavLink to="" className="sec7-btn btn text-light">
+            <NavLink to="https://neuro.danphecare.com/" className="sec7-btn btn text-light">
               Book an Appointment
             </NavLink>
           </div>
