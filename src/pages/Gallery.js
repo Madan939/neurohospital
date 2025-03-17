@@ -98,13 +98,13 @@ const Gallery = () => {
               <button className="g-btn btn" onClick={closeImage}>X</button>
             </div>
           
-            <button className="g-prev-btn text-light" onClick={prev} disabled={currentIndex === 0}
+            <button className="g-prev-btn " onClick={prev} disabled={currentIndex === 0}
             style={{ display: currentIndex === 0 ? "none" : " block" }}>
                 <i className="fa-solid fa-less-than"></i>
               </button>
-              <button className="g-next-btn  text-light" onClick={next} disabled={currentIndex === images.length - 1}
+              <button className="g-next-btn  " onClick={next} disabled={currentIndex === images.length - 1}
                style={{ display: currentIndex === images.length - 1 ? "none" : "block" }}>
-                <i className="fa-solid fa-greater-than"></i>
+                <i className="fa-solid fa-greater-than "></i>
               </button>
           </div>
         )}

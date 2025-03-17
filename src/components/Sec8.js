@@ -35,23 +35,12 @@ const Sec8 = () => {
     ]
   return (
     <>
-    {/* <div className='sec8-row row '>
-        {List.map((card)=>(
-            <div className='sec-8-col cols col-md-4 col-sm-12'>
-                <img src={card.pic} alt={card.name} className='sec8-img'/>
-                <Link onClick={()=>load(card.link)} className='sec-8-p1'>{card.name}</Link>
-                <p>{card.date}</p>
-                <p className='sec8-p3'>{card.des}</p>
-                <Link onClick={()=>load(card.link)} className='sec8-btn btn '>Read More</Link>
-            </div>
-        ))}
-    </div> */}
         <div className="blogs-row row ">
             {List.map((card) => (
               <div className="blogs-col cols col-md-4 col-sm-12">
                 <div className="blogs-col-div shadow" onClick={() => load(card.link)}>
                   <img src={card.pic} alt={card.name} className="blogs-img" />
-                  <p className="m-1">
+                  <p className="mx-2">
                     <Link
                       onClick={() => load(card.link)}
                       className="blogs-card-p1"
@@ -59,11 +48,11 @@ const Sec8 = () => {
                       {card.name}
                     </Link>
                   </p>
-
-                  <p className="m-1">{card.date}</p>
-                  <p className="sec8-p3 m-1">{card.des}&nbsp;<Link className="blog-info" onClick={() => load(card.link)} >
+                  <p className="blogs-p3 mx-2">{card.des}&nbsp;<Link className="blog-info" onClick={() => load(card.link)} >
                     See more
                   </Link></p>
+                  <p className="blog-date mx-2">Date posted:{card.date}</p>
+                  <br/>
 
                   {/* <Link
                     onClick={() => load(card.link)}

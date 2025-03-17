@@ -145,37 +145,73 @@
 }
 
 .g-btn {
-  position: absolute;
-  top:-10px;
-  right: -10px;
+  position: absolute !important;
+  top: -10px !important;
+  right: -10px !important;
   font-size: 1rem !important;
   background-color: #ff0505 !important;
   color: #fff !important;
   /* border-radius: 50% !important; */
-  border: none;
-  cursor: pointer;
+  border: none !important;
+  cursor: pointer !important;
 }
-.g-prev-btn{
-  position: absolute;
-  top: 40%;
-  left: 5%;
-  border:none;
-  font-size: 6rem;
-  background: rgba(0, 0, 0, 0);
+.g-prev-btn {
+  position: absolute !important;
+  top: 40% !important;
+  left: 5% !important;
+  border: none !important;
+  font-size: 6rem !important;
+  background: rgba(0, 0, 0, 0) !important;
   color: #fff !important;
 }
-.g-prev-btn:hover{
+.g-prev-btn:hover {
   color: rgb(163, 161, 161) !important;
 }
-.g-next-btn{
-  position: absolute;
-  top: 40%;
-  right: 5%;
-  color: #fff;
-  border:none;
-  font-size: 6rem;
-  background: rgba(0, 0, 0, 0);
+.g-next-btn {
+  position: absolute !important;
+  top: 40% !important;
+  right: 5% !important;
+  color: #fff !important;
+  border: none !important;
+  font-size: 6rem !important;
+  background: rgba(0, 0, 0, 0) !important;
 }
-.g-next-btn:hover{
-  color:rgb(163, 161, 161) !important;
+.g-next-btn:hover {
+  color: rgb(163, 161, 161) !important;
+}
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+  .g-col-div1,
+  .g-col-div2,
+  .gd1-c1,
+  .gd2-c1 {
+    width: 100%;
+  }
+  .gd1-c1,
+  .gd2-c1 {
+    margin: 0;
+    padding: 0;
+    height: auto;
+  }
+  .g-pic-overlay img {
+    width: 85%;
+    height: auto;
+    margin: auto;
+  }
+  .g-btn {
+    top: 0;
+    right: 5% !important;
+  }
+  .g-next-btn {
+    right: 1% !important;
+  }
+  .g-prev-btn {
+    left: 1% !important;
+  }
+  .g-next-btn i,
+  .g-prev-btn i {
+    font-weight: 100;
+    color: #fff;
+    transform: scaleY(3.5);
+    font-size: 2rem !important;
+  }
 }

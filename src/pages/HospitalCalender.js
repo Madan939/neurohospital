@@ -1,25 +1,9 @@
-// import React from 'react'
-// import Breadcrumb from '../components/Breadcrumb';
-
-// const HospitalCalender = () => {
-//   const name1="Hospital Calender";
-//   return (
-//     <>
-//       <Breadcrumb name1={name1}name2={name1}/>
-//       <div className='calender'>
-//         <p className='cdr-p1'>Hospital Calender</p>
-
-//       </div>
-//     </>
-//   )
-// }
-
-// export default HospitalCalender
 import React, { useState, useEffect } from "react";
 import Breadcrumb from "../components/Breadcrumb";
 
 const HospitalCalender = () => {
   const [calendarDates, setCalendarDates] = useState([]);
+  const [selectedDate, setSelectedDate] = useState(new Date().getDate());
   const [selectedMonth, setSelectedMonth] = useState(new Date().getMonth());
   const [selectedYear, setSelectedYear] = useState(new Date().getFullYear());
   const name1 = "Hospital Calendar";
@@ -42,8 +26,9 @@ const HospitalCalender = () => {
   const daysOfWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
   useEffect(() => {
-    generateCalendar(selectedYear, selectedMonth);
-  }, [selectedYear, selectedMonth]);
+    generateCalendar(selectedYear, selectedMonth,selectedDate);
+  }, [selectedYear, selectedMonth,selectedDate]);
+  console.log(setSelectedDate);
 
   // Function to generate the calendar based on selected year and month
   const generateCalendar = (year, month) => {
@@ -84,16 +69,16 @@ const HospitalCalender = () => {
     setSelectedYear(nextYear);
   };
 
-  const handleMonthChange = (e) => {
-    setSelectedMonth(e.target.value);
-  };
+  // const handleMonthChange = (e) => {
+  //   setSelectedMonth(e.target.value);
+  // };
 
-  const handleYearChange = (e) => {
-    const selectedYear = parseInt(e.target.value);
-    if (selectedYear <= new Date().getFullYear()) {
-      setSelectedYear(selectedYear);
-    }
-  };
+  // const handleYearChange = (e) => {
+  //   const selectedYear = parseInt(e.target.value);
+  //   if (selectedYear <= new Date().getFullYear()) {
+  //     setSelectedYear(selectedYear);
+  //   }
+  // };
 
   return (
     <>
@@ -111,20 +96,19 @@ const HospitalCalender = () => {
           <p className="cdr-p2 w-50  ">Neuro Hospital - Biratnagar</p>
         </div>
 
-       
         <div className="h-header">
           <button className="h-btn" onClick={handlePrevMonth}>
             {"<"}
           </button>
 
           <h3>
-            {englishMonths[selectedMonth]} {selectedYear}
+          {selectedDate}{englishMonths[selectedMonth]}, {selectedYear}
           </h3>
           <button className="h-btn" onClick={handleNextMonth}>
             {">"}
           </button>
         </div>
-
+{/* 
         <div className="month-year-selector">
           <div className="month">
             <label>Month:</label>
@@ -141,7 +125,7 @@ const HospitalCalender = () => {
             <label>Year:</label>
             <select value={selectedYear} onChange={handleYearChange}>
               {/* Limit the year selection to the current year */}
-              {[...Array(new Date().getFullYear() - 1999)].map((_, index) => {
+              {/* {[...Array(new Date().getFullYear() - 1999)].map((_, index) => {
                 const year = 2000 + index;
                 return (
                   <option key={year} value={year}>
@@ -151,7 +135,7 @@ const HospitalCalender = () => {
               })}
             </select>
           </div>
-        </div>
+        </div> */}
 
         <div className="days text-center">
           {daysOfWeek.map((day, index) => (
@@ -159,11 +143,12 @@ const HospitalCalender = () => {
               {day}
             </div>
           ))}
-        </div>
-
+        </div> 
         <div className="dates text-center">
           {calendarDates.map((date, index) => (
-            <div key={index} className={`date ${date.isToday ? "today" : ""}`}>
+            <div key={index} className={`date ${date.isToday ? "today" : ""}`}
+            
+            >
               {date.day}
             </div>
           ))}

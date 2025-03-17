@@ -9,12 +9,11 @@ const About = () => {
   const name2 = "About Us";
   const img = "/images/aboutus/abu3.png";
   const url = "https://www.youtube.com/watch?v=WYN_vQ-PdH4";
-  const navigate=useNavigate();
-function load(link){
-  navigate(link);
-  window.location.reload();
-}
-
+  const navigate = useNavigate();
+  function load(link) {
+    navigate(link);
+    window.location.reload();
+  }
 
   const sec2Ref = useRef(null);
   const sec3Ref = useRef(null);
@@ -39,7 +38,7 @@ function load(link){
       ([entry]) => {
         if (entry.isIntersecting) {
           setIsVisible(true);
-          observer2.unobserve(sec2Element); 
+          observer2.unobserve(sec2Element);
         }
       },
       { threshold: 0.3 }
@@ -96,10 +95,37 @@ function load(link){
       if (sec6Element) observer6.unobserve(sec6Element);
     };
   }, []);
+   // Animated numbers state
+   const [patients, setPatients] = useState(0);
+   const [doctors, setDoctors] = useState(0);
+   const [beds, setBeds] = useState(0);
+   const [centers, setCenters] = useState(0);
 
+   useEffect(() => {
+    if (isSec3Visible) {
+      animateNumber(setPatients, 100000, 3000);
+      animateNumber(setDoctors, 31, 3000);
+      animateNumber(setBeds, 150, 3000);
+      animateNumber(setCenters, 473, 3000);
+    }
+  }, [isSec3Visible]);
+
+  // Function to animate number smoothly
+  const animateNumber = (setter, finalValue, duration) => {
+    let start = 0;
+    let increment = finalValue / (duration / 30);
+    let interval = setInterval(() => {
+      start += increment;
+      if (start >= finalValue) {
+        start = finalValue;
+        clearInterval(interval);
+      }
+      setter(Math.floor(start));
+    }, 20);
+  };
   return (
     <>
-      <Breadcrumb name1={name1}name2={name2} />
+      <Breadcrumb name1={name1} name2={name2} />
 
       {/* Section 1 */}
       <div className="abu-sec1">
@@ -151,26 +177,29 @@ function load(link){
               <div className="sec-3-2row row">
                 <div className="sec-3-2col cols col-md-6 col-sm-12">
                   <div>
-                    <i class="fa-solid fa-angles-right"></i>&nbsp;  Service optimisation
+                    <i class="fa-solid fa-angles-right"></i>&nbsp; Service
+                    optimisation
                   </div>
                   <div>
-                    <i class="fa-solid fa-angles-right"></i>&nbsp; Cost-efficiency
-                    
+                    <i class="fa-solid fa-angles-right"></i>&nbsp;
+                    Cost-efficiency
                   </div>
                   <div>
-                    <i class="fa-solid fa-angles-right"></i>&nbsp; Engagement medical care
+                    <i class="fa-solid fa-angles-right"></i>&nbsp; Engagement
+                    medical care
                   </div>
                 </div>
                 <div className="sec-3-2col cols col-md-6 col-sm-12">
                   <div>
-                    <i class="fa-solid fa-angles-right"></i>&nbsp;  Accessibility
+                    <i class="fa-solid fa-angles-right"></i>&nbsp; Accessibility
                   </div>
                   <div>
-                    <i class="fa-solid fa-angles-right"></i>&nbsp; Improved communication
-
+                    <i class="fa-solid fa-angles-right"></i>&nbsp; Improved
+                    communication
                   </div>
                   <div>
-                    <i class="fa-solid fa-angles-right"></i>&nbsp; Personalised healthcare
+                    <i class="fa-solid fa-angles-right"></i>&nbsp; Personalised
+                    healthcare
                   </div>
                 </div>
               </div>
@@ -183,39 +212,40 @@ function load(link){
       </div>
 
       {/* Section 3 (Appears on scroll) */}
-      <div className="abu-sec3">
+  <div className="abu-sec3">
         <div ref={sec3Ref} className={`abu-sec3-div1 ${isSec3Visible ? "show" : ""}`}>
           <div className="abu-sec3-div1-1">
             <img src="/images/aboutus/cardiogram.png" alt="cardiogram" className="flat-icon" />
-            <p className="abs3-p1 text-light h3 text-bold">100000</p>
+            <p className="abs3-p1 text-light h3 text-bold">{patients}</p>
             <p className="abs3-p2">Plus Happy Patients</p>
           </div>
           <div className="abu-sec3-div1-1">
             <img src="/images/aboutus/doctor.png" alt="doctor" className="flat-icon" />
-            <p className="abs3-p1 text-light h3 text-bold">31</p>
+            <p className="abs3-p1 text-light h3 text-bold">{doctors}</p>
             <p className="abs3-p2">Qualified Doctors</p>
           </div>
           <div className="abu-sec3-div1-1">
             <img src="/images/aboutus/bed.png" alt="bed" className="flat-icon" />
-            <p className="abs3-p1 text-light h3 text-bold">150</p>
+            <p className="abs3-p1 text-light h3 text-bold">{beds}</p>
             <p className="abs3-p2">Beds</p>
           </div>
           <div className="abu-sec3-div1-1">
             <img src="/images/aboutus/location.png" alt="location" className="flat-icon" />
-            <p className="abs3-p1 text-light h3 text-bold">473</p>
+            <p className="abs3-p1 text-light h3 text-bold">{centers}</p>
             <p className="abs3-p2">Referring Center</p>
           </div>
         </div>
       </div>
-
       {/* Section 4 (Video Section) */}
       <div className="abu-sec4">
-
-        <div className="abs4-cnt" >
+        <div className="abs4-cnt">
           <div className="abs4-cnt1">
             <Video img={img} url={url} />
           </div>
-          <div ref={sec4Ref} className={`abs4-cnt2 ${isSec4Visible ? "show" : ""}`} >
+          <div
+            ref={sec4Ref}
+            className={`abs4-cnt2 ${isSec4Visible ? "show" : ""}`}
+          >
             <div className="abs4-cnt2-cnt">
               <div className="abs4ct2cnt1">Modern Medicine</div>
               <div className="abs4ct2cnt2">World Class Equipments</div>
@@ -230,18 +260,24 @@ function load(link){
                 it.
               </div>
             </div>
-            </div>
+          </div>
         </div>
       </div>
 
       {/* Section 5 (About Component) */}
       <div className="abu-sec5">
         <div className="abs5-cnt">
-          <div ref={sec5Ref} className={`abs5-cnt1 ${isSec5Visible ? "show" : ""}`}>
+          <div
+            ref={sec5Ref}
+            className={`abs5-cnt1 ${isSec5Visible ? "show" : ""}`}
+          >
             <AboutCpnt />
           </div>
-          <div  ref={sec6Ref} className={`abs5-cnt2 ${isSec6Visible ? "show" : ""}`}>
-            <div className="abs5c21" >
+          <div
+            ref={sec6Ref}
+            className={`abs5-cnt2 ${isSec6Visible ? "show" : ""}`}
+          >
+            <div className="abs5c21">
               <p className="abs5-p1 text-light">Opening Hours</p>
               <p className="abs5-p2">
                 Major services are round the clock services at our hospital. OPD
@@ -271,9 +307,12 @@ function load(link){
         <div className="abs6-cnt text-center">
           <p className="abs6-p1">Experienced Doctors</p>
           <p className="abs6-p2">
-            Team of Nepal's best doctors to provide round-the-clock services to the patients from Nepal, Bangladesh, India, Bhutan, etc.
+            Team of Nepal's best doctors to provide round-the-clock services to
+            the patients from Nepal, Bangladesh, India, Bhutan, etc.
           </p>
-          <Link onClick={()=>load('/doctors')} className="abs6-btn btn">View Doctors Team</Link>
+          <Link onClick={() => load("/doctors")} className="abs6-btn btn">
+            View Doctors Team
+          </Link>
         </div>
       </div>
     </>

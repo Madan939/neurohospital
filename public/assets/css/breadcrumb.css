@@ -40,9 +40,10 @@
     text-align: center;
   }
   .b-div1 {
+    display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     /* border:2px solid red; */
-    margin: auto;
-    width: 40%;
+    width: auto;
   }
 }

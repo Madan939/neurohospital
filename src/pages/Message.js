@@ -134,6 +134,7 @@ const Message = () => {
               Mr. Rajesh Bhattarai | Operational Director
             </div>
             <div className="ms2d2-p4 mb-3 mt-2 ">
+            <img src="/images/aboutus/msg3.png" alt="msg-3" />
               <Link to="mailto:rajesh@neurohospital.com.np">
                 rajesh@neurohospital.com.np
               </Link>

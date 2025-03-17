@@ -1,5 +1,5 @@
 .A-sec {
-/* border: 2px solid red; */
+  /* border: 2px solid red; */
   width: 88%;
   margin: auto;
 }
@@ -15,7 +15,6 @@
 }
 .A-sec-1-div2 p {
   font-size: 16px;
-  color: #555;
 }
 .A-sec-1-div2 p i {
   font-style: normal;
@@ -25,6 +24,7 @@
   margin-top: 4rem;
 }
 .As-p2 {
+  font-size: 2rem;
   font-weight: bolder !important;
 }
 .A-sec2-row {
@@ -48,15 +48,19 @@
   width: 95%;
   border-radius: 10%;
 }
+.A-sec3-col1-c {
+  display: none;
+}
 .As-p3 {
+  font-size: 1.8rem;
   font-weight: bolder !important;
 }
 .As-p4 {
-  color: #555;
   font-size: 15.9px;
   margin-top: 1.5rem;
 }
 .A-sec-3 {
+  height: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -74,9 +78,10 @@
 }
 .A-sec-4 {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  margin:5rem 0;
+  margin: 5rem 0;
 }
 .A-sec4-col1 {
   width: 46%;
@@ -84,18 +89,82 @@
 .A-sec4-col2 {
   width: 45%;
 }
-.A-sec4-col2 img{
-    width:97%;
-    border-radius: 10%;
-    height:290px;
+.A-sec4-col2 img {
+  width: 97%;
+  border-radius: 10%;
+  height: 290px;
 }
-.as4-p1{
-    font-weight: bolder !important; 
+.A-sec-5 {
+  margin-bottom: 4rem;
 }
-.as4-p2{
-    font-size: 16px;
-    color: #555;
-}
-.A-sec-5{
-    margin-bottom: 4rem;
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+  .A-sec-1-div2 p {
+    font-size: 1.1rem;
+  }
+  .As-p2 {
+    font-size: 2rem !important;
+    margin: 0;
+  }
+  .A-sec-2 {
+    margin: 0 0 1rem 0;
+    margin: 0 0 2rem 0;
+  }
+  .A-sec2-row {
+    margin: 0;
+    height: auto;
+  }
+  .A-sec2-col1,
+  .A-sec2-col2,
+  .A-sec3-col1,
+  .A-sec3-col1-c,
+  .A-sec3-col2,
+  .A-sec4-col1,
+  .A-sec4-col2 {
+    width: 100%;
+  }
+  .A-sec2-col1,
+  .A-sec3-col2 {
+    margin: 0;
+  }
+  .As-p3 {
+    font-size: 1.4rem;
+    font-weight: bolder;
+    margin: 0;
+    padding: 0;
+  }
+  .As-p4 {
+    font-weight: 300;
+    font-size: 1.1rem !important;
+    margin: 0 0 1rem 0;
+    padding: 0;
+  }
+  .A-sec2-col2 img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  .A-sec-3 {
+    margin: 0 0 2rem 0;
+    height: auto;
+  }
+  .A-sec3-col1 {
+    height: auto;
+    display: none;
+  }
+  .A-sec3-col1-c {
+    display: block;
+    height: auto;
+  }
+  .A-sec3-col1-c img {
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
+  }
+  .A-sec-4 {
+    margin: 0 0 2rem 0 !important;
+    margin: 0;
+  }
+  .A-sec4-col2 img {
+    width: 100%;
+    border-radius: 10px;
+  }
 }

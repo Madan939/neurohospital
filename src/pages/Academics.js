@@ -41,30 +41,30 @@ const Academics = () => {
           </div>
         </div>
         <div className="A-sec-2">
-          <p className="As-p2 text-center h3">Courses</p>
+          <p className="As-p2 text-center text-dark">Courses</p>
           <div className="A-sec2-row">
             <div className="A-sec2-col1">
-              <p className="As-p3 h3">Neurosurgery</p>
-              <p className="As-p4">
+              <p className="As-p3  text-dark">Neurosurgery</p>
+              <div className="As-p4">
                 This course provides a comprehensive introduction to
                 neurosurgery, covering essential topics such as neuroanatomy,
                 surgical techniques, and patient management. Students will gain
                 hands-on experience in the operating room, learn to assess
                 neurological conditions, and develop critical decision-making
                 skills necessary for neurosurgical practice.
-              </p>
+              </div>
             </div>
             <div className="A-sec2-col2">
               <img src="/images/acdemics/a2.png" alt="a2" />
             </div>
           </div>
         </div>
-        <div className="A-sec-3 d-flex">
+        <div className="A-sec-3 ">
           <div className="A-sec3-col1">
             <img src="/images/acdemics/a3.png" alt="a3" />
           </div>
           <div className="A-sec3-col2">
-            <p className="As-p3 h3">Cardiology</p>
+            <p className="As-p3 text-dark">Cardiology</p>
             <p className="As-p4">
               Explore the fundamentals of cardiology, including heart function,
               common diseases, and current treatment options. This course is
@@ -72,11 +72,14 @@ const Academics = () => {
               want to specialize in cardiac care.
             </p>
           </div>
+          <div className="A-sec3-col1-c">
+            <img src="/images/acdemics/a3.png" alt="a3" />
+          </div>
         </div>
         <div className="A-sec-4">
           <div className="A-sec4-col1">
-            <p className="as4-p1 h3 mb-3">General Medicine</p>
-            <p className="as4-p2">
+            <p className="As-p3  text-dark">General Medicine</p>
+            <p className="As-p4">
               This course provides a comprehensive introduction to general
               medicine, covering essential topics such as anatomy, physiology,
               pathology, pharmacology, and diseases. Students will gain hands-on
@@ -94,7 +97,7 @@ const Academics = () => {
             <img src="/images/acdemics/a5.png" alt="a3" />
           </div>
           <div className="A-sec3-col2">
-            <p className="As-p3 h3">Orthopedic Surgery</p>
+            <p className="As-p3  text-dark">Orthopedic Surgery</p>
             <p className="As-p4">
               This course provides a comprehensive introduction to orthopedic
               surgery, covering essential topics such as anatomy, physiology,
@@ -104,11 +107,14 @@ const Academics = () => {
               practice.
             </p>
           </div>
+          <div className="A-sec3-col1-c">
+            <img src="/images/acdemics/a5.png" alt="a3" />
+          </div>
         </div>
         <div className="A-sec-2">
           <div className="A-sec2-row">
             <div className="A-sec2-col1">
-              <p className="As-p3 h3">Surgery</p>
+              <p className="As-p3  text-dark">Surgery</p>
               <p className="As-p4">
                 This course provides a comprehensive introduction to surgery,
                 covering essential topics such as anatomy, physiology,
@@ -124,7 +130,7 @@ const Academics = () => {
           </div>
         </div>
         <div className="A-sec-5">
-            <p className="As-p3 h3 text-center ">CTEVT Courses</p>
+            <p className="As-p3  text-center text-dark">CTEVT Courses</p>
           <p className="As-p4">
              The Council for Technical Education and Vocational
             Training (CTEVT) constituted in 1989 (2045 BS) is a national
@@ -142,7 +148,7 @@ const Academics = () => {
             <img src="/images/acdemics/a7.png" alt="a3" />
           </div>
           <div className="A-sec3-col2">
-            <p className="As-p3 h3">PCL Nursing</p>
+            <p className="As-p3  text-dark">PCL Nursing</p>
             <p className="As-p4">
               This course provides a comprehensive introduction to PCL nursing,
               covering essential topics such as anatomy, physiology, pathology,
@@ -151,11 +157,14 @@ const Academics = () => {
               critical decision-making skills necessary for medical practice.
             </p>
           </div>
+          <div className="A-sec3-col1-c">
+            <img src="/images/acdemics/a7.png" alt="a3" />
+          </div>
         </div>
         <div className="A-sec-2">
           <div className="A-sec2-row">
             <div className="A-sec2-col1">
-              <p className="As-p3 h3">Health Assistant </p>
+              <p className="As-p3  text-dark">Health Assistant </p>
               <p className="As-p4">
                 This course provides a comprehensive introduction to Health
                 Assistant, covering essential topics such as anatomy,

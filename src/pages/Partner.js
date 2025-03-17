@@ -103,158 +103,173 @@ const Partner = () => {
       <Breadcrumb name1={name1} name2={name1} />
       <div className="Ptr">
         {list1.map((item) => (
-          <div className="ptr-row">
-            <div className="ptr-col1">
-              <img src={item.img} alt={item.name} />
-            </div>
-            <div className="ptr-col2">
-              <p className="ptr-p1">{item.date}</p>
-              <p className="ptr-p2">{item.name}</p>
-              <p className="ptr-p3">
-                {item.des === "null" ? <></> : <p>{item.des}</p>}
-              </p>
-              <p className="">
-                {item.link === "null" ? (
-                  <></>
-                ) : (
-                  <Link className="msd2-btn btn " to={item.link}>
-                    Browse More
-                  </Link>
-                )}
-              </p>
+          <div className="ptr-row shadow">
+            <div className="ptr-ptr-1 mx-2">
+              <div className="ptr-col1">
+                <img src={item.img} alt={item.name} />
+              </div>
+              <div className="ptr-col2">
+                <p className="ptr-p1">{item.date}</p>
+                <p className="ptr-p2">{item.name}</p>
+                <p className="ptr-p3">
+                  {item.des === "null" ? <></> : <p>{item.des}</p>}
+                </p>
+                <p className="">
+                  {item.link === "null" ? (
+                    <></>
+                  ) : (
+                    <Link className="msd2-btn btn " to={item.link}>
+                      Browse More
+                    </Link>
+                  )}
+                </p>
+              </div>
             </div>
           </div>
         ))}
         {list2.map((item) => (
-          <div className="ptr-row-1">
-            <div className="ptr-col1-1">
-              <img src={item.img} alt={item.name} />
-            </div>
-            <div className="ptr-col2-1">
-              <p className="ptr-p1">{item.date}</p>
-              <p className="ptr-p2">{item.name}</p>
-              <p className="ptr-p3">
-                {item.des === "null" ? <></> : <p>{item.des}</p>}
-              </p>
-              <p>
-                {item.link === "null" ? (
-                  <></>
-                ) : (
-                  <Link className="msd2-btn btn " to={item.link}>
-                    Browse More
-                  </Link>
-                )}
-              </p>
+          <div className="ptr-row-1 shadow">
+            <div className="ptr-ptr-2 mx-2">
+              <div className="ptr-col1-1">
+                <img src={item.img} alt={item.name} />
+              </div>
+              <div className="ptr-col2-1">
+                <p className="ptr-p1">{item.date}</p>
+                <p className="ptr-p2">{item.name}</p>
+                <p className="ptr-p3">
+                  {item.des === "null" ? <></> : <p>{item.des}</p>}
+                </p>
+                <p>
+                  {item.link === "null" ? (
+                    <></>
+                  ) : (
+                    <Link className="msd2-btn btn " to={item.link}>
+                      Browse More
+                    </Link>
+                  )}
+                </p>
+              </div>
             </div>
           </div>
         ))}
-        <div className="ptr-row33">
-          <div className="ptr3-col13">
-            <img src="images/aboutus/jhipucha.jpg" alt="" />
-          </div>
-          <div className="ptr3-col23">
-            <p className="ptr-p1">Date of MoU : 27-Mar-2024</p>
-            <p className="ptr-p2">Jhi Pucha</p>
+        <div className="ptr-row33 shadow">
+          <div className="ptr-ptr-3 mx-2">
+            <div className="ptr3-col13">
+              <img src="images/aboutus/jhipucha.jpg" alt="" />
+            </div>
+            <div className="ptr3-col23">
+              <p className="ptr-p1">Date of MoU : 27-Mar-2024</p>
+              <p className="ptr-p2">Jhi Pucha</p>
+            </div>
           </div>
         </div>
         {list3.map((item) => (
-          <div className="ptr-row-2">
-            <div className="ptr-col1-2">
-              <img src={item.img} alt={item.name} />
-            </div>
-            <div className="ptr-col2-2">
-              <p className="ptr-p1">{item.date}</p>
-              <p className="ptr-p2">{item.name}</p>
-              <p className="ptr-p3">
-                {item.des === "null" ? <></> : <p>{item.des}</p>}
-              </p>
-              <p>
-                {item.link === "null" ? (
-                  <></>
-                ) : (
-                  <Link className="msd2-btn btn " to={item.link}>
-                    Browse More
-                  </Link>
-                )}
-              </p>
+          <div className="ptr-row-2 shadow">
+            <div className="ptr-ptr-4 mx-2">
+              <div className="ptr-col1-2">
+                <img src={item.img} alt={item.name} />
+              </div>
+              <div className="ptr-col2-2">
+                <p className="ptr-p1">{item.date}</p>
+                <p className="ptr-p2">{item.name}</p>
+                <p className="ptr-p3">
+                  {item.des === "null" ? <></> : <p>{item.des}</p>}
+                </p>
+                <p>
+                  {item.link === "null" ? (
+                    <></>
+                  ) : (
+                    <Link className="msd2-btn btn " to={item.link}>
+                      Browse More
+                    </Link>
+                  )}
+                </p>
+              </div>
             </div>
           </div>
         ))}
-        <div className="ptr-row3-3">
-          <div className="ptr3-col1-3">
-            <img src="images/aboutus/gefont.png" alt="" />
-          </div>
-          <div className="ptr3-col2-3">
-            <p className="ptr-p1">Date of MoU : 1-May-2024</p>
-            <p className="ptr-p2">GEFONT</p>
-            <p className="ptr-p3">
-              General Federation of Nepalese Trade Unions (GEFONT ) was
-              established on 20th July 1989. As there was no union right in
-              Nepal; GEFONT was launched underground. GEFONT has 21 affiliates
-              (as of April 2022), which cover all three fields- agriculture,
-              industries and services; covering various sectors such as
-              manufacturing, textiles and clothing, carpet industry, transport,
-              hotels, restaurants and catering, tourism, ICT, media and
-              printing, auto-mechanics, e-rikshaw, food production, breweries,
-              chemical and metal industry, tea plantations, street vendors,
-              private school, beauticians, employees of security sector and
-              sports sector, construction and agriculture.
-            </p>
-            <p>
-              <Link className="msd2-btn btn" to="https://www.gefont.org/">
-                Browse More
-              </Link>
-            </p>
+        <div className="ptr-row3-3 shadow">
+          <div className="ptr-ptr-5 mx-2">
+            <div className="ptr3-col1-3">
+              <img src="images/aboutus/gefont.png" alt="" />
+            </div>
+            <div className="ptr3-col2-3">
+              <p className="ptr-p1">Date of MoU : 1-May-2024</p>
+              <p className="ptr-p2">GEFONT</p>
+              <p className="ptr-p3">
+                General Federation of Nepalese Trade Unions (GEFONT ) was
+                established on 20th July 1989. As there was no union right in
+                Nepal; GEFONT was launched underground. GEFONT has 21 affiliates
+                (as of April 2022), which cover all three fields- agriculture,
+                industries and services; covering various sectors such as
+                manufacturing, textiles and clothing, carpet industry,
+                transport, hotels, restaurants and catering, tourism, ICT, media
+                and printing, auto-mechanics, e-rikshaw, food production,
+                breweries, chemical and metal industry, tea plantations, street
+                vendors, private school, beauticians, employees of security
+                sector and sports sector, construction and agriculture.
+              </p>
+              <p>
+                <Link className="msd2-btn btn" to="https://www.gefont.org/">
+                  Browse More
+                </Link>
+              </p>
+            </div>
           </div>
         </div>
-        <div className="ptr-row3">
-          <div className="ptr3-col1">
-            <img src="images/aboutus/pabson.png" alt="" />
-          </div>
-          <div className="ptr3-col2">
-            <p className="ptr-p1">Date of MoU : 2-May-2024</p>
-            <p className="ptr-p2">Pabson Morang</p>
-            <p className="ptr-p3">
-              Private schools in Nepal have a significant historical role,
-              emerging to complement government efforts in enhancing access and
-              quality of education. The growth of private schools before and
-              after 2028 BS (1971 AD) highlighted the need for a structured
-              institution to guide, promote, protect, and harmonize these
-              educational institutions. This organization aimed to support
-              professional development, safeguard the rights of founders,
-              principals, teachers, staff, and students, ensuring comprehensive
-              development and safety within the education sector.
-            </p>
-            <p>
-              <Link
-                className="msd2-btn btn"
-                to="http://www.pabsonmorang.org.np/"
-              >
-                Browse More
-              </Link>
-            </p>
+        <div className="ptr-row3 shadow">
+          <div className="ptr-ptr-6 mx-2">
+            <div className="ptr3-col1">
+              <img src="images/aboutus/pabson.png" alt="" />
+            </div>
+            <div className="ptr3-col2">
+              <p className="ptr-p1">Date of MoU : 2-May-2024</p>
+              <p className="ptr-p2">Pabson Morang</p>
+              <p className="ptr-p3">
+                Private schools in Nepal have a significant historical role,
+                emerging to complement government efforts in enhancing access
+                and quality of education. The growth of private schools before
+                and after 2028 BS (1971 AD) highlighted the need for a
+                structured institution to guide, promote, protect, and harmonize
+                these educational institutions. This organization aimed to
+                support professional development, safeguard the rights of
+                founders, principals, teachers, staff, and students, ensuring
+                comprehensive development and safety within the education
+                sector.
+              </p>
+              <p>
+                <Link
+                  className="msd2-btn btn"
+                  to="http://www.pabsonmorang.org.np/"
+                >
+                  Browse More
+                </Link>
+              </p>
+            </div>
           </div>
         </div>
         {list4.map((item) => (
-          <div className="ptr-row-2">
-            <div className="ptr4-col1-2">
-              <img src={item.img} alt={item.name} />
-            </div>
-            <div className="ptr4-col2-2">
-              <p className="ptr-p1">{item.date}</p>
-              <p className="ptr-p2">{item.name}</p>
-              <p className="ptr-p3">
-                {item.des === "null" ? <></> : <p>{item.des}</p>}
-              </p>
-              <p>
-                {item.link === "null" ? (
-                  <></>
-                ) : (
-                  <Link className="msd2-btn btn " to={item.link}>
-                    Browse More
-                  </Link>
-                )}
-              </p>
+          <div className="ptr-row-2 shadow">
+            <div className="ptr-ptr-4 mx-2">
+              <div className="ptr4-col1-2">
+                <img src={item.img} alt={item.name} />
+              </div>
+              <div className="ptr4-col2-2">
+                <p className="ptr-p1">{item.date}</p>
+                <p className="ptr-p2">{item.name}</p>
+                <p className="ptr-p3">
+                  {item.des === "null" ? <></> : <p>{item.des}</p>}
+                </p>
+                <p>
+                  {item.link === "null" ? (
+                    <></>
+                  ) : (
+                    <Link className="msd2-btn btn " to={item.link}>
+                      Browse More
+                    </Link>
+                  )}
+                </p>
+              </div>
             </div>
           </div>
         ))}

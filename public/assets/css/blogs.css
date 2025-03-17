@@ -162,3 +162,40 @@
   text-decoration: underline;
   color: #2c52a0;
 }
+.blog-date{
+  font-size: 0.8rem;
+}
+@media screen and (min-width:480px) and (max-width: 600px)  {
+ 
+  .blogs-col-div:hover{
+    scale: 1;
+   }
+   .blogs-img {
+    height: 15rem;
+
+  }
+  .blogs-card-p1 {
+    font-size: 1.5rem;
+  }
+  .blogs-p3 {
+    font-size: 1.1rem;
+  }
+  .blog-pic {
+    width:95%;
+    margin: auto;
+    height: 290px;
+   
+  }
+  .blog-pic img {
+    width: 100%;
+    height: 100%;
+    border-radius:10px;
+  }
+  .blogs-col-div{
+    width:100%;
+  }
+  .blogs-row {
+    /* border: 2px solid black !important; */
+    margin: 0 !important;
+  }
+}

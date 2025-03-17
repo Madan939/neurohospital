@@ -7,7 +7,7 @@ const Blogs = () => {
     navigate(link);
     window.location.reload();
   }
-  const List1 = [
+  const List = [
     {
       pic: "/images/blog/blog-1.png",
       name: "Role of Radiology in Cancer Diagnosis and Treatment",
@@ -182,20 +182,22 @@ const Blogs = () => {
       <div className="blogs">
         <div className="blogs-div">
           <p className="blogs-p1">Neuro Hospital Blogs</p>
+          <div className="blog-pic">
           <img
             src="/images/blog/phobia.png"
-            alt="blogs-image"
-            className="blog-img-1"
+            alt="what-is-phobia"
+            className="shadow"
           />
+          </div>
           <br />
-          <br />
-          <p
+          <div
             className="blogs-phobia"
             onClick={() => load("/blog/what-is-phobia")}
           >
             What is Phobia?
-          </p>
-          <p className="text-center text-dark">Mar 27, 2024</p>
+          </div>
+          <div className="text-center text-dark">Mar 27, 2024</div>
+          <br/>
           <p className="text-center">
             {" "}
             <Link
@@ -209,11 +211,14 @@ const Blogs = () => {
           <br />
           <br />
           <div className="blogs-row row ">
-            {List1.map((card) => (
+            {List.map((card) => (
               <div className="blogs-col cols col-md-4 col-sm-12">
-                <div className="blogs-col-div shadow" onClick={() => load(card.link)}>
+                <div
+                  className="blogs-col-div shadow"
+                  onClick={() => load(card.link)}
+                >
                   <img src={card.pic} alt={card.name} className="blogs-img" />
-                  <p className="m-1">
+                  <p className="mx-2">
                     <Link
                       onClick={() => load(card.link)}
                       className="blogs-card-p1"
@@ -221,18 +226,21 @@ const Blogs = () => {
                       {card.name}
                     </Link>
                   </p>
-
-                  <p className="m-1">{card.date}</p>
-                  <p className="sec8-p3 m-1">{card.des}&nbsp;<Link className="blog-info" onClick={() => load(card.link)} >
-                    See more
-                  </Link></p>
+                  <p className="blogs-p3 mx-2">
+                    {card.des}&nbsp;
+                    <Link className="blog-info" onClick={() => load(card.link)}>
+                      See more
+                    </Link>
+                  </p>
+                  <p className="blog-date mx-2">Date posted:{card.date}</p>
+                  <br />
 
                   {/* <Link
-                    onClick={() => load(card.link)}
-                    className="blogs-btn btn "
-                  >
-                    Read More
-                  </Link> */}
+                             onClick={() => load(card.link)}
+                             className="blogs-btn btn "
+                           >
+                             Read More
+                           </Link> */}
                 </div>
               </div>
             ))}

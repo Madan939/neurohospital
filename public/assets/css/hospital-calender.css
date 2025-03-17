@@ -10,7 +10,6 @@
     max-width: 70%;
     height:118vh;
     margin: 0 auto;
-    /* text-align: center; */
     padding: 10px;
     border: 1px solid #ddd;
   }
@@ -46,8 +45,7 @@
   }
   
   .days, .dates {
-    display: grid;
-    
+    display: grid; 
     grid-template-columns: repeat(7, 1fr);
   }
   
@@ -59,11 +57,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 5px;
   }
-  
-  .today {
+  .day{
+    background-color: #2c52a0;
+    color: white;
+  }
+  .date:hover{
+    background-color: #ddd;
+    cursor:pointer;
+  }
+  .date.today {
     background-color:#2c52a0;
     color: white;
     font-weight: bold;
+    pointer-events: none !important;
+    cursor: pointer !important;
   }
   

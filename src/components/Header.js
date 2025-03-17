@@ -39,7 +39,7 @@ const Header = ({ menuOpen, setMenuOpen }) => {
     setShowBse(false);
   };
   const location = useLocation();
-  const blogs = location.pathname.startsWith("/blogs");
+  const blogs = location.pathname.startsWith("/blog");
   return (
     <>
       {/* responsive view starts*/}
@@ -193,7 +193,7 @@ const Header = ({ menuOpen, setMenuOpen }) => {
           <li className="ul-li-last">
             {blogs ? (
               <>
-                <Link to="/blogs" className="text-light ">
+                <Link onClick={() => load("/blog")}  className="text-light ">
                   Neuro Hospital Blog
                 </Link>
               </>
