@@ -183,6 +183,7 @@ const Home = () => {
                       <div className="fs ">-</div>
                       <div className="ft ">24x7 Service</div>
                     </div>
+                    <br/>
                   </div>
                 </div>
                 <div className="col2 cols col-md-3 col-xs-12 ">
@@ -199,6 +200,7 @@ const Home = () => {
                     >
                       View Doctors
                     </Link>
+                    <br/>
                   </div>
                 </div>
                 <div className="col3 cols col-md-3 col-xs-12 ">
@@ -379,7 +381,7 @@ const Home = () => {
             <div className="sec-4-col3"></div>
           </div>
         </div>
-        <div className="section-5">
+        <div className="section-5 mb-2">
           <div className="section-5-content">
             <div
               ref={sec5Ref}
@@ -426,6 +428,7 @@ const Home = () => {
             >
               Book an Appointment
             </NavLink>
+            <br/>
           </div>
         </div>
         <div className="section-8 my-2">

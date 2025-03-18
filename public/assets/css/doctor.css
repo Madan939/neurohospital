@@ -81,12 +81,21 @@
   transform: scale(0.9);
 }
 @media only screen and (min-width: 320px) and (max-width: 600px) {
-    .dct-sec-1{
-        height: auto;
-    }
+  .dct-sec-1 {
+    height: auto;
+  }
+  .dct-sec-1-div{
+    height: auto;
+  }
   .dcts1-1 {
     width: 99%;
     margin: 0 auto 1rem auto;
+    height: auto;
+  }
+  .dcts1-1 img{
+    height: auto;
+  }
+  .ul-doc{
     height: auto;
   }
   .li-doc {

@@ -45,7 +45,7 @@
 
 .home-bg {
   background-image: url(/assets/images/homepage/2.jpg);
-  width: 100%;
+  max-width: 100%;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -793,10 +793,10 @@
   justify-content: center;
   align-items: center;
 }
-@media only screen and (min-width: 320px) and (max-width: 600px) {
+@media only screen and (min-width: 300px) and (max-width: 600px) {
   .overlay-div {
     position: relative;
-    height: 55%;
+    height: 60%;
     width:90%;
     /* border: 2px solid black; */
   }
@@ -804,6 +804,7 @@
     width: 80%;
   }
   .home-bg {
+    max-width: 100%;
     height: 45rem;
     padding: 0;
     background-repeat: no-repeat;
@@ -829,6 +830,7 @@
     width: 100%;
   }
   .hcard {
+    height: 95%;
     width: 95%;
   }
   .hp1 {
@@ -837,11 +839,11 @@
   }
   .hp2 {
     margin: 0;
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   .home-1-pic {
     width: 90%;
-    height: 450px;
+    height: auto;
   }
   .home-row {
     width: 99%;
@@ -849,45 +851,46 @@
     color: #ffffff !important;
   }
   .home-first {
-    height: 112rem;
+    height: 100rem;
   }
 
   .home-row .col1 {
     border-radius: 10px;
-    margin-bottom: 1.4rem;
-    height: 17.5rem;
+    margin-bottom: 1rem;
+    height: auto;
   }
   .home-row .col2 {
     border-radius: 10px;
-    margin-bottom: 1.4rem;
-    height: 15rem;
+    margin-bottom: 1rem;
+    height: auto;
   }
   .home-row .col3 {
     border-radius: 10px;
-    margin-bottom: 1.4rem;
-    height: 15rem;
+    margin-bottom: 1rem;
+    height: auto;
   }
   .home-row .col4 {
     border-radius: 10px;
-    margin-bottom: 1.4rem;
-    height: 16rem;
+    margin-bottom: 1rem;
+    height: auto;
   }
   .hpp1 {
     font-size: 1rem;
     font-weight: 300;
   }
   .card-btn {
+    position: relative !important;
+    margin-bottom: 2px;
     font-weight: bolder !important;
     font-size: 1rem !important;
-    bottom: 0 !important;
     padding: 10px 15px !important;
   }
 
   .fh {
-    font-size: 1.1rem !important;
+    font-size: 1rem !important;
   }
   .fs {
-    font-size: 1.1rem !important;
+    font-size: 1rem !important;
     font-weight: bolder !important;
   }
   .ft {
@@ -910,14 +913,14 @@
     opacity: 1;
     transform: none;
     width: 88%;
-    height: 65rem;
+    height: auto;
     display: block !important;
     flex-wrap: wrap !important;
     margin-bottom: 3rem;
   }
   .section-1-1div {
     width: 100% !important;
-    height: 520px;
+    height: auto;
   }
   .section-1-1div img {
     width: 100%;
@@ -946,7 +949,7 @@
   }
   .slider-card {
     height: 26rem !important;
-    width: 90% !important;
+    width: 98% !important;
     margin: auto;
   }
   .slider-container {
@@ -957,7 +960,7 @@
     width: 30%;
   }
   .slider-card-p {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   .slider-card-h3 {
     font-size: 1.5rem;
@@ -1007,6 +1010,15 @@
     height: 34rem;
     width: 100%;
   }
+  .sec-4-btn {
+    border-width: 2px !important;
+    border-color: white !important;
+    position: relative;
+    bottom: 0;
+  }
+  .sec-4-row {
+    height: auto;
+  }
   .sec-4-col3 {
     display: block;
     height: 350px;
@@ -1018,55 +1030,58 @@
   }
   .sec-4-col2-div {
     width: 90%;
-    height: 93%;
+    height: auto;
     opacity: 1;
     transform: none;
   }
   .section-4 {
-    height: 57rem;
+    height: auto;
   }
   .sec-4-2 {
     font-size: 1.5rem;
   }
   .sec-5-2 {
+    height: auto;
     opacity: 1;
     transform: none;
   }
   .section-5 {
-    height: 50rem;
+    height: auto;
     margin: 0;
   }
   .section-5-content {
-    width: 92%;
+    height: auto;
+    width: 90%;
   }
   .sec-5-2 {
-    height: 300px;
+    height: auto;
+    margin-bottom: 2rem;
     width: 100%;
   }
   .sec-5-3 {
     width: 100%;
-    height: 370px;
+    height:auto;
   }
   .sec-5-p2 {
-    font-size: 2rem !important;
+    font-size: 1.5rem !important;
     margin: 0;
     padding: 0;
   }
   .sec-5-3-div {
+    height: auto;
     width: 100%;
   }
   .sec-5-p1 {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: bolder;
-    padding: 10px 0;
   }
   .sec-5-ul {
     margin: 0;
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   .sec-5-ul li {
     margin: 0;
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   .list-row {
     width: 100%;
@@ -1092,33 +1107,45 @@
   }
   .card-cnt-1,
   .card-cnt-2 {
+
     margin: 0;
     padding: 10px 0;
   }
+  .card-cnt-1{
+    font-size: 1.8rem;
+    text-align: center;
+  }
   .img-list-pic {
-    height: 22rem;
+    height: 18rem;
     width: 75%;
     margin: auto !important;
   }
-  .sec-7-div {
-    opacity: 1;
-    transform: none;
-    text-align: center;
-    width: 95%;
-    height: 85%;
+  .section-6 {
+    margin-bottom: 2rem;
   }
   .section-7 {
-    height: 400px;
+    height:auto;
     background-position: left center;
     background-size: cover;
   }
+  .sec-7-div {
+    margin: auto;
+    padding: 1.5rem 0;
+    opacity: 1;
+    transform: none;
+    text-align: center;
+    width: 89%;
+  }
   .sec7-p2 {
     width: 100%;
-    height: 1.1rem;
     color: #666 !important;
   }
+  .sec7-p1 {
+    margin: 0;
+    font-size: 1.8rem;
+  }
   .sec7-btn {
-    margin: 9rem 0 0 0 !important;
+   
   }
   .section-8 {
     margin: 0;
@@ -1134,7 +1161,8 @@
   }
   .sec8-p {
     margin: 0;
-    padding: 10px 0;
+    font-size: 1.5rem;
+    padding: 5px 0;
   }
   .sec-8-col {
     height: 30rem;

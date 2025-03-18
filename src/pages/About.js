@@ -153,6 +153,7 @@ const About = () => {
               <Link to="https://neuro.danphecare.com/" className="abu-btn btn">
                 Book an Appointment
               </Link>
+              <br/>
             </div>
           </div>
         </div>
@@ -174,7 +175,7 @@ const About = () => {
                 provision as we know it, improving access, clinical outcomes and
                 engagement with services.
               </div>
-              <div className="sec-3-2row row">
+              <div className="abu-sec-3-2row row">
                 <div className="sec-3-2col cols col-md-6 col-sm-12">
                   <div>
                     <i class="fa-solid fa-angles-right"></i>&nbsp; Service

@@ -79,5 +79,7 @@
     
   }
   @media only screen and (min-width: 320px) and (max-width: 600px) {
-
+    .apply-btn{
+     width:60% !important;
+    }
   }

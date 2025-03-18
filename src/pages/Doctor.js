@@ -25,6 +25,7 @@ const Doctor = () => {
               Senior Consultant Orthopedic Surgeon
             </div>
             <Link className="dcts-btn btn">NMC # : 3103</Link>
+            <br/>
           </div>
         </div>
       </div>

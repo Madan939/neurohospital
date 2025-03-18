@@ -82,7 +82,7 @@
   }
   .resp-nav1-div-div1 i {
     margin-left: 3px;
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   .resp-nav1-div-div2 {
     width: 40%;
@@ -99,7 +99,7 @@
     /* border: 2px solid black; */
   }
   .resp-nav1-div-div3 i {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
   .nav-2 {
     display: none;
@@ -148,7 +148,7 @@
     padding: 10px 15px;
     width: 100%;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1rem;
     color: #666;
   }
   .sidebar ul li:hover{

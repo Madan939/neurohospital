@@ -134,7 +134,7 @@ const Message = () => {
               Mr. Rajesh Bhattarai | Operational Director
             </div>
             <div className="ms2d2-p4 mb-3 mt-2 ">
-            <img src="/assets/images/aboutus/msg3.png" alt="msg-3" />
+              <img src="/assets/images/aboutus/msg3.png" alt="msg-3" />
               <Link to="mailto:rajesh@neurohospital.com.np">
                 rajesh@neurohospital.com.np
               </Link>
@@ -155,7 +155,7 @@ const Message = () => {
             ref={sec4Ref}
             className={`m-sec2-div2 ${isSec4Visible ? "show" : ""}`}
           >
-            <div className="ms2d2-p1">Message from Academic Director</div>
+            <div className="msd2-p1">Message from Academic Director</div>
             <div className="msd2-p2">World-class Medical Education</div>
             <div className="ms2d2-p3 mb-3">
               Dear Colleagues, Students, and Members of Our Hospital Community,
@@ -217,7 +217,7 @@ const Message = () => {
             ref={sec6Ref}
             className={`m-sec3-div2 ${isSec6Visible ? "show" : ""}`}
           >
-            <div className="ms2d2-p1">
+            <div className="msd2-p1">
               Message from the desk of the Medical Director
             </div>
             <div className="msd2-p2">Deep Sense of Responsibility</div>

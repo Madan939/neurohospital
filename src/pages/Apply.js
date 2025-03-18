@@ -110,7 +110,7 @@ const Apply = () => {
                 </label>
               </div>
               <div className="text-center mx-5 my-2">
-                <button type="submit " className="w-50 btn apply-btn my-2">
+                <button type="submit " className="w-50 btn apply-btn my-2 ">
                   Apply details
                 </button>
               </div>
