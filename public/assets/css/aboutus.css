@@ -481,6 +481,15 @@
     /*  */
     justify-content: none;
   }
+  .abs5c21 {
+    height: 95%;
+    /* border:2px solid red; */
+  }
+  .adiv2 {
+    margin-bottom: 1rem;
+    border-bottom: none;
+
+  }
   .abu-s2ct-1div {
     height: 100%;
   }
@@ -594,7 +603,7 @@
     transform: none;
   }
   .abs5-cnt2 {
-    height: 25rem;
+    height: auto;
     width: 100%;
     opacity: 1;
     transform: none;
@@ -607,7 +616,6 @@
   .abu-row {
     width: 100% !important;
     margin-left: 0 !important ;
-    /* border:2px solid rgb(255, 9, 9); */
   }
   .abcl-2-1 {
     font-size: 1.4rem;
@@ -625,6 +633,7 @@
     font-size: 1.1rem;
   }
   .adiv1 {
+    height: auto;
     font-size: 1.1rem;
   }
   .abs6-cnt {
