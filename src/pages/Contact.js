@@ -115,7 +115,7 @@ const Contact = () => {
               <i className="fa-brands fa-whatsapp text-light"></i>{" "}
               &nbsp;WhatsApp
             </Link>
-            <br/>
+            <br/><br/>
           </div>
           <div className="ct-s3-col1 text-center shadow">
             <img src="/assets/images/contact/c2.png" alt="img1" />
@@ -128,7 +128,7 @@ const Contact = () => {
             >
               <i className="fa-brands fa-whatsapp text-light"></i>&nbsp;WhatsApp
             </Link>
-            <br/>
+            <br/><br/>
           </div>
           <div className="ct-s3-col1 text-center shadow">
             <img src="/assets/images/contact/c3.png" alt="img1" />
@@ -141,7 +141,7 @@ const Contact = () => {
             >
               <i className="fa-brands fa-whatsapp text-light"></i>&nbsp;WhatsApp
             </Link>
-            <br/>
+            <br/><br/>
           </div>
         </div>
       </div>
