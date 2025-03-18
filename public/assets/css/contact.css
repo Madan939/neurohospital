@@ -145,7 +145,7 @@
     max-width: 30%;
   }
   .contact-i-frame {
-    width: 400px;
-    height: 500px;
+    width: 100%;
+    height: 100%;
   }
 }
