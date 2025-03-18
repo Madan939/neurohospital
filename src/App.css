@@ -558,5 +558,21 @@ body,
     font-size: 1rem;
     font-weight: 300;
   }
-  
+  .pnf-div {
+    padding: 1.5rem;
+    width: 85%;
+    height: auto;
+  }
+  .float-1,
+.float1-link {
+  bottom: 12%;
+  width: 3rem;
+  height: 3rem;
+}
+.float-1,
+.float2-link {
+  bottom: 3%;
+  width: 3rem;
+  height: 3rem;
+}
 }

@@ -5,7 +5,7 @@ const PageNotFound = () => {
   return (
     <><Link to="/" className="text-center btn btn-secondary">Back to home</Link>
       <div className="pnf">
-        <div className="pnf-div card">
+        <div className="pnf-div card shadow">
           <div className="pnf-p1">Page not found</div>
           <div>
             Looks like you’ve followed a broken link or entered a URL that
