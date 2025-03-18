@@ -109,7 +109,7 @@ const Message = () => {
             ref={sec1Ref}
             className={`m-sec1-div1 ${isSec1Visible ? "show" : ""}`}
           >
-            <img src="/images/aboutus/msg1.png" alt="msg-1" />
+            <img src="/assets/images/aboutus/msg1.png" alt="msg-1" />
           </div>
           <div
             ref={sec2Ref}
@@ -134,7 +134,7 @@ const Message = () => {
               Mr. Rajesh Bhattarai | Operational Director
             </div>
             <div className="ms2d2-p4 mb-3 mt-2 ">
-            <img src="/images/aboutus/msg3.png" alt="msg-3" />
+            <img src="/assets/images/aboutus/msg3.png" alt="msg-3" />
               <Link to="mailto:rajesh@neurohospital.com.np">
                 rajesh@neurohospital.com.np
               </Link>
@@ -149,7 +149,7 @@ const Message = () => {
             ref={sec3Ref}
             className={`m-sec2-div1 ${isSec3Visible ? "show" : ""}`}
           >
-            <img src="/images/aboutus/msg2.png" alt="msg-2" />
+            <img src="/assets/images/aboutus/msg2.png" alt="msg-2" />
           </div>
           <div
             ref={sec4Ref}
@@ -196,7 +196,7 @@ const Message = () => {
               Dr. Navin Kumar Karna | Academic Director
             </div>
             <div className="ms2d2-p4 mb-3">
-              <img src="/images/aboutus/msg3.png" alt="msg-3" />
+              <img src="/assets/images/aboutus/msg3.png" alt="msg-3" />
               <Link to="mailto:drkarna@neurohospital.com.np">
                 drkarna@neurohospital.com.np
               </Link>
@@ -211,7 +211,7 @@ const Message = () => {
             ref={sec5Ref}
             className={`m-sec3-div1 ${isSec5Visible ? "show" : ""}`}
           >
-            <img src="/images/aboutus/msg4.png" alt="msg-4" />
+            <img src="/assets/images/aboutus/msg4.png" alt="msg-4" />
           </div>
           <div
             ref={sec6Ref}
@@ -252,7 +252,7 @@ const Message = () => {
               Disease, Fellowship Rheumatology & Clinical Immunology
             </div>
             <div className="ms2d2-p4 ">
-              <img src="/images/aboutus/msg3.png" alt="msg-3" />
+              <img src="/assets/images/aboutus/msg3.png" alt="msg-3" />
               <Link to="mailto:drkarna@neurohospital.com.np">
                 drkarna@neurohospital.com.np
               </Link>

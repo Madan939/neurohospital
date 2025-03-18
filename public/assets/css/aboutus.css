@@ -142,7 +142,7 @@
 }
 .abu-sec3 {
   height: 340px;
-  background-image: url(/images/aboutus/statistic.jpg);
+  background-image: url(/assets/images/aboutus/statistic.jpg);
   background-attachment: fixed !important;
   width: 100%;
   background-repeat: no-repeat;
@@ -409,7 +409,7 @@
   border-color: #17a2b8 !important;
   background-color: #17a2b8 !important;
 }
-@media screen and (max-width: 600px) {
+@media only screen and (min-width: 320px) and (max-width: 600px) {
   .abu-sec1 {
     animation: none;
     height: 60rem;

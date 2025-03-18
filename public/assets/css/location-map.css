@@ -21,3 +21,30 @@
   opacity: 1;
   transform: translateY(0);
 }
+.map-frame {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 100%;
+  overflow: hidden;
+  max-width: 100%;
+}
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+  .lm-p2 {
+    width: 88%;
+  }
+  .row-2 {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  .map-frame {
+    padding-bottom: 5%;
+    width: 88%;
+    margin: auto;
+    /* border: 2px solid red; */
+    height: 30rem !important;
+  }
+  .map-i-frame{
+    width:440px;
+    height: 520px;
+  }
+}

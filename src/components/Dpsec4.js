@@ -22,12 +22,12 @@ const Dpsec4 = () => {
   const list = [
     {
       name: "Emergency",
-      img: "/images/department/dp21.png",
+      img: "/assets/images/department/dp21.png",
       des: "A serious, unexpected, and often dangerous situation requiring immediate action.",
     },
     {
       name: "Pharmacy",
-      img: "/images/department/dp22.png",
+      img: "/assets/images/department/dp22.png",
       des: " A medical shop or hospital dispensary where medicinal drugs are prepared or sold.",
     },
     

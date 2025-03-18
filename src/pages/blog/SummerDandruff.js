@@ -7,7 +7,7 @@ const SummerDandruff = () => {
         <div className="blogs-div">
           <div className="blog-pic">
             <img
-              src="/images/blog/blog-20.webp"
+              src="/assets/images/blog/blog-20.webp"
               alt="blogs-image-20"
               className="shadow"
             />

@@ -7,7 +7,7 @@ import SectionSix from "../components/SectionSix";
 
 const Home = () => {
   const [homePic, showHomePic] = useState(true);
-  const img = "images/homepage/video-img.jpg";
+  const img = "/assets/images/homepage/video-img.jpg";
   const url = "https://www.youtube.com/watch?v=TnBuYRP5hZo";
   const close = () => {
     showHomePic(false);
@@ -125,16 +125,16 @@ const Home = () => {
         <div className="overlay">
           <div className="overlay-div">
             <img
-              src="/images/homepage/1.jpg"
+              src="/assets/images/homepage/1.jpg"
               alt="Home"
               className="overlay-image"
             />
+            <button className="close-button" onClick={close}>
+              X
+            </button>
           </div>
-          <button className="close-button" onClick={close}>
-            X
-          </button>
         </div>
-      )} 
+      )}
       <div className="home">
         <div className="home-first">
           <div className="home-bg ">
@@ -151,11 +151,13 @@ const Home = () => {
                   facilities under a single roof by giving new lives to
                   thousands
                 </p>
-                <Link to="/about"className="hbtn btn">About Us</Link>
+                <Link to="/about" className="hbtn btn">
+                  About Us
+                </Link>
               </div>
               <div className="home-1-2">
                 <img
-                  src="/images/homepage/homeimage.png"
+                  src="/assets/images/homepage/homeimage.png"
                   alt="home-image"
                   className="home-1-pic"
                 />
@@ -191,7 +193,10 @@ const Home = () => {
                       easiest way to get emergency, OPD & other essential
                       medical services round the clock.
                     </p>
-                    <Link to="/doctors" className="card-btn btn text-light mt-3">
+                    <Link
+                      to="/doctors"
+                      className="card-btn btn text-light mt-3"
+                    >
                       View Doctors
                     </Link>
                   </div>
@@ -203,7 +208,10 @@ const Home = () => {
                       You can book an appointment to get connected with your
                       desired doctors.
                     </p>
-                    <Link to="https://neuro.danphecare.com/" className="card-btn btn text-light mt-3">
+                    <Link
+                      to="https://neuro.danphecare.com/"
+                      className="card-btn btn text-light mt-3"
+                    >
                       Book an Appointment
                     </Link>
                   </div>
@@ -240,7 +248,7 @@ const Home = () => {
           className={`section-1 d-flex ${isSec2Visible ? "show" : ""}`}
         >
           <div className="section-1-1div">
-            <img src="/images/homepage/director.png" alt="director-image" />
+            <img src="/assets/images/homepage/director.png" alt="director-image" />
           </div>
           <div className="section-1-2div container mt-3">
             <p className="section-1-1p ">SERVING THE HUMANITY</p>
@@ -320,7 +328,7 @@ const Home = () => {
             </div>
             <div className="cols col-md-6 col-sm-12">
               <img
-                src="/images/homepage/sec-3-1.png"
+                src="/assets/images/homepage/sec-3-1.png"
                 alt=""
                 className="sec-3-img"
               />
@@ -329,9 +337,7 @@ const Home = () => {
         </div>
         <div className="section-4 ">
           <div className="sec-4-row ">
-            <div className="sec-4-col1">
-              
-            </div>
+            <div className="sec-4-col1"></div>
             <div className="sec-4-col2 ">
               <div
                 ref={sec4Ref}
@@ -362,7 +368,10 @@ const Home = () => {
                   drkattel@neurohospital.com.np
                 </Link>
                 <br />
-                <Link to="https://neuro.danphecare.com/" className="sec-4-btn btn text-light">
+                <Link
+                  to="https://neuro.danphecare.com/"
+                  className="sec-4-btn btn text-light"
+                >
                   Book an Appointment
                 </Link>
               </div>
@@ -411,17 +420,20 @@ const Home = () => {
               magnetic field gradients, and radio waves to generate images of
               the organs in the body.
             </p>
-            <NavLink to="https://neuro.danphecare.com/" className="sec7-btn btn text-light">
+            <NavLink
+              to="https://neuro.danphecare.com/"
+              className="sec7-btn btn text-light"
+            >
               Book an Appointment
             </NavLink>
           </div>
         </div>
-        <div className="section-8">
+        <div className="section-8 my-2">
           <div className="sec8-div">
             <p className="sec8-p text-center">Hospital Updates</p>
             <div
               ref={sec7Ref}
-              className={`sec8cnt-div  text-light ${
+              className={`sec8cnt-div text-light ${
                 isSec7Visible ? "show" : ""
               }`}
             >

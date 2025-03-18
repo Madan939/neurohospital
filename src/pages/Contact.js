@@ -8,7 +8,7 @@ const Contact = () => {
     <>
       <Breadcrumb name1={name} name2={name} />
       <div className="contacts">
-        <div className="ct-sec1 d-flex">
+        <div className="ct-sec1">
           <div className="ct1-col1">
             <p className="ct-p1">Departments & Helplines</p>
             <p>
@@ -20,7 +20,6 @@ const Contact = () => {
               We also provide online counseling facilities via WhatsApp, Viber,
               Zoom, Jio Video Call, etc.
             </p>
-            <br />
             <div className="ct-div1 d-flex">
               <div className="ct-col2">
                 <div className="ct-p2">Emergency Helpline</div>
@@ -54,8 +53,6 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-            <br />
-            <br />
             <div className="ct-div1 d-flex">
               <div className="ct-col1">
                 <div className="ct-p2">Outreach Department</div>
@@ -87,7 +84,6 @@ const Contact = () => {
                 style={{
                   position: "relative",
                   paddingBottom: "56.25%",
-
                   overflow: "hidden",
                   maxWidth: "100%",
                 }}
@@ -112,9 +108,9 @@ const Contact = () => {
         </div>
         <br />
         <br />
-        <div className="ct-sec3 d-flex">
-          <div className="ct-s3-col1 text-center">
-            <img src="/images/contact/c1.png" alt="img1" />
+        <div className="ct-sec3">
+          <div className="ct-s3-col1 text-center shadow">
+            <img src="/assets/images/contact/c1.png" alt="img1" />
             <p className="ct-p5">P.R.O.</p>
             <p className="ct-p6">Dibya Rajbhandari (She/Her)</p>
             <p className="ct-p7">pro@neurohospital.com.np</p>
@@ -122,11 +118,11 @@ const Contact = () => {
               to="https://wa.me/9779852004024?text=Hi,%20%0A%0AI%27m%20contacting%20you%20from%20your%20website%20www.neurohospital.com.np%20%0AThanks%20"
               className="ct-s3-btn btn"
             >
-              <i className="fa-brands fa-whatsapp"></i>WhatsApp
+              <i className="fa-brands fa-whatsapp text-light"></i> &nbsp;WhatsApp
             </Link>
           </div>
-          <div className="ct-s3-col1 text-center">
-            <img src="/images/contact/c2.png" alt="img1" />
+          <div className="ct-s3-col1 text-center shadow">
+            <img src="/assets/images/contact/c2.png" alt="img1" />
             <p className="ct-p5">Frontdesk</p>
             <p className="ct-p6">Tanka Gautam (He/Him)</p>
             <p className="ct-p7">frontdesk@neurohospital.com.np</p>
@@ -134,11 +130,11 @@ const Contact = () => {
               to="https://wa.me/9779852004024?text=Hi,%20%0A%0AI%27m%20contacting%20you%20from%20your%20website%20www.neurohospital.com.np%20%0AThanks%20"
               className="ct-s3-btn btn"
             >
-              <i className="fa-brands fa-whatsapp"></i>WhatsApp
+              <i className="fa-brands fa-whatsapp text-light"></i>&nbsp;WhatsApp
             </Link>
           </div>
-          <div className="ct-s3-col1 text-center">
-            <img src="/images/contact/c3.png" alt="img1" />
+          <div className="ct-s3-col1 text-center shadow">
+            <img src="/assets/images/contact/c3.png" alt="img1" />
             <p className="ct-p5">Counselor</p>
             <p className="ct-p6">Reena Bhattarai (She/Her)</p>
             <p className="ct-p7">counselor@neurohospital.com.np</p>
@@ -146,7 +142,7 @@ const Contact = () => {
               to="https://wa.me/9779852004024?text=Hi,%20%0A%0AI%27m%20contacting%20you%20from%20your%20website%20www.neurohospital.com.np%20%0AThanks%20"
               className="ct-s3-btn btn"
             >
-              <i className="fa-brands fa-whatsapp"></i>WhatsApp
+              <i className="fa-brands fa-whatsapp text-light"></i>&nbsp;WhatsApp
             </Link>
           </div>
         </div>

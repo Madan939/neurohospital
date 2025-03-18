@@ -6,7 +6,7 @@ const WhatIsPhobia = () => {
         <div className="blogs-div">
           <div className="blog-pic">
           <img
-            src="/images/blog/phobia.png"
+            src="/assets/images/blog/phobia.png"
             alt="blogs-image"
             className="shadow"
           />

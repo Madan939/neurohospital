@@ -23,7 +23,7 @@ const SecondNav = () => {
           <div>
             <NavLink onClick={() => load("/")}>
               <img
-                src="/images/header-logo.png"
+                src="/assets/images/header-logo.png"
                 alt="header-logo"
                 className="header-logo"
               />

@@ -57,7 +57,7 @@ const Header = ({ menuOpen, setMenuOpen }) => {
           </div>
           <div className="resp-nav1-div-div2" onClick={() => load("/")}>
             <Link className="w-100">
-              <img src="/images/header-logo.png" alt="header-logo" />
+              <img src="/assets/images/header-logo.png" alt="header-logo" />
             </Link>
           </div>
           <div className="resp-nav1-div-div3">
@@ -187,8 +187,8 @@ const Header = ({ menuOpen, setMenuOpen }) => {
               </Link>
             </div>
           )}
-          <li className="ul-li" onClick={() => load("/contacts")}>
-            <Link to="/contact">Contacts</Link>
+          <li className="ul-li" onClick={() => load("/contact")}>
+            <Link>Contacts</Link>
           </li>
           <li className="ul-li-last">
             {blogs ? (
@@ -339,7 +339,7 @@ export default Header;
 //           </div>
 //           <div className="resp-nav1-div-div2">
 //             <Link to="/" className="w-100">
-//               <img src="/images/header-logo.png" alt="header-logo" />
+//               <img src="/assets/images/header-logo.png" alt="header-logo" />
 //             </Link>
 //           </div>
 //           <div className="resp-nav1-div-div3">

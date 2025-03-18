@@ -1,6 +1,6 @@
 .breadcrumb {
   height: 150px;
-  background-image: url(/images/breadcrumb.jpg);
+  background-image: url(/assets/images/breadcrumb.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: auto;
@@ -34,7 +34,7 @@
   font-weight: bolder;
   color: #2c52a0;
 }
-@media screen and (max-width: 600px) {
+@media only screen and (min-width: 320px) and (max-width: 600px) {
   .breadcrumb {
     height: 130px;
     text-align: center;

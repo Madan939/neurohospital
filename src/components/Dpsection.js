@@ -22,27 +22,27 @@ const Dpsection = () => {
   const list = [
     {
       name: "Radiology",
-      img: "/images/department/dp19.png",
+      img: "/assets/images/department/dp19.png",
       des: "A branch of medicine that uses imaging technology to diagnose and treat disease.",
     },
     {
       name: "Pathology",
-      img: "/images/department/dp7.png",
+      img: "/assets/images/department/dp7.png",
       des: "  The medical specialty concerned with the study of the nature and causes of diseases.",
     },
     {
       name: "Endoscopy",
-      img: "/images/department/dp13.png",
+      img: "/assets/images/department/dp13.png",
       des: "An endoscopy is a procedure used in medicine to look inside the body.",
     },
     {
       name: "ABPM/ Holter/ ECG",
-      img: "/images/department/dp8.png",
+      img: "/assets/images/department/dp8.png",
       des: "Electrical activity of the heart continuously 24/7 while away from the doctor's office.",
     },
     {
       name: "NCS / EMV",
-      img: "/images/department/dp5.png",
+      img: "/assets/images/department/dp5.png",
       des: "Electrical activity of the muscles and nerves of the body, usually to an arm or a leg.",
     }
     

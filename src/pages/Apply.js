@@ -8,13 +8,13 @@ const Apply = () => {
     <>
       <Breadcrumb name1={name} name2={name} />
       <div className="apply">
-        <div className="apply-row row">
+        <div className="apply-row row ">
           <div className="cols col-md-8 col-sm-12">
             <p className="text-center apply-p1 m-2">Fill up the forms to apply now.</p>
             <br/><br/>
-            <form className=" border shadow m-2">
+            <form className="shadow my-3">
               <div className="my-4 mx-5">
-                <img src="/images/apply/logo.svg" alt="sriyog" className="w-25"/>
+                <img src="/assets/images/apply/logo.svg" alt="sriyog" className="w-25"/>
               </div>
               <div className="mx-5 my-4">
                 <label HTMLFor="exampleInputEmail1" className="form-label">
@@ -29,7 +29,7 @@ const Apply = () => {
               </div>
               <div className="mx-5 my-4">
                 <div className="row">
-                  <div className="col col-6">
+                  <div className="cols col-md-6 col-sm-12">
                     <label HTMLFor="first-name" className="form-label">
                       First Name:
                     </label>
@@ -39,7 +39,7 @@ const Apply = () => {
                       id="first-name"
                     />
                   </div>
-                  <div className="col col-6">
+                  <div className="cols col-md-6 col-sm-12">
                     <label HTMLFor="last-name" className="form-label">
                       Last Name:
                     </label>
@@ -53,7 +53,7 @@ const Apply = () => {
               </div>
               <div className="mx-5 my-4">
                 <div className="row">
-                  <div className="col col-6">
+                  <div className="cols col-md-6 col-sm-12">
                     <label HTMLFor="phone" className="form-label">
                       Phone:
                     </label>
@@ -78,7 +78,7 @@ const Apply = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="col col-6">
+                  <div className="cols col-md-6 col-sm-12">
                     <label HTMLFor="address" className="form-label">
                       Address:
                     </label>
@@ -109,20 +109,20 @@ const Apply = () => {
                   All details are true
                 </label>
               </div>
-              <div className="text-center mx-5 my-4">
-                <button type="submit " className="w-50 btn apply-btn px-4">
+              <div className="text-center mx-5 my-2">
+                <button type="submit " className="w-50 btn apply-btn my-2">
                   Apply details
                 </button>
               </div>
             </form>
           </div>
-          <div className="cols col-md-4 col-sm-12 shadow">
+          <div className="cols col-md-4 col-sm-12 shadow ">
             <p className="apply-p2">Welcome !</p>
             <hr />
             <div className="row apply-row-2">
               <div className="col col-5">
                 <img
-                  src="/images/apply/ap-1.jpg"
+                  src="/assets/images/apply/ap-1.jpg"
                   alt="apply-image"
                   className="w-100 h-auto"
                 />

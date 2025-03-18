@@ -10,7 +10,7 @@ const Sec8 = () => {
     const List=[
         {
             id:1,
-            pic:"/images/homepage/sec-8-1.jpg",
+            pic:"/assets/images/homepage/sec-8-1.jpg",
             name:"What is Anxiety?",
             date:"07 Feburary 2024",
             des:"Anxiety is a natural human emotion characterized by feelings of worry, nervousness, apprehension, and dread. It can manifest.....",
@@ -18,7 +18,7 @@ const Sec8 = () => {
         },
         {
             id:2,
-            pic:"/images/homepage/sec-8-2.jpg",
+            pic:"/assets/images/homepage/sec-8-2.jpg",
             name:"Migraine Headache",
             date:"01 Feburary 2024",
             des:"Migraine is a common disorder which causes a disabling headache usually associated with nausea / vomiting and/ or light and Sound sensitivity. ....",
@@ -26,7 +26,7 @@ const Sec8 = () => {
         },
         {
             id:3,
-            pic:"/images/homepage/sec-8-3.jpg",
+            pic:"/assets/images/homepage/sec-8-3.jpg",
             name:"Autism Spectrum Disorder (ASD)",
             date:"4 January 2024",
             des:"Autism, or autism spectrum disorder (ASD), is a neurodevelopmental disorder characterized by a presence of...",

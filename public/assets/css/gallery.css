@@ -194,6 +194,7 @@
   }
   .g-pic-overlay img {
     width: 85%;
+    text-align: center;
     height: auto;
     margin: auto;
   }
@@ -212,6 +213,21 @@
     font-weight: 100;
     color: #fff;
     transform: scaleY(3.5);
+    font-size: 2rem !important;
+  }
+  .overlay1 ,.overlay2{
+    /* opacity: 0;
+    position: absolute;*/
+     top: 18px;
+    left: 4%; 
+     width: 92%;
+    height: 89%; 
+  }
+  .overlay2{
+    height: 93%;
+    width: 92%;
+  }
+  .ov-ch i {
     font-size: 2rem !important;
   }
 }

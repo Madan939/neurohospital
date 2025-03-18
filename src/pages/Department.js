@@ -14,7 +14,7 @@ const Department = () => {
       <div className="dep-sec1">
         <div className="dsec1">
           <div className="ds1-1">
-            <img src="/images/department/dept1.jpg" alt="" className="w-100 h-100" />
+            <img src="/assets/images/department/dept1.jpg" alt="" className="w-100 h-100" />
           </div>
           <div className="ds1-2">
             <div>

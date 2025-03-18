@@ -7,7 +7,7 @@ const KidneyStone = () => {
         <div className="blogs-div">
           <div className="blog-pic">
             <img
-              src="/images/blog/blog-4.png"
+              src="/assets/images/blog/blog-4.png"
               alt="blogs-image-1"
               className="shadow"
             />

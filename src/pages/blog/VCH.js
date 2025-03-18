@@ -6,7 +6,7 @@ const VCH = () => {
       <div className="blogs">
         <div className="blogs-div">
           <div className="blog-pic"> <img
-            src="/images/blog/blog-3.png"
+            src="/assets/images/blog/blog-3.png"
             alt="blogs-image-1"
             className="shadow"
           /></div>

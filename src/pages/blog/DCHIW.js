@@ -7,7 +7,7 @@ const DCHIW = () => {
         <div className="blogs-div">
           <div className="blog-pic">
             <img
-              src="/images/blog/blog-15.webp"
+              src="/assets/images/blog/blog-15.webp"
               alt="blogs-image-15"
               className="shadow"
             />
@@ -65,7 +65,7 @@ const DCHIW = () => {
           <br />
           <div className="blog-pic">
             <img
-              src="/images/blog/dghid.webp"
+              src="/assets/images/blog/dghid.webp"
               alt="blogs-image-15-1"
               className="shadow"
             />

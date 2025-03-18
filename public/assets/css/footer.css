@@ -55,7 +55,7 @@ footer{
     font-size: 0.9rem;
     color: #272626;
   }
-  @media screen and (max-width: 600px) {
+  @media only screen and (min-width: 320px) and (max-width: 600px) {
     .footer-logo {
       height: 3rem;
       margin-bottom: 1rem;

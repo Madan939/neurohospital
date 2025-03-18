@@ -22,42 +22,42 @@ const DpSectiion1 = () => {
   const list = [
     {
       name: "Neurosurgery",
-      img: "/images/department/dp1.png",
+      img: "/assets/images/department/dp1.png",
       des: "The specialty of neurosurgical care includes both adult and pediatric patients.",
     },
     {
       name: "Orthopedic",
-      img: "/images/department/dp2.png",
+      img: "/assets/images/department/dp2.png",
       des: " Focuses on injuries and diseases of your body's musculoskeletal system.",
     },
     {
       name: "Obs & Gynaecology",
-      img: "/images/department/dp3.png",
+      img: "/assets/images/department/dp3.png",
       des: "Obstetrics means care during pregnancy, childbirth, and the postpartum period.",
     },
     {
       name: "GI Surgery",
-      img: "/images/department/dp4.png",
+      img: "/assets/images/department/dp4.png",
       des: "It means to treat benign (noncancerous) conditions that affect the digestive tract.",
     },
     {
       name: "ENT",
-      img: "/images/department/dp5.png",
+      img: "/assets/images/department/dp5.png",
       des: "Specializes in everything having to do with parts of the body (ear, nose, and throat).",
     },
     {
       name: "Dental",
-      img: "/images/department/dp6.png",
+      img: "/assets/images/department/dp6.png",
       des: "The branch of medicine focused on the teeth, gums, and mouth is Known as Dental.",
     },
     {
       name: "Urology",
-      img: "/images/department/dp7.png",
+      img: "/assets/images/department/dp7.png",
       des: "Urology is a part of health care that deals with diseases of the male and female urinary tract.",
     },
     {
       name: "Interventional Cardiology",
-      img: "/images/department/dp8.png",
+      img: "/assets/images/department/dp8.png",
       des: "Specialty that diagnoses and treats heart and blood vessel conditions using small tubes.",
     },
   ];

@@ -7,7 +7,7 @@ const HTCAD = () => {
         <div className="blogs-div">
           <div className="blog-pic">
             <img
-              src="/images/blog/blog-16.webp"
+              src="/assets/images/blog/blog-16.webp"
               alt="blogs-image-16"
               className="shadow"
             />
@@ -67,7 +67,7 @@ const HTCAD = () => {
           <br />
           <div className="blog-pic">
             <img
-              src="/images/blog/htoca.webp"
+              src="/assets/images/blog/htoca.webp"
               alt="blogs-image-15-1"
               className="shadow"
             />

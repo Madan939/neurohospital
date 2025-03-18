@@ -22,67 +22,67 @@ const Dpsection2 = () => {
   const list = [
     {
       name: "Neurology",
-      img: "/images/department/dp9.png",
+      img: "/assets/images/department/dp9.png",
       des: "The specialty of neurosurgical care includes both adult and pediatric patients.",
     },
     {
       name: "Cardiology",
-      img: "/images/department/dp5.png",
+      img: "/assets/images/department/dp5.png",
       des: " Cardiology is a branch of medicine that concerns diseases and disorders of the heart.",
     },
     {
       name: "Obs & Gynaecology",
-      img: "/images/department/dp3.png",
+      img: "/assets/images/department/dp3.png",
       des: "Obstetrics means care during pregnancy, childbirth, and the postpartum period.",
     },
     {
       name: "Hematology",
-      img: "/images/department/dp10.png",
+      img: "/assets/images/department/dp10.png",
       des: "Hematology is the branch of medicine with the study of the blood and blood disorders.",
     },
     {
       name: "General Medicine",
-      img: "/images/department/dp11.png",
+      img: "/assets/images/department/dp11.png",
       des: "Speciality of medicine which is involved in the prevention, diagnosis & treatment.",
     },
     {
       name: "Nephrologyl",
-      img: "/images/department/dp12.png",
+      img: "/assets/images/department/dp12.png",
       des: "Nephrology is a specialty within the internal medicine field related to kidney care.",
     },
     {
       name: "Gastroenterology",
-      img: "/images/department/dp13.png",
+      img: "/assets/images/department/dp13.png",
       des: "The branch of medicine focused on the digestive system and its disorders.",
     },
     {
       name: "Opthalmology",
-      img: "/images/department/dp14.png",
+      img: "/assets/images/department/dp14.png",
       des: "Ophthalmology is the specialized field of medicine that focuses on the health of the eye.",
     },
     {
         name: "Dermatology",
-        img: "/images/department/dp15.png",
+        img: "/assets/images/department/dp15.png",
         des: "The study, research, diagnosis, and management of any health conditions affect the skin. ",
       },
       {
         name: "Pediatrics",
-        img: "/images/department/dp16.png",
+        img: "/assets/images/department/dp16.png",
         des: "Branch of medicine dealing with the medical care of infants, children, and adolescents.",
       },
       {
         name: "Psychiatric",
-        img: "/images/department/dp1.png",
+        img: "/assets/images/department/dp1.png",
         des: "Branch of medicine focused on the diagnosis, treatment and prevention of mental health.",
       },
       {
         name: "Oncology",
-        img: "/images/department/dp17.png",
+        img: "/assets/images/department/dp17.png",
         des: "Medicine dedicated to the investigation, diagnosis and treatment of people with cancer.",
       },
       {
         name: "Family Medicine",
-        img: "/images/department/dp18.png",
+        img: "/assets/images/department/dp18.png",
         des: "Qualified to treat most ailments and provide comprehensive health care for people.",
       },
 

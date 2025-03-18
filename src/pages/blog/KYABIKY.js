@@ -7,7 +7,7 @@ const KYABIKY = () => {
         <div className="blogs-div">
           <div className="blog-pic">
           <img
-            src="/images/blog/blog-6.png"
+            src="/assets/images/blog/blog-6.png"
             alt="blogs-image-1"
             className="shadow"
           />

@@ -7,7 +7,7 @@ import AboutCpnt from "../components/AboutCpnt";
 const About = () => {
   const name1 = "About Us";
   const name2 = "About Us";
-  const img = "/images/aboutus/abu3.png";
+  const img = "/assets/images/aboutus/abu3.png";
   const url = "https://www.youtube.com/watch?v=WYN_vQ-PdH4";
   const navigate = useNavigate();
   function load(link) {
@@ -131,7 +131,7 @@ const About = () => {
       <div className="abu-sec1">
         <div className="ab-sec1-cnt ">
           <div className="ab-sec1-cnt-1">
-            <img src="/images/aboutus/ab1.png" alt="ab1" />
+            <img src="/assets/images/aboutus/ab1.png" alt="ab1" />
           </div>
           <div className="ab-sec1-cnt-2">
             <div className="ab-sec1-cnt-2-1">
@@ -206,7 +206,7 @@ const About = () => {
             </div>
           </div>
           <div className="abu-sec2-cnt2">
-            <img src="/images/aboutus/abu2.jpg" alt="abu2" />
+            <img src="/assets/images/aboutus/abu2.jpg" alt="abu2" />
           </div>
         </div>
       </div>
@@ -215,22 +215,22 @@ const About = () => {
   <div className="abu-sec3">
         <div ref={sec3Ref} className={`abu-sec3-div1 ${isSec3Visible ? "show" : ""}`}>
           <div className="abu-sec3-div1-1">
-            <img src="/images/aboutus/cardiogram.png" alt="cardiogram" className="flat-icon" />
+            <img src="/assets/images/aboutus/cardiogram.png" alt="cardiogram" className="flat-icon" />
             <p className="abs3-p1 text-light h3 text-bold">{patients}</p>
             <p className="abs3-p2">Plus Happy Patients</p>
           </div>
           <div className="abu-sec3-div1-1">
-            <img src="/images/aboutus/doctor.png" alt="doctor" className="flat-icon" />
+            <img src="/assets/images/aboutus/doctor.png" alt="doctor" className="flat-icon" />
             <p className="abs3-p1 text-light h3 text-bold">{doctors}</p>
             <p className="abs3-p2">Qualified Doctors</p>
           </div>
           <div className="abu-sec3-div1-1">
-            <img src="/images/aboutus/bed.png" alt="bed" className="flat-icon" />
+            <img src="/assets/images/aboutus/bed.png" alt="bed" className="flat-icon" />
             <p className="abs3-p1 text-light h3 text-bold">{beds}</p>
             <p className="abs3-p2">Beds</p>
           </div>
           <div className="abu-sec3-div1-1">
-            <img src="/images/aboutus/location.png" alt="location" className="flat-icon" />
+            <img src="/assets/images/aboutus/location.png" alt="location" className="flat-icon" />
             <p className="abs3-p1 text-light h3 text-bold">{centers}</p>
             <p className="abs3-p2">Referring Center</p>
           </div>

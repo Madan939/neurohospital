@@ -7,7 +7,7 @@ const BipolarDisorder = () => {
         <div className="blogs-div">
           <div className="blog-pic">
             <img
-              src="/images/blog/blog-13.webp"
+              src="/assets/images/blog/blog-13.webp"
               alt="blogs-image-1"
               className="shadow"
             />
@@ -131,7 +131,7 @@ const BipolarDisorder = () => {
           <br />
           <div className="blog-pic">
             <img
-              src="/images/blog/bd-2.webp"
+              src="/assets/images/blog/bd-2.webp"
               alt="blogs-image-1"
               className="shadow"
             />

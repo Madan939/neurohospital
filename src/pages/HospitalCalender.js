@@ -83,17 +83,17 @@ const HospitalCalender = () => {
   return (
     <>
       <Breadcrumb name1={name1} name2={name1} />
-      <p className="cdr-p1">{name1}</p>
-      <div className="calendar">
-        <div className="d-flex">
-          <div className="w-25">
+      <br/><br/>
+      <div className="calendar shadow">
+        <div className="d-flex flex-wrap">
+          <div className="cdr-d1">
             <img
-              src="/images/header-logo.png"
+              src="/assets/images/header-logo.png"
               alt="header-logo"
-              className="header-logo"
+              className="calender-logo"
             />
           </div>
-          <p className="cdr-p2 w-50  ">Neuro Hospital - Biratnagar</p>
+          <div className="cdr-d2">Neuro Hospital - Biratnagar</div>
         </div>
 
         <div className="h-header">

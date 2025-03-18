@@ -7,7 +7,7 @@ const WIA = () => {
         <div className="blogs-div">
           <div className="blog-pic">
             <img
-              src="/images/blog/blog-24.jpg"
+              src="/assets/images/blog/blog-24.jpg"
               alt="blogs-image-24"
               className="shadow"
             />

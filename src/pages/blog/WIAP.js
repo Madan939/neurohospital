@@ -7,7 +7,7 @@ const WIAP = () => {
         <div className="blogs-div">
           <div className="blog-pic">
             <img
-              src="/images/blog/blog-22.webp"
+              src="/assets/images/blog/blog-22.webp"
               alt="blogs-image-22"
               className="shadow"
             />

@@ -1,9 +1,14 @@
 import React from "react";
 import Breadcrumb from "../components/Breadcrumb";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Career = () => {
   const name = "Careers";
+  const navigate = useNavigate();
+  function load(link) {
+    navigate(link);
+    window.location.reload();
+  }
   return (
     <>
       <Breadcrumb name1={name} name2={name} />
@@ -12,7 +17,7 @@ const Career = () => {
           <div className="crr-p">Medical Officer</div>
           <div className="mb-3">Posted on 5th January 2024</div>
           <div className="crr-p1">Job Description</div>
-          <div className="w-75 mb-3">
+          <div className="cr-p2 mb-3">
             She /he is responsible for direct patient observation, order
             investigation, diagnosis and treatment. Ultimately, you’ll be
             responsible for making sure our hospital operations run smoothly.
@@ -123,12 +128,12 @@ const Career = () => {
               Excellent working knowledge of minor medical equipment and
               devices.
             </li>
-            </ul>
+          </ul>
           <br />
           <hr />
           <br />
           <br />
-          <Link to="http://localhost:3000/career" className="cr-btn btn">
+          <Link onClick={() => load("/apply")} className="cr-btn btn">
             Apply now
           </Link>
           <br />
@@ -235,7 +240,8 @@ const Career = () => {
           <div>
             - Verify that the required signatures on all unsent forms
             (preoperative and high risk consents) have been obtained.
-          </div><br/>
+          </div>
+          <br />
           <div className="crr-p1 mt-3">Skills</div>
           <ul>
             <li>Time Management.</li>
@@ -251,12 +257,12 @@ const Career = () => {
               Excellent working knowledge of minor medical equipment and
               devices.
             </li>
-            </ul>
-            <br />
+          </ul>
+          <br />
           <hr />
           <br />
           <br />
-          <Link to="http://localhost:3000/career" className="cr-btn btn">
+          <Link onClick={() => load("/apply")} className="cr-btn btn">
             Apply now
           </Link>
         </div>

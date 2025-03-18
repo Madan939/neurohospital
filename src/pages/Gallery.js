@@ -5,28 +5,28 @@ const Gallery = () => {
   const name1 = "Our Gallery";
   const name2 = "Hospital Gallery";
   const list1 = [
-    { id: 1, pic: "/images/gallery/g1.jpg" },
-    { id: 2, pic: "/images/gallery/g2.jpg" },
-    { id: 3, pic: "/images/gallery/g4.jpg" },
-    { id: 4, pic: "/images/gallery/g5.jpg" },
-    { id: 5, pic: "/images/gallery/g6.jpg" },
-    { id: 6, pic: "/images/gallery/g8.jpg" },
-    { id: 7, pic: "/images/gallery/g9.jpg" },
-    { id: 8, pic: "/images/gallery/g10.jpg" },
-    { id: 9, pic: "/images/gallery/g12.jpg" },
-    { id: 10, pic: "/images/gallery/g13.jpg" },
-    { id: 11, pic: "/images/gallery/g14.jpg" },
-    { id: 12, pic: "/images/gallery/g15.jpg" },
-    { id: 13, pic: "/images/gallery/g16.jpg" },
-    { id: 14, pic: "/images/gallery/g17.jpg" },
-    { id: 15, pic: "/images/gallery/g18.jpg" },
-    { id: 16, pic: "/images/gallery/g19.jpg" },
+    { id: 1, pic: "/assets/images/gallery/g1.jpg" },
+    { id: 2, pic: "/assets/images/gallery/g2.jpg" },
+    { id: 3, pic: "/assets/images/gallery/g4.jpg" },
+    { id: 4, pic: "/assets/images/gallery/g5.jpg" },
+    { id: 5, pic: "/assets/images/gallery/g6.jpg" },
+    { id: 6, pic: "/assets/images/gallery/g8.jpg" },
+    { id: 7, pic: "/assets/images/gallery/g9.jpg" },
+    { id: 8, pic: "/assets/images/gallery/g10.jpg" },
+    { id: 9, pic: "/assets/images/gallery/g12.jpg" },
+    { id: 10, pic: "/assets/images/gallery/g13.jpg" },
+    { id: 11, pic: "/assets/images/gallery/g14.jpg" },
+    { id: 12, pic: "/assets/images/gallery/g15.jpg" },
+    { id: 13, pic: "/assets/images/gallery/g16.jpg" },
+    { id: 14, pic: "/assets/images/gallery/g17.jpg" },
+    { id: 15, pic: "/assets/images/gallery/g18.jpg" },
+    { id: 16, pic: "/assets/images/gallery/g19.jpg" },
   ];
   const list2 = [
-    { id: 17, pic: "/images/gallery/g3.jpg" },
-    { id: 18, pic: "/images/gallery/g7.jpg" },
-    { id: 19, pic: "/images/gallery/g11.jpg" },
-    { id: 20, pic: "/images/gallery/g20.jpg" },
+    { id: 17, pic: "/assets/images/gallery/g3.jpg" },
+    { id: 18, pic: "/assets/images/gallery/g7.jpg" },
+    { id: 19, pic: "/assets/images/gallery/g11.jpg" },
+    { id: 20, pic: "/assets/images/gallery/g20.jpg" },
   ];
 
   const images = [...list1, ...list2];
@@ -93,7 +93,7 @@ const Gallery = () => {
 
         {showImage && (
           <div className="g-pic">
-            <div className="g-pic-overlay" onClick={closeImage}>
+            <div className="g-pic-overlay">
               <img src={showImage} alt="img" />
               <button className="g-btn btn" onClick={closeImage}>X</button>
             </div>

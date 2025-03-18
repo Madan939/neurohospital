@@ -100,9 +100,10 @@ const Testimonials = () => {
   return (
     <>
       <Breadcrumb name1={name1} name2={name1} />
-      <div className="tl-sec">
+      <div className="tl-sec shadow mb-3">
+        <div className="tl-div mx-2 my-2">
         <div ref={sec2Ref} className={`tl-col1 ${isVisible ? "show" : ""}`}>
-          <img src="/images/testimonials/t1.jpg" alt="t1" />
+          <img src="/assets/images/testimonials/t1.jpg" alt="t1" />
         </div>
         <div  ref={sec3Ref} className={`tl-col2 ${isSec3Visible ? "show" : ""}`}>
           <p className="tl-p1">Diabetic patient from Inaruwa -2, Sunsari</p>
@@ -125,10 +126,13 @@ const Testimonials = () => {
           </p>
           <p className="tl-p4">Mrs. Rushanidevi Mehta | Inaruwa-2, Sunsari</p>
         </div>
+        </div>
+      
       </div>
-      <div className="tl-sec1">
-        <div ref={sec4Ref} className={`tl2-col1 ${isSec4Visible ? "show" : ""}`}>
-          <img src="/images/testimonials/t2.jpg" alt="t1" />
+      <div className="tl-sec1 shadow mb-3" >
+      <div className="tl-div mx-2 my-2">
+      <div ref={sec4Ref} className={`tl2-col1 ${isSec4Visible ? "show" : ""}`}>
+          <img src="/assets/images/testimonials/t2.jpg" alt="t1" />
         </div>
         <div  ref={sec5Ref} className={`tl2-col2 ${isSec5Visible ? "show" : ""}`}>
           <p className="tl-p1">अस्पताल ने मुझे नई जिन्दगि दि हे</p>
@@ -152,9 +156,12 @@ const Testimonials = () => {
           <p className="tl-p4">गब्बर मियाँ, मुर्शिदाबाद, अभि बिराटनगर</p>
         </div>
       </div>
-      <div className="tl-sec1">
+        
+      </div>
+      <div className="tl-sec1 shadow">
+      <div className="tl-div mx-2 my-2">
         <div  ref={sec6Ref} className={`tl3-col1 ${isSec6Visible ? "show" : ""}`}>
-          <img src="/images/testimonials/t3.jpg" alt="t1" />
+          <img src="/assets/images/testimonials/t3.jpg" alt="t1" />
         </div>
         <div ref={sec7Ref} className={`tl3-col2 ${isSec7Visible ? "show" : ""}`}>
           <p className="tl-p1">धनकुटा -२</p>
@@ -173,6 +180,7 @@ const Testimonials = () => {
             गर्न चाहन्छु ।
           </p>
           <p className="tl-p4">बिभिषा ठकुरी, धनकुटा -२</p>
+        </div>
         </div>
       </div>
     </>

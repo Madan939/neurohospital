@@ -7,7 +7,7 @@ const WhatIsAnxiety = () => {
         <div className="blogs-div">
           <div className="blog-pic">
             <img
-              src="/images/blogs/what-is-anxiety.jpg"
+              src="/assets/images/blogs/what-is-anxiety.jpg"
               alt="what-is-anxiety"
               className="shadow"
             />

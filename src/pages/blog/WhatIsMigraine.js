@@ -7,7 +7,7 @@ const WhatIsMigraine = () => {
         <div className="blogs-div">
           <div className="blog-pic">
             <img
-              src="/images/blog/blog-25.png"
+              src="/assets/images/blog/blog-25.png"
               alt="blogs-image-25"
               className="shadow"
             />

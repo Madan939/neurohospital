@@ -23,7 +23,7 @@ const PrivacyPolicy = () => {
           </p>
           <div>
             <div className="pp-p-div d-flex">
-              <i className="fas fa-angle-double-right"></i>What information is
+              <i class="fa-solid fa-angles-right"></i> &nbsp;What information is
               collected?
             </div>
             <p className="pp-p4">
@@ -34,7 +34,7 @@ const PrivacyPolicy = () => {
           </div>
           <div>
             <div className="pp-p-div d-flex">
-              <i className="fas fa-angle-double-right"></i>How is the
+              <i class="fa-solid fa-angles-right"></i> &nbsp;How is the
               information used?
             </div>
             <p className="pp-p4">
@@ -46,7 +46,7 @@ const PrivacyPolicy = () => {
           </div>
           <div>
             <div className="pp-p-div d-flex">
-              <i className="fas fa-angle-double-right"></i>Who has access to the
+              <i class="fa-solid fa-angles-right"></i>&nbsp;Who has access to the
               information?
             </div>
             <p className="pp-p4">
@@ -57,7 +57,7 @@ const PrivacyPolicy = () => {
           </div>
           <div>
             <div className="pp-p-div d-flex">
-              <i className="fas fa-angle-double-right"></i>How is the
+              <i class="fa-solid fa-angles-right"></i> &nbsp;How is the
               information protected?
             </div>
             <p className="pp-p4">
@@ -154,7 +154,7 @@ const PrivacyPolicy = () => {
             <div className="pp-p5">Contact us</div>
             <p>
               If you have any questions about this privacy policy, please
-              contact our Outreach Officer at outreach@neurohospital.com.np
+              contact our Outreach Officer at outreach @neurohospital.com.np
             </p>
           </div>
         </div>

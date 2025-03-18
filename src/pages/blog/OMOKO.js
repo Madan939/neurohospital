@@ -7,7 +7,7 @@ const OMOKO = () => {
         <div className="blogs-div">
           <div className="blog-pic">
             <img
-              src="/images/blog/blog-10.webp"
+              src="/assets/images/blog/blog-10.webp"
               alt="blogs-image-1"
               className="shadow"
             />

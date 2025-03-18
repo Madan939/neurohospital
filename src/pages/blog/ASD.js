@@ -7,7 +7,7 @@ const ASD = () => {
         <div className="blogs-div">
           <div className="blog-pic">
             <img
-              src="/images/blog/asd.jpg"
+              src="/assets/images/blog/asd.jpg"
               alt="Migraine-headache"
               className="shadow"
             />
@@ -53,7 +53,7 @@ const ASD = () => {
             </div>
             <div className="blog-pic mt-3">
               <img
-                src="/images/blog/asd1.jpg"
+                src="/assets/images/blog/asd1.jpg"
                 alt="Migraine-headache"
                 className="shadow"
               />
@@ -90,7 +90,7 @@ const ASD = () => {
             <br />
             <div className="blog-pic">
               <img
-                src="/images/blog/asd2.jpg"
+                src="/assets/images/blog/asd2.jpg"
                 alt="Migraine-headache"
                 className="shadow"
               />
@@ -210,7 +210,7 @@ const ASD = () => {
             <br />
             <div className="blog-pic">
               <img
-                src="/images/blog/asd3.jpg"
+                src="/assets/images/blog/asd3.jpg"
                 alt="Migraine-headache"
                 className="shadow"
               />

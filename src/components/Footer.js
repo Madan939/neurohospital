@@ -10,7 +10,7 @@ const Footer = () => {
             <div className="cols col-md-3 col-sm-12 col-xs-12">
               <NavLink to="">
                 <img
-                  src="/images/footer-logo.png"
+                  src="/assets/images/footer-logo.png"
                   alt="footer-logo"
                   className="footer-logo"
                 />

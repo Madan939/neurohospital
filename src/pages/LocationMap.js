@@ -37,23 +37,17 @@ const LocationMap = () => {
         ref={sec1Ref}
         className={`row2 text-center ${isSec1Visible ? "show" : ""}`}
       >
-        <div data-wow-delay="0.4s">
-          <div
-            style={{
-              position: "relative",
-              paddingBottom: "56.25%",
-              height: 0,
-              overflow: "hidden",
-              maxWidth: "100%",
-            }}
+        <div data-wow-delay="0.2s" >
+          <div className="map-frame"
           >
             <iframe
+            className="map-i-frame"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3572.0797586178865!2d87.28183477538015!3d26.45315787692409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ef745000000001%3A0x2e285e8569816c06!2sNeuro%20Cardio%20%26%20Multispeciality%20Hospital%20Pvt.%20Ltd.!5e0!3m2!1sen!2snp!4v1695969977821!5m2!1sen!2snp"
               width="900"
               height="650"
               style={{ border: 0 }}
               allowFullScreen
-              loading="lazy"
+              loading="lazy"       
               referrerPolicy="no-referrer-when-downgrade"
               title="Hospital Location"
             ></iframe>

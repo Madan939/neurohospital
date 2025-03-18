@@ -7,7 +7,7 @@ const THTOO = () => {
         <div className="blogs-div">
           <div className="blog-pic">
             <img
-              src="/images/blog/blog-21.webp"
+              src="/assets/images/blog/blog-21.webp"
               alt="blogs-image-21"
               className="shadow"
             />
@@ -62,7 +62,7 @@ const THTOO = () => {
           <br />
           <div className="blog-pic">
             <img
-              src="/images/blog/thoo.webp"
+              src="/assets/images/blog/thoo.webp"
               alt="blogs-image-21"
               className="shadow"
             />

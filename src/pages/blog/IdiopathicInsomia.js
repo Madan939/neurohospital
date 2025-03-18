@@ -7,7 +7,7 @@ const IdiopathicInsomia = () => {
         <div className="blogs-div">
           <div className="blog-pic">
             <img
-              src="/images/blog/blog-17.png"
+              src="/assets/images/blog/blog-17.png"
               alt="blogs-image-17"
               className="shadow"
             />

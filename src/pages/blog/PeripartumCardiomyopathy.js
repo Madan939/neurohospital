@@ -7,7 +7,7 @@ const PeripartumCardiomyopathy = () => {
         <div className="blogs-div">
           <div className="blog-pic">
             <img
-              src="/images/blog/blog-18.webp"
+              src="/assets/images/blog/blog-18.webp"
               alt="blogs-image-18"
               className="shadow"
             />
@@ -89,7 +89,7 @@ const PeripartumCardiomyopathy = () => {
           <br />
           <div className="blog-pic">
             <img
-              src="/images/blog/pc-2.webp"
+              src="/assets/images/blog/pc-2.webp"
               alt="blogs-image-15-1"
               className="shadow"
             />
