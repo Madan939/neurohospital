@@ -188,7 +188,7 @@ const Header = ({ menuOpen, setMenuOpen }) => {
             </div>
           )}
           <li className="ul-li" onClick={() => load("/contact")}>
-            <Link>Contacts</Link>
+            <Link>Contact</Link>
           </li>
           <li className="ul-li-last">
             {blogs ? (
