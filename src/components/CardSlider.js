@@ -96,7 +96,7 @@ const CardSlider = () => {
                   className="slider-card-img"
                 />
                 <h3 className="slider-card-h3">{card.name}</h3>
-                <p className="slider-card-p">{card.description}</p>
+                <p className="slider-card-p" style={{ textAlign: 'justify' }}>{card.description}</p>
               </div>
             </div>
           </SwiperSlide>

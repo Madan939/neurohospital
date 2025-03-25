@@ -22,15 +22,14 @@ const Dpsec4 = () => {
   const list = [
     {
       name: "Emergency",
-      img: "/assets/images/department/dp21.png",
+      icon: "fi fi-rr-ambulance",
       des: "A serious, unexpected, and often dangerous situation requiring immediate action.",
     },
     {
       name: "Pharmacy",
-      img: "/assets/images/department/dp22.png",
+      icon: "fa-solid fa-pills",
       des: " A medical shop or hospital dispensary where medicinal drugs are prepared or sold.",
     },
-    
   ];
   return (
     <div className="dps2-div">
@@ -43,7 +42,7 @@ const Dpsec4 = () => {
           <div className="dps2-col">
             <div className="dps2-col-cnt d-flex">
               <div className="dps2-col-cnt1 ">
-                <img src={item.img} alt={item.name} className="w-100 h-100" />
+                <i className={item.icon} alt={item.name}></i>
               </div>
               <div className="dps2-col-cnt2">
                 <div className="dsct-2-p1">{item.name}</div>

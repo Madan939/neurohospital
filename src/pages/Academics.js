@@ -11,8 +11,8 @@ const Academics = () => {
           <div className="A-sec-1-div1">
             <img src="/assets/images/acdemics/a1.jpg" alt="a1" />
           </div>
-          <div className="A-sec-1-div2">
-            <p>
+          <div className="A-sec-1-div2" style={{ textAlign: 'justify' }}>
+            <p >
               The Neuro Cardio & Multispeciality Hospital, located on Jahada
               Road in Biratnagar, has initiated a FCPS training (equivalent to
               Master of Medicine-MD) program in collaboration with the renowned{" "}
@@ -45,7 +45,7 @@ const Academics = () => {
           <div className="A-sec2-row">
             <div className="A-sec2-col1">
               <p className="As-p3  text-dark">Neurosurgery</p>
-              <div className="As-p4">
+              <div className="As-p4" style={{ textAlign: 'justify' }}>
                 This course provides a comprehensive introduction to
                 neurosurgery, covering essential topics such as neuroanatomy,
                 surgical techniques, and patient management. Students will gain
@@ -65,7 +65,7 @@ const Academics = () => {
           </div>
           <div className="A-sec3-col2">
             <p className="As-p3 text-dark">Cardiology</p>
-            <p className="As-p4">
+            <p className="As-p4" style={{ textAlign: 'justify' }}>
               Explore the fundamentals of cardiology, including heart function,
               common diseases, and current treatment options. This course is
               tailored for medical students and healthcare professionals who
@@ -79,7 +79,7 @@ const Academics = () => {
         <div className="A-sec-4">
           <div className="A-sec4-col1">
             <p className="As-p3  text-dark">General Medicine</p>
-            <p className="As-p4">
+            <p className="As-p4" style={{ textAlign: 'justify' }}>
               This course provides a comprehensive introduction to general
               medicine, covering essential topics such as anatomy, physiology,
               pathology, pharmacology, and diseases. Students will gain hands-on
@@ -98,7 +98,7 @@ const Academics = () => {
           </div>
           <div className="A-sec3-col2">
             <p className="As-p3  text-dark">Orthopedic Surgery</p>
-            <p className="As-p4">
+            <p className="As-p4" style={{ textAlign: 'justify' }}>
               This course provides a comprehensive introduction to orthopedic
               surgery, covering essential topics such as anatomy, physiology,
               pathology, pharmacology, and diseases. Students will gain hands-on
@@ -115,7 +115,7 @@ const Academics = () => {
           <div className="A-sec2-row">
             <div className="A-sec2-col1">
               <p className="As-p3  text-dark">Surgery</p>
-              <p className="As-p4">
+              <p className="As-p4" style={{ textAlign: 'justify' }}>
                 This course provides a comprehensive introduction to surgery,
                 covering essential topics such as anatomy, physiology,
                 pathology, pharmacology, and diseases. Students will gain
@@ -131,7 +131,7 @@ const Academics = () => {
         </div>
         <div className="A-sec-5">
             <p className="As-p3  text-center text-dark">CTEVT Courses</p>
-          <p className="As-p4">
+          <p className="As-p4" style={{ textAlign: 'justify' }}>
              The Council for Technical Education and Vocational
             Training (CTEVT) constituted in 1989 (2045 BS) is a national
             autonomous apex body of Technical and Vocational Education and
@@ -149,7 +149,7 @@ const Academics = () => {
           </div>
           <div className="A-sec3-col2">
             <p className="As-p3  text-dark">PCL Nursing</p>
-            <p className="As-p4">
+            <p className="As-p4" style={{ textAlign: 'justify' }}>
               This course provides a comprehensive introduction to PCL nursing,
               covering essential topics such as anatomy, physiology, pathology,
               pharmacology, and diseases. Students will gain hands-on experience
@@ -165,7 +165,7 @@ const Academics = () => {
           <div className="A-sec2-row">
             <div className="A-sec2-col1">
               <p className="As-p3  text-dark">Health Assistant </p>
-              <p className="As-p4">
+              <p className="As-p4" style={{ textAlign: 'justify' }}>
                 This course provides a comprehensive introduction to Health
                 Assistant, covering essential topics such as anatomy,
                 physiology, pathology, pharmacology, and diseases. Students will

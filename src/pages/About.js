@@ -128,7 +128,7 @@ const About = () => {
       <Breadcrumb name1={name1} name2={name2} />
 
       {/* Section 1 */}
-      <div className="abu-sec1">
+      <div className="abu-sec1" style={{ textAlign: 'justify' }}>
         <div className="ab-sec1-cnt ">
           <div className="ab-sec1-cnt-1">
             <img src="/assets/images/aboutus/ab1.png" alt="ab1" />
@@ -160,10 +160,10 @@ const About = () => {
       </div>
 
       {/* Section 2 (Appears on scroll) */}
-      <div ref={sec2Ref} className={` abu-sec2${isVisible ? "show" : ""}`}>
+      <div ref={sec2Ref} className={` abu-sec2${isVisible ? "show" : ""}`} style={{ textAlign: 'justify' }}>
         <div className="abu-sec2-cnt">
           <div className="abu-sec2-cnt1 ">
-            <div className="abu-s2ct-1div">
+            <div className="abu-s2ct-1div mx-2">
               <div className="s2ct-p1">Highest Quality Care</div>
               <div className="s2ct-p2">
                 Complete Medical Solutions in One Place
@@ -213,7 +213,7 @@ const About = () => {
       </div>
 
       {/* Section 3 (Appears on scroll) */}
-  <div className="abu-sec3">
+  <div className="abu-sec3" >
         <div ref={sec3Ref} className={`abu-sec3-div1 ${isSec3Visible ? "show" : ""}`}>
           <div className="abu-sec3-div1-1">
             <img src="/assets/images/aboutus/cardiogram.png" alt="cardiogram" className="flat-icon" />
@@ -238,7 +238,7 @@ const About = () => {
         </div>
       </div>
       {/* Section 4 (Video Section) */}
-      <div className="abu-sec4">
+      <div className="abu-sec4" style={{ textAlign: 'justify' }}>
         <div className="abs4-cnt">
           <div className="abs4-cnt1">
             <Video img={img} url={url} />
@@ -266,7 +266,7 @@ const About = () => {
       </div>
 
       {/* Section 5 (About Component) */}
-      <div className="abu-sec5">
+      <div className="abu-sec5" >
         <div className="abs5-cnt">
           <div
             ref={sec5Ref}

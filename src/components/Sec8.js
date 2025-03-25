@@ -29,41 +29,42 @@ const Sec8 = () => {
             pic:"/assets/images/homepage/sec-8-3.jpg",
             name:"Autism Spectrum Disorder (ASD)",
             date:"4 January 2024",
-            des:"Autism, or autism spectrum disorder (ASD), is a neurodevelopmental disorder characterized by a presence of...",
+            des:"Autism, or autism spectrum disorder (ASD), is a neurodevelopmental disorder characterized by a presence of autism is 17 per 10,000,, with a male-to-female...",
             link:"/blog/autism-spectrum-disorder-asd-3"
         },
     ]
   return (
     <>
-        <div className="blogs-row row ">
-            {List.map((card) => (
-              <div className="blogs-col cols col-md-4 col-sm-12">
-                <div className="blogs-col-div shadow" onClick={() => load(card.link)}>
-                  <img src={card.pic} alt={card.name} className="blogs-img" />
-                  <p className="mx-2">
-                    <Link
-                      onClick={() => load(card.link)}
-                      className="blogs-card-p1"
-                    >
-                      {card.name}
-                    </Link>
-                  </p>
-                  <p className="blogs-p3 mx-2">{card.des}&nbsp;<Link className="blog-info" onClick={() => load(card.link)} >
-                    See more
-                  </Link></p>
-                  <p className="blog-date mx-2">Date posted:{card.date}</p>
-                  <br/>
-
-                  {/* <Link
-                    onClick={() => load(card.link)}
-                    className="blogs-btn btn "
-                  >
-                    Read More
-                  </Link> */}
-                </div>
-              </div>
-            ))}
-          </div>
+         <div className="blogs-row row ">
+                   {List.map((card) => (
+                     <div className="blogs-col cols col-md-4 col-sm-12">
+                       <div
+                         className="blogs-col-div shadow"
+                       >
+                         <img src={card.pic} alt={card.name} className="blogs-img" />
+                         <p className="mx-2">
+                           <Link
+                             onClick={() => load(card.link)}
+                             className="blogs-card-p1"
+                           >
+                             {card.name}
+                           </Link>
+                         </p>
+                         <p className="blogs-p3 mx-2">{card.des}</p>
+                         <p className="blog-date mx-2">Date posted:{card.date}</p>
+                         <p className="text-center">
+                           {" "}
+                           <Link
+                             onClick={() => load(card.link)}
+                             className="blogs-btn btn"
+                           >
+                             Read More
+                           </Link>
+                         </p>
+                       </div>
+                     </div>
+                   ))}
+                 </div>
     </>
   )
 }

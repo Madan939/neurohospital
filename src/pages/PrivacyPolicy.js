@@ -8,7 +8,7 @@ const PrivacyPolicy = () => {
       <div className="pp-div">
         <div className="pp-div1">
           <p className="pp-p1">Privacy Policy</p>
-          <p className="pp-p2">
+          <p className="pp-p2" style={{ textAlign: 'justify' }}>
             Hospitals have a legal and ethical obligation to protect the privacy
             of their patients' medical information. This information is highly
             sensitive and can be used for a variety of purposes, including
@@ -67,7 +67,7 @@ const PrivacyPolicy = () => {
               physical security.
             </p>
           </div>
-          <p>
+          <p style={{ textAlign: 'justify' }}>
             Patients have certain rights under the Health Insurance Portability
             and Accountability Act (HIPAA), which is a federal law that protects
             the privacy of health information. These rights include the right to
@@ -75,7 +75,7 @@ const PrivacyPolicy = () => {
             information be corrected, and the right to limit how their
             information is used and shared.
           </p>
-          <p>
+          <p style={{ textAlign: 'justify' }}>
             Patients should review their hospital's privacy policy to understand
             how their information is being used and to learn about their rights.
             They should also ask questions if they have any concerns about their

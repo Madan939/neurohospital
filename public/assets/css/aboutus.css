@@ -344,13 +344,17 @@
   height: 80%;
   width: 100%;
   /* border:2px solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .abucol-1 {
   /* border:2px solid black; */
   width: 30%;
 }
-.abucol-1 img {
-  width: 90%;
+.abucol-1 i {
+  color:#aaa;
+  font-size: 4rem;
 }
 .abucol-2 {
   width: 65%;

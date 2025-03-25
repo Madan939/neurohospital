@@ -22,27 +22,27 @@ const Dpsection = () => {
   const list = [
     {
       name: "Radiology",
-      img: "/assets/images/department/dp19.png",
+      icon: "fi fi-rr-dashboard-monitor",
       des: "A branch of medicine that uses imaging technology to diagnose and treat disease.",
     },
     {
       name: "Pathology",
-      img: "/assets/images/department/dp7.png",
+      icon: "fi fi-rr-microscope",
       des: "  The medical specialty concerned with the study of the nature and causes of diseases.",
     },
     {
       name: "Endoscopy",
-      img: "/assets/images/department/dp13.png",
+      icon: "fi fi-rr-stomach",
       des: "An endoscopy is a procedure used in medicine to look inside the body.",
     },
     {
       name: "ABPM/ Holter/ ECG",
-      img: "/assets/images/department/dp8.png",
+      icon: "fi fi-rr-pulse",
       des: "Electrical activity of the heart continuously 24/7 while away from the doctor's office.",
     },
     {
       name: "NCS / EMV",
-      img: "/assets/images/department/dp5.png",
+      icon:"fa-solid fa-heart-pulse",
       des: "Electrical activity of the muscles and nerves of the body, usually to an arm or a leg.",
     }
     
@@ -58,7 +58,7 @@ const Dpsection = () => {
           <div className="dps2-col">
             <div className="dps2-col-cnt d-flex">
               <div className="dps2-col-cnt1 ">
-                <img src={item.img} alt={item.name} className="w-100 h-100" />
+                <i className={item.icon} ></i>
               </div>
               <div className="dps2-col-cnt2">
                 <div className="dsct-2-p1">{item.name}</div>

@@ -26,7 +26,7 @@ const Blogs = () => {
       pic: "/assets/images/blog/blog-3.png",
       name: "Importance of Immunizations for Children",
       date: "25 April 2024",
-      des: "Vaccinations, or immunizations, are one of the most important tools we have to protect children from serious diseases. They work by stimulating the immune system...",
+      des: "Vaccinations, or immunizations, are one of the most important tools we have to protect children from serious diseases. They work by stimulating...",
       link: "/blog/vaccinations-childrens-health",
     },
     {
@@ -40,14 +40,14 @@ const Blogs = () => {
       pic: "/assets/images/blog/blog-5.png",
       name: "When to see a Rheumatologist ?",
       date: "11 April 2024",
-      des: "A rheumatologist is a specialized doctor who diagnoses and treats diseases that affect the joints, muscles, bones, and connective ....",
+      des: "A rheumatologist is a specialized doctor who diagnoses and treats diseases that affect the joints, muscles, bones, and ....",
       link: "/blog/rheumatologist",
     },
     {
       pic: "/assets/images/blog/blog-6.png",
       name: "Kill Your Appendicitis Before It Kills You",
       date: "5 April, 2024",
-      des: "Appendicitis is a medical condition that demands swift action. It might start with a seemingly innocent stomach ache, but if ...",
+      des: "Appendicitis is a medical condition that demands swift action. It...",
       link: "/blog/kill-your-appendicitis-before-it-kills-you",
     },
     {
@@ -68,7 +68,7 @@ const Blogs = () => {
       pic: "/assets/images/blog/blog-9.jpg",
       name: "Autism Spectrum Disorder (ASD)",
       date: "4 January 2024",
-      des: "Autism, or autism spectrum disorder (ASD), is a neurodevelopmental disorder characterized by a presence of...",
+      des: "Autism, or autism spectrum disorder (ASD), is a neurodevelopmental disorder characterized by a presence of genetic disorder that is associated ...",
       link: "/blog/autism-spectrum-disorder-asd-3",
     },
     {
@@ -82,14 +82,14 @@ const Blogs = () => {
       pic: "/assets/images/blog/blog-12.png",
       name: "Best Time For Appendicitis Surgery",
       date: "May 27, 2024",
-      des: "Appendicitis occurs when the appendix, a small pouch located in the lower right abdomen, becomes inflamed and infected. ...",
+      des: "Appendicitis occurs when the appendix, a small pouch located in the lower right abdomen, becomes . ...",
       link: "/blog/best-time-for-appendicitis-surgery",
     },
     {
       pic: "/assets/images/blog/blog-13.webp",
       name: "Bipolar Disorder",
       date: "Dec 22, 2023",
-      des: "Extreme mood swings or episodes of mania and depression are hallmarks of bipolar disorder, formerly known as ...",
+      des: "Extreme mood swings or episodes of mania and depression are hallmarks of bipolar disorder, formerly known as manic-depressive illness. Periods of...",
       link: "/blog/bipolar-disorder",
     },
     {
@@ -131,7 +131,7 @@ const Blogs = () => {
       pic: "/assets/images/blog/blog-19.webp",
       name: "Polycystic Ovary Syndrome Pcos",
       date: "Jan 25, 2024",
-      des: "Polycystic Ovary Syndrome (PCOS) is a common hormonal condition that affects women of reproductive age. It affects an ...",
+      des: "Polycystic Ovary Syndrome (PCOS) is a common hormonal condition that affects women of reproductive age. It affects an  estimated 8–13% of ...",
       link: "/blog/polycystic-ovary-syndrome-pcos",
     },
     {
@@ -152,7 +152,7 @@ const Blogs = () => {
       pic: "/assets/images/blog/blog-22.webp",
       name: "What is Abdominal Pain?",
       date: "Nov 29, 2023",
-      des: "Abdominal pain is a common symptom that can be caused by a variety of factors, ranging from mild and temporary conditions to...",
+      des: "Abdominal pain is a common symptom that can be caused by a variety of factors, ranging from mild and...",
       link: "/blog/what-is-abdominal-pain",
     },
     {
@@ -173,7 +173,7 @@ const Blogs = () => {
       pic: "/assets/images/blog/blog-25.png",
       name: "What is Migraine ?",
       date: "Apr 9, 2024",
-      des: "A migraine is a neurological condition characterized by recurring moderate to severe headaches, often accompanied by ..",
+      des: "A migraine is a neurological condition characterized by recurring moderate to severe headaches, often accompanied by other symptoms such as nausea ...",
       link: "/blog/what-is-migraine",
     },
   ];
@@ -183,11 +183,11 @@ const Blogs = () => {
         <div className="blogs-div">
           <p className="blogs-p1">Neuro Hospital Blogs</p>
           <div className="blog-pic">
-          <img
-            src="/assets/images/blog/phobia.png"
-            alt="what-is-phobia"
-            className="shadow"
-          />
+            <img
+              src="/assets/images/blog/phobia.png"
+              alt="what-is-phobia"
+              className="shadow"
+            />
           </div>
           <br />
           <div
@@ -197,7 +197,7 @@ const Blogs = () => {
             What is Phobia?
           </div>
           <div className="text-center text-dark">Mar 27, 2024</div>
-          <br/>
+          <br />
           <p className="text-center">
             {" "}
             <Link
@@ -215,7 +215,6 @@ const Blogs = () => {
               <div className="blogs-col cols col-md-4 col-sm-12">
                 <div
                   className="blogs-col-div shadow"
-                  onClick={() => load(card.link)}
                 >
                   <img src={card.pic} alt={card.name} className="blogs-img" />
                   <p className="mx-2">
@@ -226,21 +225,17 @@ const Blogs = () => {
                       {card.name}
                     </Link>
                   </p>
-                  <p className="blogs-p3 mx-2">
-                    {card.des}&nbsp;
-                    <Link className="blog-info" onClick={() => load(card.link)}>
-                      See more
+                  <p className="blogs-p3 mx-2">{card.des}</p>
+                  <p className="blog-date mx-2">Date posted:{card.date}</p>
+                  <p className="text-center">
+                    {" "}
+                    <Link
+                      onClick={() => load(card.link)}
+                      className="blogs-btn btn"
+                    >
+                      Read More
                     </Link>
                   </p>
-                  <p className="blog-date mx-2">Date posted:{card.date}</p>
-                  <br />
-
-                  {/* <Link
-                             onClick={() => load(card.link)}
-                             className="blogs-btn btn "
-                           >
-                             Read More
-                           </Link> */}
                 </div>
               </div>
             ))}

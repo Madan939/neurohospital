@@ -103,7 +103,7 @@ const Message = () => {
   return (
     <>
       <Breadcrumb name1={name1} name2={name2} />
-      <div className="m-sec1">
+      <div className="m-sec1" style={{ textAlign: 'justify' }}>
         <div className="m-sec1-div">
           <div
             ref={sec1Ref}
@@ -143,7 +143,7 @@ const Message = () => {
           </div>
         </div>
       </div>
-      <div className="m-sec2">
+      <div className="m-sec2" style={{ textAlign: 'justify' }}>
         <div className="m-sec2-div">
           <div
             ref={sec3Ref}
@@ -205,7 +205,7 @@ const Message = () => {
           </div>
         </div>
       </div>
-      <div className="m-sec3">
+      <div className="m-sec3" style={{ textAlign: 'justify' }}>
         <div className="m-sec3-div">
           <div
             ref={sec5Ref}

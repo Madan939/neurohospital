@@ -22,67 +22,67 @@ const Dpsection2 = () => {
   const list = [
     {
       name: "Neurology",
-      img: "/assets/images/department/dp9.png",
+      icon: "fi fi-ss-treatment",
       des: "The specialty of neurosurgical care includes both adult and pediatric patients.",
     },
     {
       name: "Cardiology",
-      img: "/assets/images/department/dp5.png",
+      icon: "fa-solid fa-heart-pulse",
       des: " Cardiology is a branch of medicine that concerns diseases and disorders of the heart.",
     },
     {
       name: "Obs & Gynaecology",
-      img: "/assets/images/department/dp3.png",
+      icon: "fi fi-rr-hands-heart",
       des: "Obstetrics means care during pregnancy, childbirth, and the postpartum period.",
     },
     {
       name: "Hematology",
-      img: "/assets/images/department/dp10.png",
+      icon: "fi fi-rr-tubes",
       des: "Hematology is the branch of medicine with the study of the blood and blood disorders.",
     },
     {
       name: "General Medicine",
-      img: "/assets/images/department/dp11.png",
+      icon: "fi fi-ss-file-medical",
       des: "Speciality of medicine which is involved in the prevention, diagnosis & treatment.",
     },
     {
       name: "Nephrologyl",
-      img: "/assets/images/department/dp12.png",
+      icon: "fi fi-rr-hospitals",
       des: "Nephrology is a specialty within the internal medicine field related to kidney care.",
     },
     {
       name: "Gastroenterology",
-      img: "/assets/images/department/dp13.png",
+      icon: "fi fi-rr-stomach",
       des: "The branch of medicine focused on the digestive system and its disorders.",
     },
     {
       name: "Opthalmology",
-      img: "/assets/images/department/dp14.png",
+      icon: "fi fi-rr-sunglasses",
       des: "Ophthalmology is the specialized field of medicine that focuses on the health of the eye.",
     },
     {
         name: "Dermatology",
-        img: "/assets/images/department/dp15.png",
+        icon: "fi fi-rr-capsules",
         des: "The study, research, diagnosis, and management of any health conditions affect the skin. ",
       },
       {
         name: "Pediatrics",
-        img: "/assets/images/department/dp16.png",
+        icon: "fi fi-ss-user-md",
         des: "Branch of medicine dealing with the medical care of infants, children, and adolescents.",
       },
       {
         name: "Psychiatric",
-        img: "/assets/images/department/dp1.png",
+        icon: "fi fi-rs-head-side-medical",
         des: "Branch of medicine focused on the diagnosis, treatment and prevention of mental health.",
       },
       {
         name: "Oncology",
-        img: "/assets/images/department/dp17.png",
+        icon: "fi fi-rs-treatment",
         des: "Medicine dedicated to the investigation, diagnosis and treatment of people with cancer.",
       },
       {
         name: "Family Medicine",
-        img: "/assets/images/department/dp18.png",
+        icon: "fi fi-ss-briefcase",
         des: "Qualified to treat most ailments and provide comprehensive health care for people.",
       },
 
@@ -99,7 +99,7 @@ const Dpsection2 = () => {
           <div className="dps2-col">
             <div className="dps2-col-cnt d-flex">
               <div className="dps2-col-cnt1 ">
-                <img src={item.img} alt={item.name} className="w-100 h-100" />
+                <i className={item.icon} ></i>
               </div>
               <div className="dps2-col-cnt2">
                 <div className="dsct-2-p1">{item.name}</div>

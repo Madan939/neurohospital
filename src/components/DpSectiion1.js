@@ -22,42 +22,42 @@ const DpSectiion1 = () => {
   const list = [
     {
       name: "Neurosurgery",
-      img: "/assets/images/department/dp1.png",
+      icon: "fi fi-rs-head-side-medical",
       des: "The specialty of neurosurgical care includes both adult and pediatric patients.",
     },
     {
       name: "Orthopedic",
-      img: "/assets/images/department/dp2.png",
+      icon: "fi fi-rr-bone",
       des: " Focuses on injuries and diseases of your body's musculoskeletal system.",
     },
     {
       name: "Obs & Gynaecology",
-      img: "/assets/images/department/dp3.png",
+      icon: "fi fi-rr-hands-heart",
       des: "Obstetrics means care during pregnancy, childbirth, and the postpartum period.",
     },
     {
       name: "GI Surgery",
-      img: "/assets/images/department/dp4.png",
+      icon: "fi fi-rr-lungs",
       des: "It means to treat benign (noncancerous) conditions that affect the digestive tract.",
     },
     {
       name: "ENT",
-      img: "/assets/images/department/dp5.png",
+      icon: "fa-solid fa-heart-pulse",
       des: "Specializes in everything having to do with parts of the body (ear, nose, and throat).",
     },
     {
       name: "Dental",
-      img: "/assets/images/department/dp6.png",
+      icon: "fi fi-rr-tooth",
       des: "The branch of medicine focused on the teeth, gums, and mouth is Known as Dental.",
     },
     {
       name: "Urology",
-      img: "/assets/images/department/dp7.png",
+      icon: "fi fi-rr-microscope",
       des: "Urology is a part of health care that deals with diseases of the male and female urinary tract.",
     },
     {
       name: "Interventional Cardiology",
-      img: "/assets/images/department/dp8.png",
+      icon: "fi fi-rr-pulse",
       des: "Specialty that diagnoses and treats heart and blood vessel conditions using small tubes.",
     },
   ];
@@ -72,7 +72,7 @@ const DpSectiion1 = () => {
           <div className="dps2-col">
             <div className="dps2-col-cnt d-flex">
               <div className="dps2-col-cnt1 ">
-                <img src={item.img} alt={item.name} className="w-100 h-100" />
+                <i className={item.icon}></i>
               </div>
               <div className="dps2-col-cnt2">
                 <div className="dsct-2-p1">{item.name}</div>

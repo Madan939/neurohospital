@@ -165,7 +165,7 @@ const SecondNav = () => {
             </NavLink>
             {blogs ? (
               <>
-                <NavLink to="/blog" className="nav-2-btn btn text-sm">
+                <NavLink onClick={()=>load("/blog" )}className="nav-2-btn btn text-sm">
                   Neuro Hospital Blog
                 </NavLink>
               </>

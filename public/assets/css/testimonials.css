@@ -127,6 +127,9 @@
   opacity: 1;
   transform: translateY(0);
 }
+.tl-p3{
+  text-align: justify;
+}
 @media only screen and (min-width: 320px) and (max-width: 600px) {
   .tl-sec,
   .tl-sec1 {

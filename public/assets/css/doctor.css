@@ -74,6 +74,7 @@
   border-radius: 10px;
 }
 .li-doc-1 img {
+  transition: transform 0.2s ease-in-out;
   height: 70%;
   width: 90%;
 }

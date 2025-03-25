@@ -135,8 +135,8 @@ const Home = () => {
           </div>
         </div>
       )}
-      <div className="home">
-        <div className="home-first">
+      <div className="home" >
+        <div className="home-first" style={{ textAlign: 'justify' }}>
           <div className="home-bg ">
             <div
               ref={sec1Ref}
@@ -252,10 +252,10 @@ const Home = () => {
           <div className="section-1-1div">
             <img src="/assets/images/homepage/director.png" alt="director-image" />
           </div>
-          <div className="section-1-2div container mt-3">
+          <div className="section-1-2div container mt-3" style={{ textAlign: 'justify' }}>
             <p className="section-1-1p ">SERVING THE HUMANITY</p>
             <p className="section-1-2p">Director's Message</p>
-            <p className="mb-3 mt-3">
+            <p className="mb-3 mt-3" >
               Our mission at Neuro Cardio & Multispeciality Hospital Pvt.Ltd. is
               to provide exemplary healthcare, and it is your unwavering
               dedication that allows us to achieve this. As we move forward, I
@@ -293,7 +293,7 @@ const Home = () => {
             <div className="cols col-md-6 col-sm-12  text-secondary">
               <p className="sec-3-p1">Best Practices</p>
               <p className="sec-3-p2">Premium Medical Facilities</p>
-              <p className="sec-3-p3">
+              <p className="sec-3-p3" style={{ textAlign: 'justify' }}>
                 To provide a safe and efficient environment to patients, staff,
                 and visitors routine inspections are one of the hospital
                 facility management’s key activities that are performed to find
@@ -349,7 +349,7 @@ const Home = () => {
               >
                 <div className="sec-4-1 text-light">Experienced Doctors</div>
                 <p className="sec-4-2 text-light">World Class Treatment</p>
-                <p className="text-light">
+                <p className="text-light" style={{ textAlign: 'justify' }}>
                   I feel proud to become a team member of professionally managed
                   healthcare services in Nepal. Our hospital provides world
                   class healthcare solutions for them whose last lifeline is
@@ -406,7 +406,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="section-6 ">
+        <div className="section-6 " style={{ textAlign: 'justify' }}>
           <SectionSix />
         </div>
         <div className="section-7">
@@ -415,7 +415,7 @@ const Home = () => {
             className={`sec-7-div  ${isSec6Visible ? "show" : ""}`}
           >
             <p className="sec7-p1">World Class Equipments</p>
-            <p className="sec7-p2 ">
+            <p className="sec7-p2 " style={{ textAlign: 'justify' }}>
               Magnetic resonance imaging is a medical imaging technique used in
               radiology to form pictures of the anatomy and the physiological
               processes of the body. MRI scanners use strong magnetic fields,

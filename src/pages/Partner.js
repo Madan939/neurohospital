@@ -101,7 +101,7 @@ const Partner = () => {
   return (
     <>
       <Breadcrumb name1={name1} name2={name1} />
-      <div className="Ptr">
+      <div className="Ptr" style={{ textAlign: 'justify' }}>
         {list1.map((item) => (
           <div className="ptr-row shadow">
             <div className="ptr-ptr-1 mx-2">

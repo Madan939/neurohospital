@@ -100,11 +100,11 @@ const Gallery = () => {
           
             <button className="g-prev-btn " onClick={prev} disabled={currentIndex === 0}
             style={{ display: currentIndex === 0 ? "none" : " block" }}>
-                <i className="fa-solid fa-less-than"></i>
+                <i className="fa-solid fa-less-than text-light"></i>
               </button>
               <button className="g-next-btn  " onClick={next} disabled={currentIndex === images.length - 1}
                style={{ display: currentIndex === images.length - 1 ? "none" : "block" }}>
-                <i className="fa-solid fa-greater-than "></i>
+                <i className="fa-solid fa-greater-than text-light"></i>
               </button>
           </div>
         )}
