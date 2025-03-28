@@ -242,7 +242,7 @@
   justify-content: center;
   align-items: center;
   background-color: #f8f9fb;
-  height: 700px;
+  height: 600px;
 }
 .slide-p1 {
   padding: 3rem 0;
@@ -300,8 +300,8 @@
 }
 
 .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
+  width: 8px;
+  height: 8px;
   background: #ccc;
   opacity: 0.6;
   margin: 0 5px;
@@ -309,7 +309,7 @@
 }
 
 .swiper-pagination-bullet-active {
-  background: #007bff; /* Active dot color */
+  background: #2c52a0; /* Active dot color */
   opacity: 1;
 }
 
