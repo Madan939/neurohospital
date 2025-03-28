@@ -29,6 +29,7 @@ const Home = () => {
   const [isSec7Visible, setIsSec7Visible] = useState(false);
 
   useEffect(() => {
+    document.title="Neuro Hospital - Biratnagar | home"
     const sec1Element = sec1Ref.current;
     const sec2Element = sec2Ref.current;
     const sec3Element = sec3Ref.current;

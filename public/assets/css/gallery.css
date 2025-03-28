@@ -179,6 +179,22 @@
 .g-next-btn:hover {
   color: rgb(163, 161, 161) !important;
 }
+.gallery-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 999;
+    transition: 1.5s ease-in-out;
+}
+.gallery-overlay-pic{
+  width:40%;
+  height: 70%;
+  margin:1rem auto;
+  border:2px solid red;
+}
 @media only screen and (min-width: 320px) and (max-width: 600px) {
   .g-col-div1,
   .g-col-div2,

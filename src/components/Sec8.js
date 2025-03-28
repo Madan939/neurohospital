@@ -13,7 +13,7 @@ const Sec8 = () => {
             pic:"/assets/images/homepage/sec-8-1.jpg",
             name:"What is Anxiety?",
             date:"07 Feburary 2024",
-            des:"Anxiety is a natural human emotion characterized by feelings of worry, nervousness, apprehension, and dread. It can manifest.....",
+            des:"Anxiety is a natural human emotion characterized by feelings of worry, nervousness, apprehension, and dread. It can manifest.",
             link:"/blog/what-is-anxiety"
         },
         {
@@ -21,7 +21,7 @@ const Sec8 = () => {
             pic:"/assets/images/homepage/sec-8-2.jpg",
             name:"Migraine Headache",
             date:"01 Feburary 2024",
-            des:"Migraine is a common disorder which causes a disabling headache usually associated with nausea / vomiting and/ or light and Sound sensitivity. ....",
+            des:"Migraine is a common disorder which causes a disabling headache usually associated with nausea / vomiting and/ or light and Sound sensitivity.",
             link:"/blog/migraine-headache"
         },
         {
@@ -29,7 +29,7 @@ const Sec8 = () => {
             pic:"/assets/images/homepage/sec-8-3.jpg",
             name:"Autism Spectrum Disorder (ASD)",
             date:"4 January 2024",
-            des:"Autism, or autism spectrum disorder (ASD), is a neurodevelopmental disorder characterized by a presence of autism is 17 per 10,000,, with a male-to-female...",
+            des:"Autism, or autism spectrum disorder (ASD), is a neurodevelopmental disorder characterized by a presence of autism is 17 per 10,000,, with a male-to-female.",
             link:"/blog/autism-spectrum-disorder-asd-3"
         },
     ]
