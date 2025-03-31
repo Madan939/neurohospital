@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const ARDTACS = () => {
+    useEffect(()=>{
+        document.title="Neuro Hospital | anxiety-recognizing-different-types-and-coping-strategies";
+      },[]);
   return (
     <>
       <div className="blogs">

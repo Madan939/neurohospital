@@ -1,5 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 const WhatIsPhobia = () => {
+  useEffect(()=>{
+    document.title="Neuro Hospital | what-is-phobia";
+  },[]);
   return (
     <>
       <div className="blogs">

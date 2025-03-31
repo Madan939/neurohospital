@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import Breadcrumb from "../components/Breadcrumb";
 const Testimonials = () => {
+  
   const name1 = "Testimonials";
   const sec2Ref = useRef(null);
       const sec3Ref = useRef(null);
@@ -17,6 +18,7 @@ const Testimonials = () => {
       const [isSec7Visible, setIsSec7Visible] = useState(false);
     
       useEffect(() => {
+        document.title="Neuro Hospital | testimonial";
         const sec2Element = sec2Ref.current;
         const sec3Element = sec3Ref.current;
         const sec4Element = sec4Ref.current;

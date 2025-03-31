@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Breadcrumb from "../components/Breadcrumb";
 import { Link } from "react-router-dom";
 
 const Contact = () => {
   const name = "Contact Us";
+  useEffect(()=>{
+    document.title="Neuro Hospital | contact";
+  },[]);
   return (
     <>
       <Breadcrumb name1={name} name2={name} />

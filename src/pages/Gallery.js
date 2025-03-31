@@ -1,7 +1,10 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Breadcrumb from "../components/Breadcrumb";
 
 const Gallery = () => {
+  useEffect(()=>{
+    document.title="Neuro Hospital | gallery";
+  },[]);
   const name1 = "Our Gallery";
   const name2 = "Hospital Gallery";
   const list1 = [

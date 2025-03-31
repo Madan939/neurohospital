@@ -138,14 +138,18 @@
   color: #535353;
   font-size: 16px;
 }
+.ms2d2-p4 {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
 .ms2d2-p4 a {
   text-decoration: none;
   color: #535353;
 }
-.ms2d2-p4 img {
-  height: 40px;
-  width: 35px;
-  color: #535353;
+.ms2d2-p4 i {
+  font-size: 1.9rem;
+  color:  #535353;
 }
 .m-sec3 {
   /* border: 2px solid red; */

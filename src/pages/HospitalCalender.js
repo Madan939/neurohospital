@@ -79,6 +79,9 @@ const HospitalCalender = () => {
   //     setSelectedYear(selectedYear);
   //   }
   // };
+  useEffect(()=>{
+    document.title="Neuro Hospital | calender";
+  },[]);
 
   return (
     <>

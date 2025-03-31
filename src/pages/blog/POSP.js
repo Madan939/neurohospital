@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const POSP = () => {
+    useEffect(()=>{
+            document.title="Neuro Hospital | polycystic-ovary-syndrome-pcos";
+          },[]);
   return (
     <>
       <div className="blogs">

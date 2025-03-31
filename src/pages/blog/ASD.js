@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const ASD = () => {
+    useEffect(()=>{
+            document.title="Neuro Hospital | autism-spectrum-disorder-asd-3";
+          },[]);
   return (
     <>
       <div className="blogs">

@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const WIA = () => {
+    useEffect(()=>{
+            document.title="Neuro Hospital | what-is-appendicitis";
+          },[]);
   return (
     <>
       <div className="blogs">

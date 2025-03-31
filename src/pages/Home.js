@@ -29,7 +29,14 @@ const Home = () => {
   const [isSec7Visible, setIsSec7Visible] = useState(false);
 
   useEffect(() => {
-    document.title="Neuro Hospital - Biratnagar |  Hospital in Nepal"
+    document.title="Neuro Hospital | home";
+    if (homePic) {
+      const timer = setTimeout(() => {
+        showHomePic(false);
+      }, 3000);
+  
+      return () => clearTimeout(timer); 
+    }
     const sec1Element = sec1Ref.current;
     const sec2Element = sec2Ref.current;
     const sec3Element = sec3Ref.current;
@@ -119,7 +126,7 @@ const Home = () => {
       if (sec6Element) observer6.unobserve(sec6Element);
       if (sec7Element) observer7.unobserve(sec7Element);
     };
-  }, []);
+  }, [homePic]);
   return (
     <>
       {homePic && (

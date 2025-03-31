@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Breadcrumb from "../components/Breadcrumb";
 
 const Academics = () => {
+  useEffect(()=>{
+    document.title="Neuro Hospital | academics";
+  },[]);
   const name1 = "Academics";
   return (
     <>

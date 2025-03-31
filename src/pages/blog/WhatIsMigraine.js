@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const WhatIsMigraine = () => {
+    useEffect(()=>{
+            document.title="Neuro Hospital | what-is-migraine";
+          },[]);
   return (
     <>
       <div className="blogs">

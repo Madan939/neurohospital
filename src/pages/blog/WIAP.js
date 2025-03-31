@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const WIAP = () => {
+  useEffect(() => {
+    document.title = "Neuro Hospital | what-is-abdominal-pain";
+  }, []);
   return (
     <>
       <div className="blogs">

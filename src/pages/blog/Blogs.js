@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 const Blogs = () => {
@@ -6,7 +6,10 @@ const Blogs = () => {
   function load(link) {
     navigate(link);
     window.location.reload();
-  }
+  };
+  useEffect(()=>{
+    document.title="Neuro Hospital | blog";
+  },[]);
   const List = [
     {
       pic: "/assets/images/blog/blog-1.png",
@@ -198,6 +201,14 @@ const Blogs = () => {
           </div>
           <div className="text-center text-dark">Mar 27, 2024</div>
           <br />
+          <p>
+            A phobia is an uncontrollable, irrational, and lasting fear of a
+            certain object, situation, or activity. This fear can be so
+            overwhelming that a person may go to great lengths to avoid the
+            source of this fear. One response can be a panic attack. This is a
+            sudden, intense fear that lasts for several minutes. It happens when
+            there is no real danger.
+          </p>
           <p className="text-center">
             {" "}
             <Link
@@ -213,9 +224,7 @@ const Blogs = () => {
           <div className="blogs-row row ">
             {List.map((card) => (
               <div className="blogs-col cols col-md-4 col-sm-12">
-                <div
-                  className="blogs-col-div shadow"
-                >
+                <div className="blogs-col-div shadow">
                   <img src={card.pic} alt={card.name} className="blogs-img" />
                   <p className="mx-2">
                     <Link
@@ -225,11 +234,17 @@ const Blogs = () => {
                       {card.name}
                     </Link>
                   </p>
-                  <p className="blogs-p3 mx-2">{card.des}</p>
+                  <p
+                    className="blogs-p3 mx-2"
+                    style={{ textAlign: " justify" }}
+                  >
+                    {card.des}
+                  </p>
                   <p className="blog-date mx-2">Date posted:{card.date}</p>
                   <p className="text-center">
                     {" "}
                     <Link
+                    to="/"
                       onClick={() => load(card.link)}
                       className="blogs-btn btn"
                     >

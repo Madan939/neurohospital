@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Breadcrumb from "../components/Breadcrumb";
 
 const Partner = () => {
+  useEffect(()=>{
+    document.title="Neuro Hospital | partner";
+  },[]);
   const list1 = [
     {
       name: "Kumari Bank Limited.",

@@ -1,18 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const KYABIKY = () => {
+  useEffect(() => {
+    document.title =
+      "Neuro Hospital | kill-your-appendicitis-before-it-kills-you";
+  }, []);
   return (
     <>
       <div className="blogs">
         <div className="blogs-div">
           <div className="blog-pic">
-          <img
-            src="/assets/images/blog/blog-6.png"
-            alt="blogs-image-1"
-            className="shadow"
-          />
+            <img
+              src="/assets/images/blog/blog-6.png"
+              alt="blogs-image-1"
+              className="shadow"
+            />
           </div>
-         
+
           <br />
           <br />
           <p className="blog-name text-center">
@@ -52,25 +56,52 @@ const KYABIKY = () => {
               medical attention right away. Appendicitis is a medical emergency
               that requires prompt treatment to prevent complications.
             </li>
-            <li><b>Diagnosis and Evaluation:</b><br/>
-            Your doctor will perform a physical exam and may order tests such as blood tests, urine tests, and imaging studies like ultrasound or CT scan to confirm the diagnosis of appendicitis.</li>
-            <li><b>Surgical Intervention:</b><br/>
-            The most common treatment for appendicitis is surgery to remove the inflamed appendix, known as an appendectomy. In most cases, surgery is performed as soon as possible to prevent the appendix from rupturing.</li>
-            <li><b>Recovery and Follow-Up:</b><br/>
-            After surgery, you'll need some time to recover. Most people can leave the hospital within a day or two after surgery and resume normal activities within a few weeks. Follow your doctor's instructions for post-operative care and attend follow-up appointments to ensure a smooth recovery.</li>
+            <li>
+              <b>Diagnosis and Evaluation:</b>
+              <br />
+              Your doctor will perform a physical exam and may order tests such
+              as blood tests, urine tests, and imaging studies like ultrasound
+              or CT scan to confirm the diagnosis of appendicitis.
+            </li>
+            <li>
+              <b>Surgical Intervention:</b>
+              <br />
+              The most common treatment for appendicitis is surgery to remove
+              the inflamed appendix, known as an appendectomy. In most cases,
+              surgery is performed as soon as possible to prevent the appendix
+              from rupturing.
+            </li>
+            <li>
+              <b>Recovery and Follow-Up:</b>
+              <br />
+              After surgery, you'll need some time to recover. Most people can
+              leave the hospital within a day or two after surgery and resume
+              normal activities within a few weeks. Follow your doctor's
+              instructions for post-operative care and attend follow-up
+              appointments to ensure a smooth recovery.
+            </li>
           </ul>
           <p className="blog-heading">Why Acting Fast Matters ?</p>
 
           <p>
-          Delaying treatment for appendicitis can have serious consequences. If the appendix ruptures, it can lead to complications such as peritonitis, abscess formation, and even sepsis—a life-threatening infection. By recognizing the signs of appendicitis and seeking prompt medical attention, you can prevent these complications and ensure a speedy recovery.
+            Delaying treatment for appendicitis can have serious consequences.
+            If the appendix ruptures, it can lead to complications such as
+            peritonitis, abscess formation, and even sepsis—a life-threatening
+            infection. By recognizing the signs of appendicitis and seeking
+            prompt medical attention, you can prevent these complications and
+            ensure a speedy recovery.
           </p>
-          <p className="blog-heading">
-          Conclusion
-          </p>
+          <p className="blog-heading">Conclusion</p>
           <p>
-          Appendicitis is a serious condition that requires immediate medical attention. Don't ignore the signs—act fast to kill your appendicitis before it has a chance to kill you. By recognizing the symptoms, seeking medical help promptly, and undergoing timely surgical intervention, you can prevent complications and get back to enjoying life without the threat of appendicitis looming overhead. Remember, when it comes to appendicitis, time is of the essence—so don't delay, seek help today.
+            Appendicitis is a serious condition that requires immediate medical
+            attention. Don't ignore the signs—act fast to kill your appendicitis
+            before it has a chance to kill you. By recognizing the symptoms,
+            seeking medical help promptly, and undergoing timely surgical
+            intervention, you can prevent complications and get back to enjoying
+            life without the threat of appendicitis looming overhead. Remember,
+            when it comes to appendicitis, time is of the essence—so don't
+            delay, seek help today.
           </p>
-          
         </div>
       </div>
     </>

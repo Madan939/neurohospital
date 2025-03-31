@@ -28,6 +28,7 @@ const About = () => {
   const [isSec6Visible, setIsSec6Visible] = useState(false);
 
   useEffect(() => {
+    document.title="Neuro Hospital | about";
     const sec2Element = sec2Ref.current;
     const sec3Element = sec3Ref.current;
     const sec4Element = sec4Ref.current;
@@ -51,7 +52,7 @@ const About = () => {
           observer3.unobserve(sec3Element);
         }
       },
-      { threshold: 0.5 }
+      { threshold: 0.3 }
     );
     const observer4 = new IntersectionObserver(
       ([entry]) => {
@@ -60,7 +61,7 @@ const About = () => {
           observer4.unobserve(sec4Element);
         }
       },
-      { threshold: 0.5 }
+      { threshold: 0.3 }
     );
     const observer5 = new IntersectionObserver(
       ([entry]) => {
@@ -69,7 +70,7 @@ const About = () => {
           observer5.unobserve(sec5Element);
         }
       },
-      { threshold: 0.1 }
+      { threshold: 0.3 }
     );
     const observer6 = new IntersectionObserver(
       ([entry]) => {
@@ -78,7 +79,7 @@ const About = () => {
           observer6.unobserve(sec6Element);
         }
       },
-      { threshold: 0.5 }
+      { threshold: 0.3 }
     );
 
     if (sec2Element) observer2.observe(sec2Element);
@@ -160,8 +161,8 @@ const About = () => {
       </div>
 
       {/* Section 2 (Appears on scroll) */}
-      <div ref={sec2Ref} className={` abu-sec2${isVisible ? "show" : ""}`} style={{ textAlign: 'justify' }}>
-        <div className="abu-sec2-cnt">
+      <div ref={sec2Ref} className={` abu-sec2 ${isVisible ? "show" : ""}`} >
+        <div className="abu-sec2-cnt" style={{ textAlign: 'justify' }}>
           <div className="abu-sec2-cnt1 ">
             <div className="abu-s2ct-1div mx-2">
               <div className="s2ct-p1">Highest Quality Care</div>
@@ -213,7 +214,7 @@ const About = () => {
       </div>
 
       {/* Section 3 (Appears on scroll) */}
-  <div className="abu-sec3" >
+  <div className="abu-sec3 my-2" >
         <div ref={sec3Ref} className={`abu-sec3-div1 ${isSec3Visible ? "show" : ""}`}>
           <div className="abu-sec3-div1-1">
             <img src="/assets/images/aboutus/cardiogram.png" alt="cardiogram" className="flat-icon" />

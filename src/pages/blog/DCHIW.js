@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const DCHIW = () => {
+    useEffect(()=>{
+            document.title="Neuro Hospital | dry-chapped-hands-in-winter";
+          },[]);
   return (
     <>
       <div className="blogs">

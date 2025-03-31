@@ -21,6 +21,7 @@ const Message = () => {
   const [isSec6Visible, setIsSec6Visible] = useState(false);
 
   useEffect(() => {
+    document.title="Neuro Hospital | message";
     const sec1Element = sec1Ref.current;
     const sec2Element = sec2Ref.current;
     const sec3Element = sec3Ref.current;
@@ -134,7 +135,7 @@ const Message = () => {
               Mr. Rajesh Bhattarai | Operational Director
             </div>
             <div className="ms2d2-p4 mb-3 mt-2 ">
-              <img src="/assets/images/aboutus/msg3.png" alt="msg-3" />
+            <i className="fa-solid fa-stethoscope"></i> &nbsp;
               <Link to="mailto:rajesh@neurohospital.com.np">
                 rajesh@neurohospital.com.np
               </Link>
@@ -196,7 +197,7 @@ const Message = () => {
               Dr. Navin Kumar Karna | Academic Director
             </div>
             <div className="ms2d2-p4 mb-3">
-              <img src="/assets/images/aboutus/msg3.png" alt="msg-3" />
+            <i className="fa-solid fa-stethoscope"></i> &nbsp;
               <Link to="mailto:drkarna@neurohospital.com.np">
                 drkarna@neurohospital.com.np
               </Link>
@@ -252,7 +253,7 @@ const Message = () => {
               Disease, Fellowship Rheumatology & Clinical Immunology
             </div>
             <div className="ms2d2-p4 ">
-              <img src="/assets/images/aboutus/msg3.png" alt="msg-3" />
+            <i className="fa-solid fa-stethoscope"></i> &nbsp;
               <Link to="mailto:drkarna@neurohospital.com.np">
                 drkarna@neurohospital.com.np
               </Link>

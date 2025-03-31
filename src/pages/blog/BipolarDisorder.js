@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const BipolarDisorder = () => {
+    useEffect(()=>{
+            document.title="Neuro Hospital | bipolar-disorder";
+          },[]);
   return (
     <>
       <div className="blogs">

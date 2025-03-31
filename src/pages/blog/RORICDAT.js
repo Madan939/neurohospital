@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const RORICDAT = () => {
+   useEffect(()=>{
+      document.title="Neuro Hospital | role-of-radiology-in-cancer-diagnosis-and-treatment";
+    },[]);
   return (
     <>
       <div className="blogs">

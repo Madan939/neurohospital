@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Breadcrumb from "../components/Breadcrumb";
 const PrivacyPolicy = () => {
+  useEffect(()=>{
+    document.title="Neuro Hospital | privacy";
+  },[]);
   const name1 = "Privacy Policy";
   return (
     <>

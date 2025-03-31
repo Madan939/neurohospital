@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const OMOKO = () => {
+    useEffect(()=>{
+            document.title="Neuro Hospital | outpatient-management-of-knee-osteoarthritis";
+          },[]);
   return (
     <>
       <div className="blogs">
