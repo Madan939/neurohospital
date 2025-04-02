@@ -153,7 +153,7 @@ body,
   height: 34rem;
   position: absolute;
   top: 100%;
-  left: 20px;
+  left:-35px;
   background-color: white;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   transform: translateX(-40%);
@@ -163,7 +163,6 @@ body,
 .dept-row {
   width: 94%;
   height: 94%;
-  /* border:2px solid black; */
 }
 .dept-p1 {
   color: black;
