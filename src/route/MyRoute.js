@@ -43,6 +43,7 @@ import WIAA from "../pages/blog/WIAA";
 import WIA from "../pages/blog/WIA";
 import WhatIsMigraine from "../pages/blog/WhatIsMigraine";
 import Apply from "../pages/Apply";
+import Services from "../pages/Services";
 
 const MyRoute = () => {
   return (
@@ -66,6 +67,7 @@ const MyRoute = () => {
         <Route path="*" element={<Navigate to="/404" />} />
         <Route path="/404" element={<PageNotFound />} />
         <Route path="/apply" element={<Apply/>}/>
+        <Route path="/services" element={<Services/>}/>
         <Route path="/blog/what-is-anxiety" element={<WhatIsAnxiety />} />
         <Route path="/blog/migraine-headache" element={<MigraineHeadache />} />
         <Route path="/blog/autism-spectrum-disorder-asd-3" element={<ASD />} />

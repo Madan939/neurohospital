@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import CardSlider from "../components/CardSlider";
 import Video from "../components/Video";
 import Sec8 from "../components/Sec8";
@@ -12,6 +12,11 @@ const Home = () => {
   const close = () => {
     showHomePic(false);
   };
+  const navigate=useNavigate();
+  const load=(path)=>{
+    navigate(path);
+    window.location.reload();
+  }
   const sec1Ref = useRef(null);
   const sec2Ref = useRef(null);
   const sec3Ref = useRef(null);
@@ -203,7 +208,7 @@ const Home = () => {
                       medical services round the clock.
                     </p>
                     <Link
-                      to="/doctors"
+                      onClick={()=>load("/doctors")}
                       className="card-btn btn text-light mt-3"
                     >
                       View Doctors

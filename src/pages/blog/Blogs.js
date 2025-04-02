@@ -226,7 +226,7 @@ const Blogs = () => {
               <div className="blogs-col cols col-md-4 col-sm-12">
                 <div className="blogs-col-div shadow">
                   <img src={card.pic} alt={card.name} className="blogs-img" />
-                  <p className="mx-2">
+                  <p className="mx-3">
                     <Link
                       onClick={() => load(card.link)}
                       className="blogs-card-p1"
@@ -235,12 +235,12 @@ const Blogs = () => {
                     </Link>
                   </p>
                   <p
-                    className="blogs-p3 mx-2"
-                    style={{ textAlign: " justify" }}
+                    className="blogs-p3 mx-3"
+                    
                   >
                     {card.des}
                   </p>
-                  <p className="blog-date mx-2">Date posted:{card.date}</p>
+                  <p className="blog-date mx-3">Date posted:{card.date}</p>
                   <p className="text-center">
                     {" "}
                     <Link

@@ -51,7 +51,7 @@ const Sec8 = () => {
                            </Link>
                          </p>
                          <p className="blogs-p3 mx-3">{card.des}</p>
-                         <p className="blog-date mx-2">Date posted:{card.date}</p>
+                         <p className="blog-date mx-3">Date posted:{card.date}</p>
                          <p className="text-center">
                            {" "}
                            <Link
