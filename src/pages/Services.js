@@ -28,55 +28,57 @@ const Services = () => {
             <div className="">
               <ul style={{ textAlign: "justify" }}>
                 <li>
-                  DEXA Scan (Dual-Energy X-ray Absorptiometry) – Assesses bone
-                  mineral density (BMD) to diagnose osteoporosis and predict
-                  fracture risk.
+                  <i>DEXA Scan (Dual-Energy X-ray Absorptiometry) –</i> Assesses
+                  bone mineral density (BMD) to diagnose osteoporosis and
+                  predict fracture risk.
                 </li>
                 <li>
-                  CT Scan (Computed Tomography) – Provides detailed
+                  <i>CT Scan (Computed Tomography) –</i> Provides detailed
                   cross-sectional images for diagnosing brain injuries, cancers,
                   cardiovascular diseases, and musculoskeletal disorders.
                 </li>
                 <li>
-                  MRI (Magnetic Resonance Imaging) – A non-invasive imaging
-                  technique offering high-resolution images for neurological,
-                  orthopedic, and soft tissue conditions.
+                  <i>MRI (Magnetic Resonance Imaging) – </i>A non-invasive
+                  imaging technique offering high-resolution images for
+                  neurological, orthopedic, and soft tissue conditions.
                 </li>
                 <li>
-                  EEG (Electroencephalogram) – Evaluates brain activity to
-                  diagnose epilepsy, seizures, and other neurological disorders.
-                </li>
-                <li>
-                  ECG (Electrocardiogram) – A quick and painless test to check
-                  the heart’s electrical activity for arrhythmias and other
-                  heart conditions.
-                </li>
-                <li>
-                  ECHO (Echocardiogram) – Uses ultrasound to create images of
-                  the heart, helping diagnose heart diseases and valve
+                  <i>EEG (Electroencephalogram) –</i> Evaluates brain activity
+                  to diagnose epilepsy, seizures, and other neurological
                   disorders.
                 </li>
                 <li>
-                  TMT (Treadmill Test) – A cardiac stress test used to evaluate
-                  heart function during physical exertion.
+                  <i>ECG (Electrocardiogram) –</i> A quick and painless test to
+                  check the heart’s electrical activity for arrhythmias and
+                  other heart conditions.
                 </li>
                 <li>
-                  Holter Monitoring – A portable ECG device that continuously
-                  records heart rhythms for 24-48 hours to detect
+                  <i>ECHO (Echocardiogram) –</i> Uses ultrasound to create
+                  images of the heart, helping diagnose heart diseases and valve
+                  disorders.
+                </li>
+                <li>
+                  <i>TMT (Treadmill Test) –</i> A cardiac stress test used to
+                  evaluate heart function during physical exertion.
+                </li>
+                <li>
+                  <i>Holter Monitoring –</i> A portable ECG device that
+                  continuously records heart rhythms for 24-48 hours to detect
                   irregularities.
                 </li>
                 <li>
-                  NCS/EMG (Nerve Conduction Study & Electromyography) – Helps
-                  diagnose nerve and muscle disorders like neuropathy, carpal
-                  tunnel syndrome, and muscle weakness.
+                  <i>NCS/EMG (Nerve Conduction Study & Electromyography) –</i>{" "}
+                  Helps diagnose nerve and muscle disorders like neuropathy,
+                  carpal tunnel syndrome, and muscle weakness.
                 </li>
                 <li>
-                  X-Ray – Provides quick and detailed imaging for diagnosing
-                  fractures, lung infections, and other medical conditions.
+                  <i>X-Ray – </i>Provides quick and detailed imaging for
+                  diagnosing fractures, lung infections, and other medical
+                  conditions.
                 </li>
                 <li>
-                  Endoscopy – A minimally invasive procedure to examine the
-                  digestive tract and diagnose gastrointestinal conditions.
+                  <i>Endoscopy –</i> A minimally invasive procedure to examine
+                  the digestive tract and diagnose gastrointestinal conditions.
                 </li>
               </ul>
             </div>
@@ -109,39 +111,41 @@ const Services = () => {
             <div className="">
               <ul style={{ textAlign: "justify" }} className="mx-2">
                 <li>
-                  Modular OT Setup – Modern operating theaters designed to
-                  maintain a sterile environment for complex and high-risk
+                  <i>Modular OT Setup –</i> Modern operating theaters designed
+                  to maintain a sterile environment for complex and high-risk
                   surgeries.
                 </li>
                 <li>
-                  Major Surgeries:
+                  <i>Major Surgeries:</i>
                   <ul>
-                    <li>Neurosurgery – Brain and spinal cord procedures.</li>
                     <li>
-                      Orthopedic Surgery – Musculoskeletal treatments,
+                      <i>Neurosurgery –</i> Brain and spinal cord procedures.
+                    </li>
+                    <li>
+                      <i>Orthopedic Surgery –</i> Musculoskeletal treatments,
                       fractures, and joint surgeries.
                     </li>
                     <li>
-                      General Surgery – Comprehensive surgical care for various
-                      conditions.
+                      <i>General Surgery –</i> Comprehensive surgical care for
+                      various conditions.
                     </li>
                     <li>
-                      Urosurgery – Advanced surgical treatments for kidney,
-                      bladder, and urinary tract diseases.
+                      <i>Urosurgery – </i>Advanced surgical treatments for
+                      kidney, bladder, and urinary tract diseases.
                     </li>
                     <li>
-                      Ophthalmic Surgery – Surgical procedures for eye
+                      <i>Ophthalmic Surgery –</i> Surgical procedures for eye
                       conditions, including cataracts and glaucoma.
                     </li>
                     <li>
-                      Dermatology Procedures – Specialized skin treatments for
-                      various dermatological conditions, including minor
-                      cosmetic surgeries.
+                      <i>Dermatology Procedures – </i>Specialized skin
+                      treatments for various dermatological conditions,
+                      including minor cosmetic surgeries.
                     </li>
                   </ul>
                 </li>
                 <li>
-                  Cath Lab – Equipped with modern technology for advanced
+                  <i>Cath Lab –</i> Equipped with modern technology for advanced
                   cardiac and vascular procedures.
                 </li>
               </ul>
@@ -161,17 +165,17 @@ const Services = () => {
             <div className="">
               <ul style={{ textAlign: "justify" }}>
                 <li>
-                  24-Hour Emergency Services – Trauma care, life-saving
+                  <i>24-Hour Emergency Services –</i> Trauma care, life-saving
                   treatments, and urgent consultations.
                 </li>
                 <li>
-                  Trauma Center – Rapid diagnosis, stabilization, and treatment
-                  for accident-related injuries and emergencies.
+                  <i>Trauma Center –</i> Rapid diagnosis, stabilization, and
+                  treatment for accident-related injuries and emergencies.
                 </li>
                 <li>
-                  Intensive Care Units (ICU) – We provide specialized critical
-                  care with state-of-the-art monitoring and life-support
-                  systems.
+                  <i>Intensive Care Units (ICU) –</i> We provide specialized
+                  critical care with state-of-the-art monitoring and
+                  life-support systems.
                 </li>
               </ul>
             </div>
@@ -204,23 +208,23 @@ const Services = () => {
             <div className="mx-2">
               <ul style={{ textAlign: "justify" }}>
                 <li>
-                  Dialysis Services – High-quality dialysis for renal failure
-                  patients, managed by trained professionals.
+                  <i>Dialysis Services –</i> High-quality dialysis for renal
+                  failure patients, managed by trained professionals.
                 </li>
                 <li>
-                  Free Ambulance Service in Biratnagar – Prompt emergency
+                  <i>Free Ambulance Service in Biratnagar –</i> Prompt emergency
                   transport equipped with life-saving medical equipment.
                 </li>
                 <li>
-                  Super Deluxe & Deluxe Cabins –
+                  <i>Super Deluxe & Deluxe Cabins –</i>
                   <ul>
                     <li>
-                      Super Deluxe Cabin – A premium recovery room with enhanced
-                      comfort, privacy, and personalized services.
+                      <i>Super Deluxe Cabin –</i> A premium recovery room with
+                      enhanced comfort, privacy, and personalized services.
                     </li>
                     <li>
-                      Deluxe Cabin – Comfortable and private rooms with premium
-                      facilities for a peaceful recovery.
+                      <i>Deluxe Cabin –</i> Comfortable and private rooms with
+                      premium facilities for a peaceful recovery.
                     </li>
                   </ul>
                 </li>
@@ -241,22 +245,22 @@ const Services = () => {
             <div className="">
               <ul style={{ textAlign: "justify" }}>
                 <li>
-                  Outpatient Department (OPD) – Consultations with expert
+                  <i>Outpatient Department (OPD) –</i> Consultations with expert
                   doctors across multiple specialties.
                 </li>
                 <li>
-                  Online Appointment Booking – Convenient online scheduling for
-                  consultations and procedures. You can book your appointment
-                  easily by visiting our website:{" "}
+                  <i>Online Appointment Booking –</i> Convenient online
+                  scheduling for consultations and procedures. You can book your
+                  appointment easily by visiting our website:{" "}
                   <Link to="https://neuro.danphecare.com/">
                     https://neuro.danphecare.com/
                   </Link>{" "}
                   or using our mobile application.
                 </li>
                 <li>
-                  MRI (Magnetic Resonance Imaging) – A non-invasive imaging
-                  technique offering high-resolution images for neurological,
-                  orthopedic, and soft tissue conditions.
+                  <i>MRI (Magnetic Resonance Imaging) – </i> A non-invasive
+                  imaging technique offering high-resolution images for
+                  neurological, orthopedic, and soft tissue conditions.
                 </li>
               </ul>
             </div>
@@ -289,27 +293,30 @@ const Services = () => {
             <div className="">
               <ul style={{ textAlign: "justify" }} className="mx-2">
                 <li>
-                  Free OPD & 25% Discount – On designated days, enjoy free OPD
-                  consultations and 25% off medical services.
+                  <i>Free OPD & 25% Discount –</i> On designated days, enjoy
+                  free OPD consultations and 25% off medical services.
                 </li>
                 <li>
-                  Gynecology Consultations (Thursday) – Specialized women’s
-                  health consultations.
+                  <i>Gynecology Consultations (Thursday) –</i> Specialized
+                  women’s health consultations.
                 </li>
                 <li>
-                  Pediatric Consultations (Wednesday) – Expert care for
+                  <i>Pediatric Consultations (Wednesday) –</i> Expert care for
                   children’s health needs.
                 </li>
                 <li>
-                  Cardiology Consultations (Thursday) – Diagnosis and treatment
-                  of heart conditions.
+                  <i> Cardiology Consultations (Thursday) –</i>
+                  Diagnosis and treatment of heart conditions.
                 </li>
                 <li>
-                  General Surgery Consultations (Friday) – Consultation for
-                  surgical procedures.
+                  <i>General Surgery Consultations (Friday) – </i>Consultation
+                  for surgical procedures.
                 </li>
                 <li>
-                  Pathology Services Discount (Saturday – Special Tests Only) –
+                  <i>
+                    Pathology Services Discount (Saturday – Special Tests Only)
+                    –
+                  </i>
                   50% off on selected special pathology tests, ensuring
                   affordable diagnostic care.
                 </li>

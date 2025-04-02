@@ -54,7 +54,9 @@ const SecondNav = () => {
                 </div>
               )}
             </div>
-
+            <NavLink onClick={() => load("/services")} className="nav-links">
+              Services
+            </NavLink>
             <div
               className="dropdown-container"
               onMouseEnter={() => setShowDept(true)}
@@ -113,9 +115,7 @@ const SecondNav = () => {
                 </div>
               )}
             </div>
-            <NavLink onClick={() => load("/services")} className="nav-links">
-              Services
-            </NavLink>
+           
             <NavLink onClick={() => load("/doctors")} className="nav-links">
               Doctors
             </NavLink>
