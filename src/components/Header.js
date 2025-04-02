@@ -97,6 +97,9 @@ const Header = ({ menuOpen, setMenuOpen }) => {
               </Link>
             </div>
           )}
+          <li onClick={() => load("/services")} className="ul-li">
+            <Link>Services</Link>
+          </li>
           <li onClick={() => toggleSection("dept")} className="ul-li">
             <Link className={`nav-cnt ${showDept ? "active" : ""}`}>
               Department
