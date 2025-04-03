@@ -223,7 +223,7 @@ const Blogs = () => {
           <br />
           <div className="blogs-row row ">
             {List.map((card) => (
-              <div className="blogs-col cols col-md-4 col-sm-12">
+              <div key={card.name} className="blogs-col cols col-md-4 col-sm-12">
                 <div className="blogs-col-div shadow">
                   <img src={card.pic} alt={card.name} className="blogs-img" />
                   <p className="mx-3">

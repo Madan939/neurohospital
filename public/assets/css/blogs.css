@@ -158,7 +158,11 @@
   font-size: 0.8rem;
 }
 @media screen and (min-width:320px) and (max-width: 600px)  {
- 
+  .blogs {
+    width:88%;
+    margin: auto;
+    text-align: justify;
+  }
   .blogs-col-div:hover{
     scale: 1;
    }

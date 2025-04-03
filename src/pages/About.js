@@ -179,28 +179,28 @@ const About = () => {
               <div className="abu-sec-3-2row row">
                 <div className="sec-3-2col cols col-md-6 col-sm-12">
                   <div>
-                    <i class="fa-solid fa-angles-right"></i>&nbsp; Service
+                    <i className="fa-solid fa-angles-right"></i>&nbsp; Service
                     optimisation
                   </div>
                   <div>
-                    <i class="fa-solid fa-angles-right"></i>&nbsp;
+                    <i className="fa-solid fa-angles-right"></i>&nbsp;
                     Cost-efficiency
                   </div>
                   <div>
-                    <i class="fa-solid fa-angles-right"></i>&nbsp; Engagement
+                    <i className="fa-solid fa-angles-right"></i>&nbsp; Engagement
                     medical care
                   </div>
                 </div>
                 <div className="sec-3-2col cols col-md-6 col-sm-12">
                   <div>
-                    <i class="fa-solid fa-angles-right"></i>&nbsp; Accessibility
+                    <i className="fa-solid fa-angles-right"></i>&nbsp; Accessibility
                   </div>
                   <div>
-                    <i class="fa-solid fa-angles-right"></i>&nbsp; Improved
+                    <i className="fa-solid fa-angles-right"></i>&nbsp; Improved
                     communication
                   </div>
                   <div>
-                    <i class="fa-solid fa-angles-right"></i>&nbsp; Personalised
+                    <i className="fa-solid fa-angles-right"></i>&nbsp; Personalised
                     healthcare
                   </div>
                 </div>

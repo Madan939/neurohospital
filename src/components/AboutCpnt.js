@@ -37,7 +37,7 @@ const AboutCpnt = () => {
     <>
       <div className="abu-row row">
         {list.map((item) => (
-          <div className="abu-col cols col-md-5 col-sm-12">
+          <div key={item.name} className="abu-col cols col-md-5 col-sm-12">
             <div className="abu-col-div d-flex">
               <div className="abucol-1">
                 <i className={item.icon}></i>

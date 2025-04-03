@@ -106,7 +106,7 @@ const Partner = () => {
       <Breadcrumb name1={name1} name2={name1} />
       <div className="Ptr" style={{ textAlign: 'justify' }}>
         {list1.map((item) => (
-          <div className="ptr-row shadow">
+          <div key={item.name} className="ptr-row shadow">
             <div className="ptr-ptr-1 mx-2">
               <div className="ptr-col1">
                 <img src={item.img} alt={item.name} />
@@ -114,10 +114,10 @@ const Partner = () => {
               <div className="ptr-col2">
                 <p className="ptr-p1">{item.date}</p>
                 <p className="ptr-p2">{item.name}</p>
-                <p className="ptr-p3">
+                <div className="ptr-p3">
                   {item.des === "null" ? <></> : <p>{item.des}</p>}
-                </p>
-                <p className="">
+                </div>
+                <div className="">
                   {item.link === "null" ? (
                     <></>
                   ) : (
@@ -125,13 +125,13 @@ const Partner = () => {
                       Browse More
                     </Link>
                   )}
-                </p>
+                </div>
               </div>
             </div>
           </div>
         ))}
         {list2.map((item) => (
-          <div className="ptr-row-1 shadow">
+          <div key={item.name} className="ptr-row-1 shadow">
             <div className="ptr-ptr-2 mx-2">
               <div className="ptr-col1-1">
                 <img src={item.img} alt={item.name} />
@@ -139,10 +139,10 @@ const Partner = () => {
               <div className="ptr-col2-1">
                 <p className="ptr-p1">{item.date}</p>
                 <p className="ptr-p2">{item.name}</p>
-                <p className="ptr-p3">
+                <div className="ptr-p3">
                   {item.des === "null" ? <></> : <p>{item.des}</p>}
-                </p>
-                <p>
+                </div>
+                <div>
                   {item.link === "null" ? (
                     <></>
                   ) : (
@@ -150,7 +150,7 @@ const Partner = () => {
                       Browse More
                     </Link>
                   )}
-                </p>
+                </div>
               </div>
             </div>
           </div>
@@ -167,7 +167,7 @@ const Partner = () => {
           </div>
         </div>
         {list3.map((item) => (
-          <div className="ptr-row-2 shadow">
+          <div key={item.name} className="ptr-row-2 shadow">
             <div className="ptr-ptr-4 mx-2">
               <div className="ptr-col1-2">
                 <img src={item.img} alt={item.name} />
@@ -175,9 +175,9 @@ const Partner = () => {
               <div className="ptr-col2-2">
                 <p className="ptr-p1">{item.date}</p>
                 <p className="ptr-p2">{item.name}</p>
-                <p className="ptr-p3">
+                <div className="ptr-p3">
                   {item.des === "null" ? <></> : <p>{item.des}</p>}
-                </p>
+                </div>
                 <p>
                   {item.link === "null" ? (
                     <></>
@@ -252,7 +252,7 @@ const Partner = () => {
           </div>
         </div>
         {list4.map((item) => (
-          <div className="ptr-row-2 shadow">
+          <div key={item.name} className="ptr-row-2 shadow">
             <div className="ptr-ptr-4 mx-2">
               <div className="ptr4-col1-2">
                 <img src={item.img} alt={item.name} />
@@ -260,9 +260,9 @@ const Partner = () => {
               <div className="ptr4-col2-2">
                 <p className="ptr-p1">{item.date}</p>
                 <p className="ptr-p2">{item.name}</p>
-                <p className="ptr-p3">
+                <div className="ptr-p3">
                   {item.des === "null" ? <></> : <p>{item.des}</p>}
-                </p>
+                </div>
                 <p>
                   {item.link === "null" ? (
                     <></>

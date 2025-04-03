@@ -38,7 +38,7 @@ const Home = () => {
     if (homePic) {
       const timer = setTimeout(() => {
         showHomePic(false);
-      }, 3000);
+      }, 2000);
   
       return () => clearTimeout(timer); 
     }
@@ -305,7 +305,7 @@ const Home = () => {
           <div className="sec-3-content row">
             <div className="cols col-md-6 col-sm-12  text-secondary">
               <p className="sec-3-p1">Best Practices</p>
-              <p className="sec-3-p2">Premium Medical Facilities</p>
+              <h1 className="sec-3-p2">Premium Medical Facilities</h1>
               <p className="sec-3-p3" style={{ textAlign: 'justify' }}>
                 To provide a safe and efficient environment to patients, staff,
                 and visitors routine inspections are one of the hospital
@@ -316,26 +316,26 @@ const Home = () => {
               <div className="sec-3-2row row">
                 <div className="sec-3-2col cols col-md-6 col-sm-12">
                   <div>
-                    <i class="fa-solid fa-angles-right"></i>&nbsp; Trauma Care
+                    <i className="fa-solid fa-angles-right"></i>&nbsp; Trauma Care
                   </div>
                   <div>
-                    <i class="fa-solid fa-angles-right"></i>&nbsp; Intensive
+                    <i className="fa-solid fa-angles-right"></i>&nbsp; Intensive
                     Care Unit
                   </div>
                   <div>
-                    <i class="fa-solid fa-angles-right"></i>&nbsp;Ventilator
+                    <i className="fa-solid fa-angles-right"></i>&nbsp;Ventilator
                   </div>
                 </div>
                 <div className="sec-3-2col cols col-md-6 col-sm-12">
                   <div>
-                    <i class="fa-solid fa-angles-right"></i>&nbsp; Stroke Care
+                    <i className="fa-solid fa-angles-right"></i>&nbsp; Stroke Care
                   </div>
                   <div>
-                    <i class="fa-solid fa-angles-right"></i>&nbsp; Heart Attack
+                    <i className="fa-solid fa-angles-right"></i>&nbsp; Heart Attack
                     Care
                   </div>
                   <div>
-                    <i class="fa-solid fa-angles-right"></i>&nbsp;Knee/ Hip
+                    <i className="fa-solid fa-angles-right"></i>&nbsp;Knee/ Hip
                     Replacement
                   </div>
                 </div>

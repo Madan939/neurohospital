@@ -26,7 +26,7 @@ const PrivacyPolicy = () => {
           </p>
           <div>
             <div className="pp-p-div d-flex">
-              <i class="fa-solid fa-angles-right"></i> &nbsp;What information is
+              <i className="fa-solid fa-angles-right"></i> &nbsp;What information is
               collected?
             </div>
             <p className="pp-p4">
@@ -37,7 +37,7 @@ const PrivacyPolicy = () => {
           </div>
           <div>
             <div className="pp-p-div d-flex">
-              <i class="fa-solid fa-angles-right"></i> &nbsp;How is the
+              <i className="fa-solid fa-angles-right"></i> &nbsp;How is the
               information used?
             </div>
             <p className="pp-p4">
@@ -49,7 +49,7 @@ const PrivacyPolicy = () => {
           </div>
           <div>
             <div className="pp-p-div d-flex">
-              <i class="fa-solid fa-angles-right"></i>&nbsp;Who has access to the
+              <i className="fa-solid fa-angles-right"></i>&nbsp;Who has access to the
               information?
             </div>
             <p className="pp-p4">
@@ -60,7 +60,7 @@ const PrivacyPolicy = () => {
           </div>
           <div>
             <div className="pp-p-div d-flex">
-              <i class="fa-solid fa-angles-right"></i> &nbsp;How is the
+              <i className="fa-solid fa-angles-right"></i> &nbsp;How is the
               information protected?
             </div>
             <p className="pp-p4">

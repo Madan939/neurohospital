@@ -20,7 +20,7 @@ const Apply = () => {
                 <img src="/assets/images/apply/logo.svg" alt="sriyog" className="w-25"/>
               </div>
               <div className="mx-5 my-4">
-                <label HTMLFor="exampleInputEmail1" className="form-label">
+                <label htmlFor="exampleInputEmail1" className="form-label">
                   Email:
                 </label>
                 <input
@@ -33,7 +33,7 @@ const Apply = () => {
               <div className="mx-5 my-4">
                 <div className="row">
                   <div className="cols col-md-6 col-sm-12">
-                    <label HTMLFor="first-name" className="form-label">
+                    <label htmlFor="first-name" className="form-label">
                       First Name:
                     </label>
                     <input
@@ -43,7 +43,7 @@ const Apply = () => {
                     />
                   </div>
                   <div className="cols col-md-6 col-sm-12">
-                    <label HTMLFor="last-name" className="form-label">
+                    <label htmlFor="last-name" className="form-label">
                       Last Name:
                     </label>
                     <input
@@ -57,7 +57,7 @@ const Apply = () => {
               <div className="mx-5 my-4">
                 <div className="row">
                   <div className="cols col-md-6 col-sm-12">
-                    <label HTMLFor="phone" className="form-label">
+                    <label htmlFor="phone" className="form-label">
                       Phone:
                     </label>
                     <div className="row">
@@ -82,7 +82,7 @@ const Apply = () => {
                     </div>
                   </div>
                   <div className="cols col-md-6 col-sm-12">
-                    <label HTMLFor="address" className="form-label">
+                    <label htmlFor="address" className="form-label">
                       Address:
                     </label>
                     <input type="text" className="form-control" id="address" />
@@ -91,7 +91,7 @@ const Apply = () => {
               </div>
               <div className="mx-5 my-4">
                 <label
-                  HTMLFor="exampleFormControlTextarea1"
+                  htmlFor="exampleFormControlTextarea1"
                   className="form-label"
                 >
                   Description
@@ -108,7 +108,7 @@ const Apply = () => {
                   className="form-check-input"
                   id="exampleCheck1"
                 />
-                <label className="form-check-label" HTMLFor="exampleCheck1">
+                <label className="form-check-label" htmlFor="exampleCheck1">
                   All details are true
                 </label>
               </div>

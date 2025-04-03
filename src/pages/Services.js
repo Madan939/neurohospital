@@ -8,15 +8,15 @@ const Services = () => {
     <>
       <Breadcrumb name1={name} name2={name} />
       <div className="services">
-        <div className="services-sec-1">
+        <div className="services-sec-1 my-3" style={{textAlign:"justify"}}>
           Neuro Cardio & Multispeciality Hospital Biratnagar provides a{" "}
           <i> comprehensive range of healthcare services</i>, including{" "}
           <i>diagnostic, surgical, emergency, and specialized care</i>. Our
           advanced medical technology, experienced doctors, and dedicated staff
           ensure that patients receive the highest quality care.
         </div>
-        <div className="shadow my-3">
-          <p className="text-center h2 my-3" style={{ color: "#2c52a0" }}>
+        <div className="shadow py-3" >
+          <p className="text-center h2 " style={{ color: "#2c52a0" }}>
             {" "}
             Diagnostic and Imaging Services
           </p>
@@ -25,7 +25,7 @@ const Services = () => {
             reliable results for various health conditions.
           </p>
           <div className="services-sec-2 ">
-            <div className="">
+            <div className="mx-2">
               <ul style={{ textAlign: "justify" }}>
                 <li>
                   <i>DEXA Scan (Dual-Energy X-ray Absorptiometry) –</i> Assesses
@@ -82,7 +82,7 @@ const Services = () => {
                 </li>
               </ul>
             </div>
-            <div className="mx-2">
+            <div className="m-2">
               <img
                 src="/assets/images/services/2.jpg"
                 alt="services-img-1"
@@ -91,8 +91,8 @@ const Services = () => {
             </div>
           </div>
         </div>
-        <div className="shadow my-3">
-          <p className="text-center h2 my-2" style={{ color: "#2c52a0" }}>
+        <div className="shadow py-3 my-3">
+          <p className="text-center h2 " style={{ color: "#2c52a0" }}>
             {" "}
             Surgical Services
           </p>
@@ -101,7 +101,7 @@ const Services = () => {
             highly skilled team to perform a wide range of procedures.
           </p>
           <div className="services-sec-2 ">
-            <div className="mx-2">
+            <div className="m-2">
               <img
                 src="/assets/images/services/3.jpg"
                 alt="services-img-1"
@@ -152,8 +152,8 @@ const Services = () => {
             </div>
           </div>
         </div>
-        <div className="shadow my-3">
-          <p className="text-center h2 my-3" style={{ color: "#2c52a0" }}>
+        <div className="shadow py-3 my-3">
+          <p className="text-center h2 " style={{ color: "#2c52a0" }}>
             {" "}
             Emergency and Critical Care Services
           </p>
@@ -162,7 +162,7 @@ const Services = () => {
             emergencies with immediate care.
           </p>
           <div className="services-sec-2 ">
-            <div className="">
+            <div className="m-2">
               <ul style={{ textAlign: "justify" }}>
                 <li>
                   <i>24-Hour Emergency Services –</i> Trauma care, life-saving
@@ -188,8 +188,8 @@ const Services = () => {
             </div>
           </div>
         </div>
-        <div className="shadow my-3">
-          <p className="text-center h2 my-2" style={{ color: "#2c52a0" }}>
+        <div className="shadow py-3 my-3">
+          <p className="text-center h2 " style={{ color: "#2c52a0" }}>
             {" "}
             Specialized Care Services
           </p>
@@ -232,8 +232,8 @@ const Services = () => {
             </div>
           </div>
         </div>
-        <div className="shadow my-3">
-          <p className="text-center h2 my-2" style={{ color: "#2c52a0" }}>
+        <div className="shadow py-3 my-3">
+          <p className="text-center h2 " style={{ color: "#2c52a0" }}>
             {" "}
             Outpatient and Consultation Services
           </p>
@@ -242,7 +242,7 @@ const Services = () => {
             consultations, and follow-up care.
           </p>
           <div className="services-sec-2 ">
-            <div className="">
+            <div className="m-2">
               <ul style={{ textAlign: "justify" }}>
                 <li>
                   <i>Outpatient Department (OPD) –</i> Consultations with expert
@@ -264,7 +264,7 @@ const Services = () => {
                 </li>
               </ul>
             </div>
-            <div className="mx-2">
+            <div className="m-2">
               <img
                 src="/assets/images/services/5.png"
                 alt="services-img-1"
@@ -273,8 +273,8 @@ const Services = () => {
             </div>
           </div>
         </div>
-        <div className="shadow my-3">
-          <p className="text-center h2 my-2" style={{ color: "#2c52a0" }}>
+        <div className="shadow py-3 my-3">
+          <p className="text-center h2" style={{ color: "#2c52a0" }}>
             {" "}
             Special Days and Discounts
           </p>
@@ -283,7 +283,7 @@ const Services = () => {
             discounts:
           </p>
           <div className="services-sec-2 ">
-            <div className="mx-2">
+            <div className="m-2">
               <img
                 src="/assets/images/services/pop_up.jpg"
                 alt="services-img-1"
@@ -327,7 +327,7 @@ const Services = () => {
         <p className=" h2 my-3" style={{ color: "#2c52a0" }}>
           Conclusion
         </p>
-        <p>
+        <p style={{textAlign:"justify"}}>
           Neuro Cardio & Multispeciality Hospital Biratnagar is committed to
           top-quality healthcare through advanced technology, expert doctors,
           and a patient-first approach. Explore our services, book an

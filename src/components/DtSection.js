@@ -211,7 +211,7 @@ const DtSection = () => {
     <>
       <div className="ul-doc">
         {list.map((item) => (
-          <div className="li-doc">
+          <div key={item.id} className="li-doc">
             <div className="li-doc-1 text-center">
               <img src={item.pic} alt="dc1" />
               <div className="dcts-1-p1">{item.name}</div>

@@ -8,7 +8,7 @@ const Breadcrumb = ({name1,name2}) => {
         <div className='b-div'>
             <div className='b-div1 d-flex '>
                 <Link to="/">Home</Link>
-                <i class="fa-solid fa-angles-right"></i>
+                <i className="fa-solid fa-angles-right"></i>
                 <div className='b-p1'>{name1}</div>
 
             </div>

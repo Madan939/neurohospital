@@ -39,7 +39,7 @@ const Dpsec4 = () => {
         className={`dps2-row w-100  ${isVisible ? "show" : ""}`}
       >
         {list.map((item) => (
-          <div className="dps2-col">
+          <div key={item.name} className="dps2-col">
             <div className="dps2-col-cnt d-flex">
               <div className="dps2-col-cnt1 ">
                 <i className={item.icon} alt={item.name}></i>
