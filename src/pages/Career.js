@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Breadcrumb from "../components/Breadcrumb";
 import { Link, useNavigate } from "react-router-dom";
 
@@ -9,9 +9,7 @@ const Career = () => {
     navigate(link);
     window.location.reload();
   }
-  useEffect(()=>{
-    document.title="Neuro Hospital | career";
-  },[]);
+
   return (
     <>
       <Breadcrumb name1={name} name2={name} />

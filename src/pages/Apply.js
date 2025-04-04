@@ -1,12 +1,10 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Breadcrumb from "../components/Breadcrumb";
 import { NavLink } from "react-router-dom";
 
 const Apply = () => {
   const name = "Apply Now";
-  useEffect(()=>{
-    document.title="Neuro Hospital | apply";
-  },[]);
+
   return (
     <>
       <Breadcrumb name1={name} name2={name} />

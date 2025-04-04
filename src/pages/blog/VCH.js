@@ -1,9 +1,7 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 const VCH = () => {
-  useEffect(()=>{
-        document.title="Neuro Hospital | vaccinations-childrens-health";
-      },[]);
+
   return (
     <>
       <div className="blogs">

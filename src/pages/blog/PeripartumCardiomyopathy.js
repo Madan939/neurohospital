@@ -1,9 +1,7 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 const PeripartumCardiomyopathy = () => {
-    useEffect(()=>{
-            document.title="Neuro Hospital | peripartum-cardiomyopathy";
-          },[]);
+ 
   return (
     <>
       <div className="blogs">

@@ -21,7 +21,6 @@ const Message = () => {
   const [isSec6Visible, setIsSec6Visible] = useState(false);
 
   useEffect(() => {
-    document.title="Neuro Hospital | message";
     const sec1Element = sec1Ref.current;
     const sec2Element = sec2Ref.current;
     const sec3Element = sec3Ref.current;

@@ -34,11 +34,11 @@ const Home = () => {
   const [isSec7Visible, setIsSec7Visible] = useState(false);
 
   useEffect(() => {
-    document.title="Neuro Hospital | home";
+ 
     if (homePic) {
       const timer = setTimeout(() => {
         showHomePic(false);
-      }, 2000);
+      }, 7000);
   
       return () => clearTimeout(timer); 
     }
@@ -249,7 +249,7 @@ const Home = () => {
                       to="https://wa.me/9779852004024?text=Hi%2C%20I%27m%20contacting%20you%20through%20www.neurohospital.com.np.%20"
                       className="card-btn btn text-light mt-3"
                     >
-                      Call on Whatsapp
+                      Call on WhatsApp
                     </Link>
                   </div>
                 </div>

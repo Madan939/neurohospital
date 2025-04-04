@@ -1,10 +1,9 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Breadcrumb from "../components/Breadcrumb";
+import { Link } from "react-router-dom";
 
 const Academics = () => {
-  useEffect(()=>{
-    document.title="Neuro Hospital | academics";
-  },[]);
+
   const name1 = "Academics";
   return (
     <>
@@ -19,7 +18,7 @@ const Academics = () => {
               The Neuro Cardio & Multispeciality Hospital, located on Jahada
               Road in Biratnagar, has initiated a FCPS training (equivalent to
               Master of Medicine-MD) program in collaboration with the renowned{" "}
-              <i>CPSP</i> Pakistan. This partnership marks a significant step forward in
+              <Link to="https://www.cpsp.edu.pk/" target="_blank">CPSP</Link> Pakistan. This partnership marks a significant step forward in
               advancing medical education in the region, providing aspiring
               doctors with access to world-class training and expertise.
             </p>
@@ -34,7 +33,7 @@ const Academics = () => {
               facilities and commitment to patient care.
             </p>
             <p>
-              The collaboration with <i>CPSP</i> Pakistan brings in an added
+              The collaboration with <Link to="https://www.cpsp.edu.pk/" target="_blank">CPSP</Link> Pakistan brings in an added
               layer of expertise, with faculty members and specialists from
               Pakistan contributing to the academic and clinical training. This
               cross-border educational initiative aims to produce highly skilled

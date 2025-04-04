@@ -1,20 +1,17 @@
-import React, { useEffect } from "react";
+import React from "react";
 const WhatIsPhobia = () => {
-  useEffect(()=>{
-    document.title="Neuro Hospital | what-is-phobia";
-  },[]);
   return (
     <>
       <div className="blogs">
         <div className="blogs-div">
           <div className="blog-pic">
-          <img
-            src="/assets/images/blog/phobia.png"
-            alt="blogs-image"
-            className="shadow"
-          />
+            <img
+              src="/assets/images/blog/phobia.png"
+              alt="blogs-image"
+              className="shadow"
+            />
           </div>
-         
+
           <br />
           <br />
           <p className="blog-name text-center">What is Phobia?</p>

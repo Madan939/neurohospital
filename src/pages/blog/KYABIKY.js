@@ -1,10 +1,7 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 const KYABIKY = () => {
-  useEffect(() => {
-    document.title =
-      "Neuro Hospital | kill-your-appendicitis-before-it-kills-you";
-  }, []);
+
   return (
     <>
       <div className="blogs">

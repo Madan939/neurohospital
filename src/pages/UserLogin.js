@@ -7,7 +7,7 @@ const UserLogin = () => {
         <form className="w-25 border shadow">
           <div className="m-3">
             <label for="exampleInputEmail1" className="form-label">
-              Email: 
+              Email:
             </label>
             <input
               type="email"
@@ -33,15 +33,14 @@ const UserLogin = () => {
               id="exampleCheck1"
             />
             <label className="form-check-label" for="exampleCheck1">
-              Remember me 
+              Remember me
             </label>
           </div>
           <div className="text-center mb-3">
-          <button type="submit " className="btn btn-primary px-4">
-            Log in
-          </button>
+            <button type="submit " className="btn btn-primary px-4">
+              Log in
+            </button>
           </div>
-         
         </form>
       </div>
     </>

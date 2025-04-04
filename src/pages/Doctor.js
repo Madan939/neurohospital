@@ -1,12 +1,10 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Breadcrumb from "../components/Breadcrumb";
 import { Link } from "react-router-dom";
 import DtSection from "../components/DtSection";
 
 const Doctor = () => {
-  useEffect(()=>{
-    document.title="Neuro Hospital | doctors";
-  },[]);
+
   const name1 = "Meet the Doctors";
   const name2 = "Doctors";
 

@@ -1,9 +1,7 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 const BTFAS = () => {
-    useEffect(()=>{
-            document.title="Neuro Hospital | best-time-for-appendicitis-surgery";
-          },[]);
+
   return (
     <>
       <div className="blogs">

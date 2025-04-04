@@ -6,7 +6,7 @@ const LocationMap = () => {
   const sec1Ref = useRef(null);
   const [isSec1Visible, setIsSec1Visible] = useState(false);
   useEffect(() => {
-    document.title="Neuro Hospital | location";
+
     const sec1Element = sec1Ref.current;
     const observer1 = new IntersectionObserver(
       ([entry]) => {

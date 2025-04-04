@@ -1,9 +1,7 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 const HTCAD = () => {
-    useEffect(()=>{
-            document.title="Neuro Hospital | how-to-control-anxiety-disorder";
-          },[]);
+
   return (
     <>
       <div className="blogs">

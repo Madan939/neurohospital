@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 const Blogs = () => {
@@ -7,9 +7,7 @@ const Blogs = () => {
     navigate(link);
     window.location.reload();
   };
-  useEffect(()=>{
-    document.title="Neuro Hospital | blog";
-  },[]);
+
   const List = [
     {
       pic: "/assets/images/blog/blog-1.png",

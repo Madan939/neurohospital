@@ -1,9 +1,7 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 const SummerDandruff = () => {
-    useEffect(()=>{
-            document.title="Neuro Hospital | summer-dandruff";
-          },[]);
+ 
   return (
     <>
       <div className="blogs">

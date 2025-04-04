@@ -79,10 +79,6 @@ const HospitalCalender = () => {
   //     setSelectedYear(selectedYear);
   //   }
   // };
-  useEffect(()=>{
-    document.title="Neuro Hospital | calender";
-  },[]);
-
   return (
     <>
       <Breadcrumb name1={name1} name2={name1} />

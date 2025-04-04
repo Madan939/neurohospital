@@ -1,9 +1,7 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 const THTOO = () => {
-    useEffect(()=>{
-            document.title="Neuro Hospital | the-hidden-toll-of-obesity";
-          },[]);
+ 
   return (
     <>
       <div className="blogs">

@@ -3,9 +3,9 @@ import { Link, NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div>
-      <footer className="mt-3 ">
-        <div className="main-footer  mt-3">
+    <>
+      <footer className="py-1 ">
+        <div className="main-footer ">
           <div className="footer-row row">
             <div className="cols col-md-3 col-sm-12 col-xs-12">
               <NavLink to="">
@@ -93,12 +93,12 @@ const Footer = () => {
               All Rights Reserved
             </div>
             <div className="f-l-cnt text-center ">
-              Site Managed By : PRACAS Upreti
+              Site Managed By : <Link className="text-decoration-none text-dark" to="https://wa.me/9779852020060?text=Hi%2C%20I%27m%20contacting%20you%20through%20www.neurohospital.com.np.%20" target="_blank">PRACAS UPRETI</Link>
             </div>
           </div>
         </div>
       </footer>
-    </div>
+    </>
   );
 };
 

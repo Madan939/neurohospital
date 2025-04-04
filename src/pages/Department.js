@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Breadcrumb from "../components/Breadcrumb";
 import DpSectiion1 from "../components/DpSectiion1";
 import Dpsection2 from "../components/Dpsection2";
@@ -8,9 +8,7 @@ import Dpsec4 from "../components/Dpsec4";
 const Department = () => {
   const name1 = "Our Departments";
   const name2 = "Our Departments";
-  useEffect(()=>{
-    document.title="Neuro Hospital | departments";
-  },[]);
+
   return (
     <div>
       <Breadcrumb name1={name1}name2={name2} />

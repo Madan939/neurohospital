@@ -16,7 +16,8 @@
 .A-sec-1-div2 p {
   font-size: 16px;
 }
-.A-sec-1-div2 p i {
+.A-sec-1-div2 p a {
+  text-decoration: none;
   font-style: normal;
   color: rgb(232, 218, 32);
 }
