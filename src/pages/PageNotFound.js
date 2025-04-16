@@ -15,7 +15,8 @@ const PageNotFound = () => {
           <div>
             If this is your site, and you weren’t expecting a 404 for this path,
             please visit Netlify’s{" "}
-            <Link to="https://answers.netlify.com/t/support-guide-i-ve-deployed-my-site-but-i-still-see-page-not-found/125?utm_source=404page&utm_campaign=community_tracking">
+
+            <Link target="_blank" to="https://answers.netlify.com/t/support-guide-i-ve-deployed-my-site-but-i-still-see-page-not-found/125?utm_source=404page&utm_campaign=community_tracking">
               “page not found” support guide 
             </Link>
              &nbsp;for troubleshooting tips.

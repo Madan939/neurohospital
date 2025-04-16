@@ -45,135 +45,143 @@ const Services = () => {
         <p className="h1 text-center m-3" style={{ color: "#2c52a0" }}>
           Services
         </p>
-        <div className=" py-3">
-          <p className=" h4 "> 1. Diagnostic and Imaging Services</p>
-          <p className="mx-4">
-            We offer state-of-the-art diagnostic tools to provide accurate and
-            reliable results for various health conditions.
-          </p>
-          <div className="service-pic">
-            <img
-              src="/assets/images/services/2.jpg"
-              alt="services-img-1"
-              className="shadow "
-            />
-          </div>
-     
-          <div className="m-2">
-            <ul>
-              <li>
-                <i>DEXA Scan (Dual-Energy X-ray Absorptiometry) –</i> Assesses
-                bone mineral density (BMD) to diagnose osteoporosis and predict
-                fracture risk.
-              </li>
-              <li>
-                <i>CT Scan (Computed Tomography) –</i> Provides detailed
-                cross-sectional images for diagnosing brain injuries, cancers,
-                cardiovascular diseases, and musculoskeletal disorders.
-              </li>
-              <li>
-                <i>MRI (Magnetic Resonance Imaging) – </i>A non-invasive imaging
-                technique offering high-resolution images for neurological,
-                orthopedic, and soft tissue conditions.
-              </li>
-              <li>
-                <i>EEG (Electroencephalogram) –</i> Evaluates brain activity to
-                diagnose epilepsy, seizures, and other neurological disorders.
-              </li>
-              <li>
-                <i>ECG (Electrocardiogram) –</i> A quick and painless test to
-                check the heart’s electrical activity for arrhythmias and other
-                heart conditions.
-              </li>
-              <li>
-                <i>ECHO (Echocardiogram) –</i> Uses ultrasound to create images
-                of the heart, helping diagnose heart diseases and valve
-                disorders.
-              </li>
-              <li>
-                <i>TMT (Treadmill Test) –</i> A cardiac stress test used to
-                evaluate heart function during physical exertion.
-              </li>
-              <li>
-                <i>Holter Monitoring –</i> A portable ECG device that
-                continuously records heart rhythms for 24-48 hours to detect
-                irregularities.
-              </li>
-              <li>
-                <i>NCS/EMG (Nerve Conduction Study & Electromyography) –</i>{" "}
-                Helps diagnose nerve and muscle disorders like neuropathy,
-                carpal tunnel syndrome, and muscle weakness.
-              </li>
-              <li>
-                <i>X-Ray – </i>Provides quick and detailed imaging for
-                diagnosing fractures, lung infections, and other medical
-                conditions.
-              </li>
-              <li>
-                <i>Endoscopy –</i> A minimally invasive procedure to examine the
-                digestive tract and diagnose gastrointestinal conditions.
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div className=" py-3 my-3">
-          <p className=" h4 "> 2. Surgical Services</p>
-          <p className="mx-4">
-            Our hospital is equipped with advanced surgical facilities and a
-            highly skilled team to perform a wide range of procedures.
-          </p>
-          <div className="service-pic">
-            <img
-              src="/assets/images/services/3.jpg"
-              alt="services-img-2"
-              className="shadow "
-            />
-            
-          </div>
-          <ul className="m-3">
-            <li>
-              <i>Modular OT Setup –</i> Modern operating theaters designed to
-              maintain a sterile environment for complex and high-risk
-              surgeries.
-            </li>
-            <li>
-              <i>Major Surgeries:</i>
-              <ul>
+        <ol >
+          <li className="service-ol-li">
+            <div className=" py-3">
+              <p className=" h4 ">Diagnostic and Imaging Services</p>
+              <p className="">
+                We offer state-of-the-art diagnostic tools to provide accurate
+                and reliable results for various health conditions.
+              </p>
+              <div className="service-pic">
+                <img
+                  src="/assets/images/services/2.jpg"
+                  alt="services-img-1"
+                  className="shadow "
+                />
+              </div>
+
+              <div className="mt-3">
+                <ul>
+                  <li>
+                    <i>DEXA Scan (Dual-Energy X-ray Absorptiometry) –</i>{" "}
+                    Assesses bone mineral density (BMD) to diagnose osteoporosis
+                    and predict fracture risk.
+                  </li>
+                  <li>
+                    <i>CT Scan (Computed Tomography) –</i> Provides detailed
+                    cross-sectional images for diagnosing brain injuries,
+                    cancers, cardiovascular diseases, and musculoskeletal
+                    disorders.
+                  </li>
+                  <li>
+                    <i>MRI (Magnetic Resonance Imaging) – </i>A non-invasive
+                    imaging technique offering high-resolution images for
+                    neurological, orthopedic, and soft tissue conditions.
+                  </li>
+                  <li>
+                    <i>EEG (Electroencephalogram) –</i> Evaluates brain activity
+                    to diagnose epilepsy, seizures, and other neurological
+                    disorders.
+                  </li>
+                  <li>
+                    <i>ECG (Electrocardiogram) –</i> A quick and painless test
+                    to check the heart’s electrical activity for arrhythmias and
+                    other heart conditions.
+                  </li>
+                  <li>
+                    <i>ECHO (Echocardiogram) –</i> Uses ultrasound to create
+                    images of the heart, helping diagnose heart diseases and
+                    valve disorders.
+                  </li>
+                  <li>
+                    <i>TMT (Treadmill Test) –</i> A cardiac stress test used to
+                    evaluate heart function during physical exertion.
+                  </li>
+                  <li>
+                    <i>Holter Monitoring –</i> A portable ECG device that
+                    continuously records heart rhythms for 24-48 hours to detect
+                    irregularities.
+                  </li>
+                  <li>
+                    <i>NCS/EMG (Nerve Conduction Study & Electromyography) –</i>{" "}
+                    Helps diagnose nerve and muscle disorders like neuropathy,
+                    carpal tunnel syndrome, and muscle weakness.
+                  </li>
+                  <li>
+                    <i>X-Ray – </i>Provides quick and detailed imaging for
+                    diagnosing fractures, lung infections, and other medical
+                    conditions.
+                  </li>
+                  <li>
+                    <i>Endoscopy –</i> A minimally invasive procedure to examine
+                    the digestive tract and diagnose gastrointestinal
+                    conditions.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li className="service-ol-li">
+            <div className=" py-3 my-3">
+              <p className=" h4 ">Surgical Services</p>
+              <p className="">
+                Our hospital is equipped with advanced surgical facilities and a
+                highly skilled team to perform a wide range of procedures.
+              </p>
+              <div className="service-pic">
+                <img
+                  src="/assets/images/services/3.jpg"
+                  alt="services-img-2"
+                  className="shadow "
+                />
+              </div>
+              <ul className="mt-3">
                 <li>
-                  <i>Neurosurgery –</i> Brain and spinal cord procedures.
+                  <i>Modular OT Setup –</i> Modern operating theaters designed
+                  to maintain a sterile environment for complex and high-risk
+                  surgeries.
                 </li>
                 <li>
-                  <i>Orthopedic Surgery –</i> Musculoskeletal treatments,
-                  fractures, and joint surgeries.
+                  <i>Major Surgeries:</i>
+                  <ul>
+                    <li>
+                      <i>Neurosurgery –</i> Brain and spinal cord procedures.
+                    </li>
+                    <li>
+                      <i>Orthopedic Surgery –</i> Musculoskeletal treatments,
+                      fractures, and joint surgeries.
+                    </li>
+                    <li>
+                      <i>General Surgery –</i> Comprehensive surgical care for
+                      various conditions.
+                    </li>
+                    <li>
+                      <i>Urosurgery – </i>Advanced surgical treatments for
+                      kidney, bladder, and urinary tract diseases.
+                    </li>
+                    <li>
+                      <i>Ophthalmic Surgery –</i> Surgical procedures for eye
+                      conditions, including cataracts and glaucoma.
+                    </li>
+                    <li>
+                      <i>Dermatology Procedures – </i>Specialized skin
+                      treatments for various dermatological conditions,
+                      including minor cosmetic surgeries.
+                    </li>
+                  </ul>
                 </li>
                 <li>
-                  <i>General Surgery –</i> Comprehensive surgical care for
-                  various conditions.
-                </li>
-                <li>
-                  <i>Urosurgery – </i>Advanced surgical treatments for kidney,
-                  bladder, and urinary tract diseases.
-                </li>
-                <li>
-                  <i>Ophthalmic Surgery –</i> Surgical procedures for eye
-                  conditions, including cataracts and glaucoma.
-                </li>
-                <li>
-                  <i>Dermatology Procedures – </i>Specialized skin treatments
-                  for various dermatological conditions, including minor
-                  cosmetic surgeries.
+                  <i>Cath Lab –</i> Equipped with modern technology for advanced
+                  cardiac and vascular procedures.
                 </li>
               </ul>
-            </li>
-            <li>
-              <i>Cath Lab –</i> Equipped with modern technology for advanced
-              cardiac and vascular procedures.
-            </li>
-          </ul>
-        </div>
-        <div className=" py-3 my-3">
-          <p className=" h4 "> 3. Emergency and Critical Care Services</p>
-          <p className="mx-4">
+            </div>
+          </li>
+          <li className="service-ol-li">
+          <div className=" py-3 my-3">
+          <p className=" h4 ">Emergency and Critical Care Services</p>
+          <p className="">
             Our emergency services are available 24/7 to respond to medical
             emergencies with immediate care.
           </p>
@@ -184,8 +192,8 @@ const Services = () => {
               className="shadow "
             />
           </div>
-          
-          <div className="m-2">
+
+          <div className="mt-3">
             <ul>
               <li>
                 <i>24-Hour Emergency Services –</i> Trauma care, life-saving
@@ -203,9 +211,10 @@ const Services = () => {
             </ul>
           </div>
         </div>
-        <div className=" py-3 my-3">
-          <p className="h4 "> 4. Specialized Care Services</p>
-          <p className="mx-4">
+          </li>
+          <li className="service-ol-li"> <div className=" py-3 my-3">
+          <p className="h4 ">Specialized Care Services</p>
+          <p className="">
             Our specialized departments offer expert care tailored to various
             medical needs.
           </p>
@@ -216,8 +225,8 @@ const Services = () => {
               className="shadow "
             />
           </div>
-          
-          <div className="m-2">
+
+          <div className="mt-3">
             <ul>
               <li>
                 <i>Dialysis Services –</i> High-quality dialysis for renal
@@ -242,10 +251,10 @@ const Services = () => {
               </li>
             </ul>
           </div>
-        </div>
-        <div className=" py-3 my-3">
-          <p className=" h4 "> 5. Outpatient and Consultation Services</p>
-          <p className="mx-4">
+        </div></li>
+          <li  className="service-ol-li">  <div className=" py-3 my-3">
+          <p className=" h4 ">Outpatient and Consultation Services</p>
+          <p className="">
             We offer outpatient services for routine checkups, specialist
             consultations, and follow-up care.
           </p>
@@ -256,9 +265,9 @@ const Services = () => {
               className="shadow "
             />
           </div>
-          
+
           <div className="services-sec-2 ">
-            <div className="m-2 w-100">
+            <div className="mt-3 w-100">
               <ul>
                 <li>
                   <i>Outpatient Department (OPD) –</i> Consultations with expert
@@ -268,7 +277,7 @@ const Services = () => {
                   <i>Online Appointment Booking –</i> Convenient online
                   scheduling for consultations and procedures. You can book your
                   appointment easily by visiting our website:{" "}
-                  <Link to="https://neuro.danphecare.com/">
+                  <Link to="https://neuro.danphecare.com/" target="_blank">
                     https://neuro.danphecare.com/
                   </Link>{" "}
                   or using our mobile application.
@@ -281,10 +290,10 @@ const Services = () => {
               </ul>
             </div>
           </div>
-        </div>
-        <div className=" py-3 my-3">
-          <p className="h4"> 6. Special Days and Discounts</p>
-          <p className="mx-4">
+        </div></li>
+          <li className="service-ol-li"><div className=" py-3 my-3">
+          <p className="h4">Special Days and Discounts</p>
+          <p className="">
             We provide affordable healthcare through various special days and
             discounts:
           </p>
@@ -295,9 +304,9 @@ const Services = () => {
               className="shadow "
             />
           </div>
-          
+
           <div className="">
-            <ul className="m-2">
+            <ul className="mt-3">
               <li>
                 <i>Free OPD & 25% Discount –</i> On designated days, enjoy free
                 OPD consultations and 25% off medical services.
@@ -327,7 +336,8 @@ const Services = () => {
               </li>
             </ul>
           </div>
-        </div>
+        </div></li>
+        </ol>
         <p className=" h2 my-3">Conclusion</p>
         <p style={{ textAlign: "justify" }}>
           Neuro Cardio & Multispeciality Hospital Biratnagar is committed to

@@ -43,10 +43,10 @@ const Academics = () => {
           </div>
         </div>
         <div className="A-sec-2">
-          <p className="As-p2 text-center text-dark">Courses</p>
+          <p className="As-p2 text-center text-dark my-4" >Courses</p>
           <div className="A-sec2-row">
             <div className="A-sec2-col1">
-              <p className="As-p3  text-dark">Neurosurgery</p>
+              <p className="As-p3  text-dark mb-2">Neurosurgery</p>
               <div className="As-p4" style={{ textAlign: 'justify' }}>
                 This course provides a comprehensive introduction to
                 neurosurgery, covering essential topics such as neuroanatomy,
@@ -66,7 +66,7 @@ const Academics = () => {
             <img src="/assets/images/acdemics/a3.png" alt="a3" />
           </div>
           <div className="A-sec3-col2">
-            <p className="As-p3 text-dark">Cardiology</p>
+            <p className="As-p3 text-dark mb-2">Cardiology</p>
             <p className="As-p4" style={{ textAlign: 'justify' }}>
               Explore the fundamentals of cardiology, including heart function,
               common diseases, and current treatment options. This course is
@@ -80,7 +80,7 @@ const Academics = () => {
         </div>
         <div className="A-sec-4">
           <div className="A-sec4-col1">
-            <p className="As-p3  text-dark">General Medicine</p>
+            <p className="As-p3  text-dark mb-2">General Medicine</p>
             <p className="As-p4" style={{ textAlign: 'justify' }}>
               This course provides a comprehensive introduction to general
               medicine, covering essential topics such as anatomy, physiology,
@@ -99,7 +99,7 @@ const Academics = () => {
             <img src="/assets/images/acdemics/a5.png" alt="a3" />
           </div>
           <div className="A-sec3-col2">
-            <p className="As-p3  text-dark">Orthopedic Surgery</p>
+            <p className="As-p3  text-dark mb-2">Orthopedic Surgery</p>
             <p className="As-p4" style={{ textAlign: 'justify' }}>
               This course provides a comprehensive introduction to orthopedic
               surgery, covering essential topics such as anatomy, physiology,
@@ -116,7 +116,7 @@ const Academics = () => {
         <div className="A-sec-2">
           <div className="A-sec2-row">
             <div className="A-sec2-col1">
-              <p className="As-p3  text-dark">Surgery</p>
+              <p className="As-p3  text-dark mb-2">Surgery</p>
               <p className="As-p4" style={{ textAlign: 'justify' }}>
                 This course provides a comprehensive introduction to surgery,
                 covering essential topics such as anatomy, physiology,
@@ -132,10 +132,10 @@ const Academics = () => {
           </div>
         </div>
         <div className="A-sec-5">
-            <p className="As-p3  text-center text-dark">CTEVT Courses</p>
+            <p className="As-p3  text-center text-dark mb-3">CTEVT Courses</p>
           <p className="As-p4" style={{ textAlign: 'justify' }}>
              The Council for Technical Education and Vocational
-            Training (CTEVT) constituted in 1989 (2045 BS) is a national
+            Training (CTEVT) constituted in 1989 (2045 B.S.) is a national
             autonomous apex body of Technical and Vocational Education and
             Training (TVET) sector committed for the production of technical and
             skillful human resources required to the nation. It mainly involves
@@ -150,7 +150,7 @@ const Academics = () => {
             <img src="/assets/images/acdemics/a7.png" alt="a3" />
           </div>
           <div className="A-sec3-col2">
-            <p className="As-p3  text-dark">PCL Nursing</p>
+            <p className="As-p3  text-dark mb-2">PCL Nursing</p>
             <p className="As-p4" style={{ textAlign: 'justify' }}>
               This course provides a comprehensive introduction to PCL nursing,
               covering essential topics such as anatomy, physiology, pathology,

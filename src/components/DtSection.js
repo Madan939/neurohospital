@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const DtSection = () => {
   const list = [
@@ -192,6 +192,8 @@ const DtSection = () => {
       link: "/doctors",
       id: "NMC # : 6361",
     },
+  ];
+  const list1 = [
     {
       name: "Dr. Nabin Kumar Chaudhary",
       pic: "/assets/images/doctors/dc30.png",
@@ -203,20 +205,45 @@ const DtSection = () => {
       name: "Join our Team",
       pic: "/assets/images/doctors/dc31.png",
       prof: "Apply Now",
-      link: "https://neurohospital.com.np/apply",
+      link: "/apply",
       id: "Apply now",
     },
   ];
+  const navigate = useNavigate();
+  const load = (link) => {
+    navigate(link);
+    window.location.reload();
+  };
   return (
     <>
-      <div className="ul-doc">
+      <div className="ul-doc ">
         {list.map((item) => (
           <div key={item.id} className="li-doc">
             <div className="li-doc-1 text-center">
               <img src={item.pic} alt="dc1" />
               <div className="dcts-1-p1">{item.name}</div>
               <div className="dcts-1-p2">{item.prof}</div>
-              <Link to={item.link} className="dcts-btn btn">{item.id}</Link>
+              <Link onClick={() => load(item.link)} className="dcts-btn btn">
+                {item.id}
+              </Link>
+            </div>
+          </div>
+        ))}
+      </div>
+      <div className="ul-doc1 ">
+        {list1.map((item) => (
+          <div key={item.id} className="li-doc1">
+            <div className="li-doc-1 text-center">
+              <img src={item.pic} alt="dc1" />
+              <div className="dcts-1-p1">{item.name}</div>
+              <div className="dcts-1-p2">{item.prof}</div>
+              <Link
+              
+                onClick={() => load(item.link)}
+                className="dcts-btn btn"
+              >
+                {item.id}
+              </Link>
             </div>
           </div>
         ))}

@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react'
 
-const UserLogin = () => {
+const Email = () => {
   return (
     <>
-      <div className="form">
+    <div className="form">
         <form className="w-25 border shadow">
           <div className="m-3">
             <label for="exampleInputEmail1" className="form-label">
@@ -44,7 +44,7 @@ const UserLogin = () => {
         </form>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default UserLogin;
+export default Email

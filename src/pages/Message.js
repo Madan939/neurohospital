@@ -109,7 +109,7 @@ const Message = () => {
             ref={sec1Ref}
             className={`m-sec1-div1 ${isSec1Visible ? "show" : ""}`}
           >
-            <img src="/assets/images/aboutus/msg1.png" alt="msg-1" />
+            <img src="/assets/images/message/msg1.png" alt="msg-1" />
           </div>
           <div
             ref={sec2Ref}
@@ -149,7 +149,7 @@ const Message = () => {
             ref={sec3Ref}
             className={`m-sec2-div1 ${isSec3Visible ? "show" : ""}`}
           >
-            <img src="/assets/images/aboutus/msg2.png" alt="msg-2" />
+            <img src="/assets/images/message/msg2.png" alt="msg-2" />
           </div>
           <div
             ref={sec4Ref}
@@ -211,7 +211,7 @@ const Message = () => {
             ref={sec5Ref}
             className={`m-sec3-div1 ${isSec5Visible ? "show" : ""}`}
           >
-            <img src="/assets/images/aboutus/msg4.png" alt="msg-4" />
+            <img src="/assets/images/message/msg4.png" alt="msg-4" />
           </div>
           <div
             ref={sec6Ref}

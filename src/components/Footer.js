@@ -20,19 +20,19 @@ const Footer = () => {
                 profesionally managed healthcare solutions.
               </p>
               <div className="footer-media-icons">
-                <NavLink to="https://wa.me/9779852004024?text=Hi%2C%20I%27m%20contacting%20you%20through%20www.neurohospital.com.np.%20">
+                <NavLink target="_blank" to="https://wa.me/9779852004024?text=Hi%2C%20I%27m%20contacting%20you%20through%20www.neurohospital.com.np.%20">
                   <i className="fa-brands fa-whatsapp"></i>
                 </NavLink>
-                <NavLink to="https://www.linkedin.com/company/neurohospital/?originalSubdomain=np">
+                <NavLink target="_blank" to="https://www.linkedin.com/company/neurohospital/?originalSubdomain=np">
                   <i className="fa-brands fa-linkedin"></i>
                 </NavLink>
-                <NavLink to="https://www.youtube.com/channel/UCGrHL0QQXVu1n-P29xUhmYA">
+                <NavLink target="_blank" to="https://www.youtube.com/channel/UCGrHL0QQXVu1n-P29xUhmYA">
                   <i className="fa-brands fa-youtube"></i>
                 </NavLink>
-                <NavLink to="https://www.instagram.com/neurohospitalbrt/">
+                <NavLink target="_blank" to="https://www.instagram.com/neurohospitalbrt/">
                   <i className="fa-brands fa-instagram"></i>
                 </NavLink>
-                <NavLink to="https://www.facebook.com/neurohospitalofficial/">
+                <NavLink target="_blank" to="https://www.facebook.com/neurohospitalofficial/">
                   <i className="fa-brands fa-square-facebook"></i>
                 </NavLink>
               </div>
@@ -43,6 +43,7 @@ const Footer = () => {
               <p>
                 E:{" "}
                 <Link
+                target="_blank"
                   className="e-link text-dark"
                   to="mailto:info@neurohospital.com.np"
                 >
@@ -51,7 +52,7 @@ const Footer = () => {
               </p>
               <p>
                 P:{" "}
-                <Link to="tel:+977-21-417475" className="foot-phn">
+                <Link to="tel:+977-21-417475" className="foot-phn" target="_blank">
                   +977-21-417484 / 417475
                 </Link>
               </p>
@@ -68,14 +69,14 @@ const Footer = () => {
             <div className="cols col-lg-2 col-md-2 col-xs-12">
               <p className="footer-head">Toll Free Number</p>
               <p>
-                <Link to="tel:1660-21-52777" className="tel-no">
+                <Link to="tel:1660-21-52777" target="_blank" className="tel-no">
                   1660-21-52777
                 </Link>
               </p>
-              <Link to="tel:"></Link>
+              <Link to="tel:" target="_blank"></Link>
               <p>24X7 Helpline</p>
               <p>
-                <Link to="tel:+977-21-416267" className="tel-no">
+                <Link to="tel:+977-21-416267" target="_blank" className="tel-no">
                   +977-21-416267
                 </Link>
               </p>
@@ -86,9 +87,9 @@ const Footer = () => {
         <div className="footer-last text-center">
           <div>
             <div className="container">
-              Copyright &copy; 2000-{" "}
+              Copyright &copy; 2000 - {" "}2025{" "}
               <b className="text-dark">
-                Neuro Cardio & Multispeciality Hospital Pvt.Ltd.
+                Neuro Cardio & Multispeciality Hospital Pvt. Ltd.
               </b>{" "}
               All Rights Reserved
             </div>

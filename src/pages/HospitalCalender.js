@@ -82,8 +82,7 @@ const HospitalCalender = () => {
   return (
     <>
       <Breadcrumb name1={name1} name2={name1} />
-      <br/><br/>
-      <div className="calendar shadow">
+      <div className="calendar">
         <div className="d-flex flex-wrap">
           <div className="cdr-d1">
             <img
@@ -101,7 +100,7 @@ const HospitalCalender = () => {
           </button>
 
           <h3>
-          {selectedDate}{englishMonths[selectedMonth]}, {selectedYear}
+          {selectedDate}&nbsp;{englishMonths[selectedMonth]}, {selectedYear}
           </h3>
           <button className="h-btn" onClick={handleNextMonth}>
             {">"}

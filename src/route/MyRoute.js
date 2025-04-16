@@ -15,7 +15,6 @@ import Career from "../pages/Career";
 import LocationMap from "../pages/LocationMap";
 import Contact from "../pages/Contact";
 import PageNotFound from "../pages/PageNotFound";
-import UserLogin from "../pages/UserLogin";
 import WhatIsAnxiety from "../pages/blog/WhatIsAnxiety";
 import MigraineHeadache from "../pages/blog/MigraineHeadache";
 import ASD from "../pages/blog/ASD";
@@ -44,6 +43,7 @@ import WIA from "../pages/blog/WIA";
 import WhatIsMigraine from "../pages/blog/WhatIsMigraine";
 import Apply from "../pages/Apply";
 import Services from "../pages/Services";
+import Email from "../pages/Email";
 
 const MyRoute = () => {
   return (
@@ -51,7 +51,7 @@ const MyRoute = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/location" element={<LocationMap />} />
-        <Route path="/email" element={<UserLogin />} />
+        <Route path="/email" element={<Email />} />
         <Route path="/about" element={<About />} />
         <Route path="/message" element={<Message />} />
         <Route path="/partner" element={<Partner />} />

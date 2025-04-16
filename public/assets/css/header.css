@@ -8,7 +8,8 @@
 }
 
 .nav-1-content {
-  width: 88%;
+  /* border:2px solid red; */
+  width: 1110px;
   display: flex;
   margin: auto;
   justify-content: space-between;
@@ -81,15 +82,15 @@
     /* border: 2px solid black; */
   }
   .resp-nav1-div-div1 i {
-    margin-left: 3px;
+    margin-left: 15px;
     font-size: 1.8rem;
   }
   .resp-nav1-div-div2 {
-    width: 40%;
+    width: 50%;
     /* border: 2px solid black; */
   }
   .resp-nav1-div-div2 img {
-    height: 2.8rem;
+    height: 3.2rem;
     width: 100%;
   }
   .resp-nav1-div-div3 {
@@ -99,7 +100,8 @@
     /* border: 2px solid black; */
   }
   .resp-nav1-div-div3 i {
-    font-size: 1.4rem;
+    margin-right:15px ;
+    font-size: 1.5rem;
   }
   .nav-2 {
     display: none;

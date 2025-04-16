@@ -117,7 +117,7 @@ const Apply = () => {
               </div>
             </form>
           </div>
-          <div className="cols col-md-4 col-sm-12 shadow ">
+          <div className="cols col-md-4 col-sm-12 shadow mb-3 ">
             <p className="apply-p2">Welcome !</p>
             <hr />
             <div className="row apply-row-2">
@@ -139,6 +139,7 @@ const Apply = () => {
               which is in Biratnagar.
             </p>
             <NavLink
+            target="_blank"
               to="https://neuro.danphecare.com/"
               className="nav-2-btn btn text-sm"
             >

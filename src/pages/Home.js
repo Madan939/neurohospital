@@ -12,11 +12,11 @@ const Home = () => {
   const close = () => {
     showHomePic(false);
   };
-  const navigate=useNavigate();
-  const load=(path)=>{
+  const navigate = useNavigate();
+  const load = (path) => {
     navigate(path);
     window.location.reload();
-  }
+  };
   const sec1Ref = useRef(null);
   const sec2Ref = useRef(null);
   const sec3Ref = useRef(null);
@@ -34,13 +34,12 @@ const Home = () => {
   const [isSec7Visible, setIsSec7Visible] = useState(false);
 
   useEffect(() => {
- 
     if (homePic) {
       const timer = setTimeout(() => {
         showHomePic(false);
       }, 7000);
-  
-      return () => clearTimeout(timer); 
+
+      return () => clearTimeout(timer);
     }
     const sec1Element = sec1Ref.current;
     const sec2Element = sec2Ref.current;
@@ -148,8 +147,8 @@ const Home = () => {
           </div>
         </div>
       )}
-      <div className="home" >
-        <div className="home-first" style={{ textAlign: 'justify' }}>
+      <div className="home">
+        <div className="home-first" style={{ textAlign: "justify" }}>
           <div className="home-bg ">
             <div
               ref={sec1Ref}
@@ -196,7 +195,7 @@ const Home = () => {
                       <div className="fs ">-</div>
                       <div className="ft ">24x7 Service</div>
                     </div>
-                    <br/>
+                    <br />
                   </div>
                 </div>
                 <div className="col2 cols col-md-3 col-xs-12 ">
@@ -208,12 +207,12 @@ const Home = () => {
                       medical services round the clock.
                     </p>
                     <Link
-                      onClick={()=>load("/doctors")}
+                      onClick={() => load("/doctors")}
                       className="card-btn btn text-light mt-3"
                     >
                       View Doctors
                     </Link>
-                    <br/>
+                    <br />
                   </div>
                 </div>
                 <div className="col3 cols col-md-3 col-xs-12 ">
@@ -224,6 +223,7 @@ const Home = () => {
                       desired doctors.
                     </p>
                     <Link
+                      target="_blank"
                       to="https://neuro.danphecare.com/"
                       className="card-btn btn text-light mt-3"
                     >
@@ -263,12 +263,18 @@ const Home = () => {
           className={`section-1 d-flex ${isSec2Visible ? "show" : ""}`}
         >
           <div className="section-1-1div">
-            <img src="/assets/images/homepage/director.png" alt="director-image" />
+            <img
+              src="/assets/images/homepage/director.png"
+              alt="director-image"
+            />
           </div>
-          <div className="section-1-2div container mt-3" style={{ textAlign: 'justify' }}>
+          <div
+            className="section-1-2div container mt-3"
+            style={{ textAlign: "justify" }}
+          >
             <p className="section-1-1p ">SERVING THE HUMANITY</p>
             <p className="section-1-2p">Director's Message</p>
-            <p className="mb-3 mt-3" >
+            <p className="mb-3 mt-3">
               Our mission at Neuro Cardio & Multispeciality Hospital Pvt.Ltd. is
               to provide exemplary healthcare, and it is your unwavering
               dedication that allows us to achieve this. As we move forward, I
@@ -306,7 +312,7 @@ const Home = () => {
             <div className="cols col-md-6 col-sm-12  text-secondary">
               <p className="sec-3-p1">Best Practices</p>
               <h1 className="sec-3-p2">Premium Medical Facilities</h1>
-              <p className="sec-3-p3" style={{ textAlign: 'justify' }}>
+              <p className="sec-3-p3" style={{ textAlign: "justify" }}>
                 To provide a safe and efficient environment to patients, staff,
                 and visitors routine inspections are one of the hospital
                 facility management’s key activities that are performed to find
@@ -316,7 +322,8 @@ const Home = () => {
               <div className="sec-3-2row row">
                 <div className="sec-3-2col cols col-md-6 col-sm-12">
                   <div>
-                    <i className="fa-solid fa-angles-right"></i>&nbsp; Trauma Care
+                    <i className="fa-solid fa-angles-right"></i>&nbsp; Trauma
+                    Care
                   </div>
                   <div>
                     <i className="fa-solid fa-angles-right"></i>&nbsp; Intensive
@@ -328,11 +335,12 @@ const Home = () => {
                 </div>
                 <div className="sec-3-2col cols col-md-6 col-sm-12">
                   <div>
-                    <i className="fa-solid fa-angles-right"></i>&nbsp; Stroke Care
+                    <i className="fa-solid fa-angles-right"></i>&nbsp; Stroke
+                    Care
                   </div>
                   <div>
-                    <i className="fa-solid fa-angles-right"></i>&nbsp; Heart Attack
-                    Care
+                    <i className="fa-solid fa-angles-right"></i>&nbsp; Heart
+                    Attack Care
                   </div>
                   <div>
                     <i className="fa-solid fa-angles-right"></i>&nbsp;Knee/ Hip
@@ -362,7 +370,7 @@ const Home = () => {
               >
                 <div className="sec-4-1 text-light">Experienced Doctors</div>
                 <p className="sec-4-2 text-light">World Class Treatment</p>
-                <p className="text-light" style={{ textAlign: 'justify' }}>
+                <p className="text-light" style={{ textAlign: "justify" }}>
                   I feel proud to become a team member of professionally managed
                   healthcare services in Nepal. Our hospital provides world
                   class healthcare solutions for them whose last lifeline is
@@ -384,6 +392,7 @@ const Home = () => {
                 </Link>
                 <br />
                 <Link
+                  target="_blank"
                   to="https://neuro.danphecare.com/"
                   className="sec-4-btn btn text-light"
                 >
@@ -419,7 +428,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="section-6 " style={{ textAlign: 'justify' }}>
+        <div className="section-6 " style={{ textAlign: "justify" }}>
           <SectionSix />
         </div>
         <div className="section-7">
@@ -428,7 +437,7 @@ const Home = () => {
             className={`sec-7-div  ${isSec6Visible ? "show" : ""}`}
           >
             <p className="sec7-p1">World Class Equipments</p>
-            <p className="sec7-p2 " style={{ textAlign: 'justify' }}>
+            <p className="sec7-p2 " style={{ textAlign: "justify" }}>
               Magnetic resonance imaging is a medical imaging technique used in
               radiology to form pictures of the anatomy and the physiological
               processes of the body. MRI scanners use strong magnetic fields,
@@ -436,12 +445,13 @@ const Home = () => {
               the organs in the body.
             </p>
             <NavLink
+              target="_blank"
               to="https://neuro.danphecare.com/"
               className="sec7-btn btn text-light"
             >
               Book an Appointment
             </NavLink>
-            <br/>
+            <br />
           </div>
         </div>
         <div className="section-8 my-2">

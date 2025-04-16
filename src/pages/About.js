@@ -3,7 +3,6 @@ import Breadcrumb from "../components/Breadcrumb";
 import { Link, useNavigate } from "react-router-dom";
 import Video from "../components/Video";
 import AboutCpnt from "../components/AboutCpnt";
-import { Helmet } from "react-helmet";
 
 const About = () => {
   const name1 = "About Us";
@@ -105,7 +104,7 @@ const About = () => {
   useEffect(() => {
     if (isSec3Visible) {
       animateNumber(setPatients, 100000, 3000);
-      animateNumber(setDoctors, 31, 3000);
+      animateNumber(setDoctors, 30, 3000);
       animateNumber(setBeds, 150, 3000);
       animateNumber(setCenters, 473, 3000);
     }
@@ -126,10 +125,9 @@ const About = () => {
   };
   return (
     <>
-    
       <Breadcrumb name1={name1} name2={name2} />
 
-      {/* Section 1 */}
+   
       <div className="abu-sec1" style={{ textAlign: "justify" }}>
         <div className="ab-sec1-cnt ">
           <div className="ab-sec1-cnt-1">
@@ -146,13 +144,13 @@ const About = () => {
                 doctors in Nepal.
               </p>
               <p className="abu-p3">
-                Neuro Cardio & Multispecialty Hospital Pvt.Ltd. is a well-known
-                multispecialty hospital that was established in 2000 AD to
+                Neuro Cardio & Multispecialty Hospital Pvt. Ltd. is a well-known
+                multispecialty hospital that was established in 2000 A.D. to
                 provide the best neurological and other medical facilities.
               </p>
-              <div className="abu-p4 text-dark">Dr. Birendra Kumar Bista</div>
+              <div className="abu-p4 text-bold">Dr. Birendra Kumar Bista</div>
               <div className="abu-p5">Senior Consultant Neurologist</div>
-              <Link to="https://neuro.danphecare.com/" className="abu-btn btn">
+              <Link to="https://neuro.danphecare.com/" className="abu-btn btn" target="_blank">
                 Book an Appointment
               </Link>
               <br />
@@ -160,17 +158,15 @@ const About = () => {
           </div>
         </div>
       </div>
-
-      {/* Section 2 (Appears on scroll) */}
       <div ref={sec2Ref} className={` abu-sec2 ${isVisible ? "show" : ""}`}>
-        <div className="abu-sec2-cnt" style={{ textAlign: "justify" }}>
+        <div className="abu-sec2-cnt" >
           <div className="abu-sec2-cnt1 ">
             <div className="abu-s2ct-1div mx-2">
               <div className="s2ct-p1">Highest Quality Care</div>
               <div className="s2ct-p2">
                 Complete Medical Solutions in One Place
               </div>
-              <div className="s2ct-p3">
+              <div className="s2ct-p3" style={{ textAlign: "justify" }}>
                 Medical solutions rank amongst the most exciting and interesting
                 ways healthcare providers leverage digital technology to improve
                 medical care. They have the potential to transform healthcare
@@ -215,7 +211,7 @@ const About = () => {
         </div>
       </div>
 
-      {/* Section 3 (Appears on scroll) */}
+     
       <div className="abu-sec3 my-2">
         <div
           ref={sec3Ref}
@@ -259,7 +255,6 @@ const About = () => {
           </div>
         </div>
       </div>
-      {/* Section 4 (Video Section) */}
       <div className="abu-sec4" style={{ textAlign: "justify" }}>
         <div className="abs4-cnt">
           <div className="abs4-cnt1">
@@ -286,8 +281,6 @@ const About = () => {
           </div>
         </div>
       </div>
-
-      {/* Section 5 (About Component) */}
       <div className="abu-sec5">
         <div className="abs5-cnt">
           <div

@@ -7,14 +7,14 @@ import Footer from "./components/Footer";
 import MyRoute from "./route/MyRoute";
 import Float from "./components/Float";
 import PageNotFound from "./pages/PageNotFound";
-import UserLogin from "./pages/UserLogin";
 import Nav from "./components/Nav";
+import Email from "./pages/Email";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation();
   const isNotFoundPage = location.pathname === "/404";
-  const isUserLogin = location.pathname === "/login";
+  const isUserLogin = location.pathname === "/email";
   useEffect(() => {
     ReactGA.initialize("G-Y6XX5D6NJW");
     ReactGA.send({ hitType: "pageview", page: location.pathname });
@@ -26,7 +26,7 @@ function App() {
     <>
       {isUserLogin ? (
         <>
-          <UserLogin />
+          <Email />
         </>
       ) : (
         <>

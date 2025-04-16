@@ -130,7 +130,7 @@ const Blogs = () => {
     },
     {
       pic: "/assets/images/blog/blog-19.webp",
-      name: "Polycystic Ovary Syndrome Pcos",
+      name: "Polycystic Ovary Syndrome ",
       date: "Jan 25, 2024",
       des: "Polycystic Ovary Syndrome (PCOS) is a common hormonal condition that affects women of reproductive age. It affects an  estimated 8–13% of ...",
       link: "/blog/polycystic-ovary-syndrome-pcos",
@@ -182,6 +182,7 @@ const Blogs = () => {
     <>
       <div className="blogs">
         <div className="blogs-div">
+          <div className="blog-first">
           <p className="blogs-p1">Neuro Hospital Blogs</p>
           <div className="blog-pic">
             <img
@@ -219,26 +220,28 @@ const Blogs = () => {
           </p>
           <br />
           <br />
+          </div>
+         
           <div className="blogs-row row ">
             {List.map((card) => (
               <div key={card.name} className="blogs-col cols col-md-4 col-sm-12">
                 <div className="blogs-col-div shadow">
-                  <img src={card.pic} alt={card.name} className="blogs-img" />
+                  <img src={card.pic} alt={card.name} className="blogs-img " />
                   <p className="mx-3">
                     <Link
                       onClick={() => load(card.link)}
-                      className="blogs-card-p1"
+                      className="blogs-card-p1 "
                     >
                       {card.name}
                     </Link>
                   </p>
                   <p
                     className="blogs-p3 mx-3"
-                    
+                    style={{textAlign:"justify"}}
                   >
                     {card.des}
                   </p>
-                  <p className="blog-date mx-3">Date posted:{card.date}</p>
+                  <p className="blog-date mx-3">Date posted : {card.date}</p>
                   <p className="text-center">
                     {" "}
                     <Link
