@@ -3,6 +3,7 @@ import Breadcrumb from "../components/Breadcrumb";
 import { Link, useNavigate } from "react-router-dom";
 import Video from "../components/Video";
 import AboutCpnt from "../components/AboutCpnt";
+import { Helmet } from "react-helmet";
 
 const About = () => {
   const name1 = "About Us";
@@ -125,6 +126,22 @@ const About = () => {
   };
   return (
     <>
+      {
+        <Helmet>
+          <meta
+            property="og:description"
+            content="Neuro Hospital provides top-class healthcare services in Nepal, specializing in neurology, cardiology, and more."
+          />
+          <meta property="og:url" content="https://neurohospital.com.np/about" />
+          <meta property="og:type" content="website" />
+          <meta property="og:image" content="%PUBLIC_URL%/images/aboutus/ab1.png" />
+          <meta
+            property="og:site_name"
+            content="Neuro Cardio & Multispecialty Hospital Pvt.Ltd."
+          />
+          <meta property="fb:app_id" content="AsfDAtkyGujE3OkZKqlgTEn" />
+        </Helmet>
+      }
       <Breadcrumb name1={name1} name2={name2} />
 
       {/* Section 1 */}
